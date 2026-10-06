@@ -1,0 +1,262 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import { notFound } from "next/navigation";
+import { ProgressionChart, type ChartMark } from "@/components/ProgressionChart";
+import { RecordsTable } from "@/components/RecordsTable";
+import { events, genderMeta, strokeMeta } from "@/data";
+import {
+  FLAG_ZH,
+  countryOf,
+  holderZh,
+  isRatified,
+  toSeconds,
+  zhDate,
+} from "@/lib/display";
+
+interface PageProps {
+  params: Promise<{ slug: string }>;
+}
+
+const CHART_MARKS: Record<string, ChartMark[]> = {
+  "mens-100m-freestyle": [
+    { date: "1922-07-09", label: "首破1分钟" },
+    { date: "1976-07-25", label: "首破50秒" },
+  ],
+  "womens-100m-freestyle": [
+    { date: "1964-02-29", label: "长池首破1分钟" },
+    { date: "2017-07-23", label: "舍斯特伦 51.71" },
+  ],
+  "mens-100m-breaststroke": [
+    { date: "2001-06-29", label: "首破1分钟" },
+    { date: "2015-04-17", label: "皮蒂首破58秒" },
+  ],
+  "womens-100m-breaststroke": [
+    { date: "1996-07-21", label: "海因斯夺金" },
+    { date: "2017-07-25", label: "莉莉·金 1:04.13" },
+  ],
+};
+
+export function generateStaticParams() {
+  return events.map((e) => ({ slug: e.slug }));
+}
+
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const event = events.find((e) => e.slug === slug);
+  if (!event) return {};
+  return {
+    title: `${event.name}：世界纪录与历史`,
+    description: event.summary,
+  };
+}
+
+export default async function EventPage({ params }: PageProps) {
+  const { slug } = await params;
+  const event = events.find((e) => e.slug === slug);
+  if (!event) notFound();
+
+  const idx = events.findIndex((e) => e.slug === slug);
+  const prev = events[(idx - 1 + events.length) % events.length];
+  const next = events[(idx + 1) % events.length];
+
+  const ratified = event.progression.filter(isRatified);
+  const wr = ratified[ratified.length - 1];
+  const first = ratified[0];
+  const wrCountry = countryOf(wr.country);
+  const improvement = toSeconds(first.time) - toSeconds(wr.time);
+
+  const chartRecords = ratified.map((r) => ({
+    time: r.time,
+    seconds: toSeconds(r.time),
+    holder: r.holder,
+    holderDisplay: holderZh(r.holder),
+    countryZh: countryOf(r.country).zh,
+    date: r.date,
+    dateLabel: zhDate(r.date),
+    meet: r.meet,
+  }));
+
+  return (
+    <div className="mx-auto max-w-6xl px-4 py-10">
+      {/* 面包屑 */}
+      <nav className="text-sm text-slate-400">
+        <Link href="/" className="hover:text-pool-700">
+          首页
+        </Link>
+        <span className="mx-2">/</span>
+        <Link href="/events/" className="hover:text-pool-700">
+          项目
+        </Link>
+        <span className="mx-2">/</span>
+        <span className="text-slate-600">{event.name}</span>
+      </nav>
+
+      {/* 页头 */}
+      <header className="mt-4">
+        <div className="flex flex-wrap items-center gap-2">
+          <span className="rounded-full bg-pool-100 px-2.5 py-1 text-xs font-medium text-pool-700">
+            {genderMeta[event.gender].zh}
+          </span>
+          <span className="rounded-full bg-pool-100 px-2.5 py-1 text-xs font-medium text-pool-700">
+            {strokeMeta[event.stroke].zh}
+          </span>
+          <span className="rounded-full bg-pool-100 px-2.5 py-1 text-xs font-medium text-pool-700">
+            {event.distance} 米
+          </span>
+          <span className="rounded-full bg-pool-100 px-2.5 py-1 text-xs font-medium text-pool-700">
+            长池（50米）
+          </span>
+        </div>
+        <h1 className="mt-3 text-3xl font-bold text-pool-950 sm:text-4xl">
+          {event.name}
+        </h1>
+        <p className="mt-3 max-w-3xl leading-relaxed text-slate-600">
+          {event.summary}
+        </p>
+      </header>
+
+      {/* 现世界纪录 */}
+      <section className="mt-8 overflow-hidden rounded-2xl bg-gradient-to-r from-pool-950 via-pool-800 to-pool-600 text-white">
+        <div className="grid gap-6 p-6 sm:p-8 lg:grid-cols-[auto_1fr] lg:items-center">
+          <div>
+            <div className="text-sm text-pool-200">现世界纪录</div>
+            <div className="mt-2 font-mono text-6xl font-bold tabular-nums sm:text-7xl">
+              {wr.time}
+            </div>
+            <div className="mt-1 text-sm text-pool-200">
+              {wrCountry.flag} {wrCountry.zh}
+            </div>
+          </div>
+          <div className="lg:border-l lg:border-white/20 lg:pl-8">
+            <div className="text-xl font-semibold">
+              {holderZh(wr.holder)}
+              <span className="ml-2 text-sm font-normal text-pool-200">
+                {wr.holder}
+              </span>
+            </div>
+            <div className="mt-1 text-pool-100">
+              {zhDate(wr.date)}
+              {wr.meet ? ` · ${wr.meet}` : ""}
+              {wr.place ? ` · ${wr.place}` : ""}
+            </div>
+            {wr.flags && wr.flags.length > 0 && (
+              <div className="mt-2 flex flex-wrap gap-1.5">
+                {wr.flags.map((f) => (
+                  <span
+                    key={f}
+                    className="rounded-full bg-white/15 px-2 py-0.5 text-xs"
+                  >
+                    {FLAG_ZH[f]}
+                  </span>
+                ))}
+              </div>
+            )}
+            <div className="mt-4 flex flex-wrap gap-x-6 gap-y-2 text-sm text-pool-100">
+              <span>
+                第 <b className="font-mono text-base">{ratified.length}</b>{" "}
+                次刷新（被承认）
+              </span>
+              <span>
+                首项纪录 {first.date.slice(0, 4)} 年
+              </span>
+              <span>
+                累计提升{" "}
+                <b className="font-mono text-base">
+                  {improvement.toFixed(1)}
+                </b>{" "}
+                秒
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 纪录演进图 */}
+      <section className="mt-10">
+        <h2 className="text-2xl font-bold text-pool-950">纪录演进</h2>
+        <p className="mt-1 text-sm text-slate-500">
+          阶梯线为被承认的世界纪录；阴影带为 2008–2009 年聚氨酯快速泳衣时代；悬停查看每项纪录。
+        </p>
+        <div className="mt-4 rounded-2xl border border-slate-200 bg-white p-4">
+          <ProgressionChart
+            records={chartRecords}
+            marks={CHART_MARKS[event.slug] ?? []}
+          />
+        </div>
+      </section>
+
+      {/* 完整纪录表 */}
+      <section className="mt-10">
+        <h2 className="text-2xl font-bold text-pool-950">
+          完整纪录表
+          <span className="ml-2 align-middle text-sm font-normal text-slate-400">
+            共 {event.progression.length} 条（含{" "}
+            {event.progression.length - ratified.length} 条未获批准）
+          </span>
+        </h2>
+        <div className="mt-4">
+          <RecordsTable records={event.progression} />
+        </div>
+      </section>
+
+      {/* 项目历史 */}
+      <section className="mt-12">
+        <h2 className="text-2xl font-bold text-pool-950">项目历史</h2>
+        <div className="mt-6 space-y-10">
+          {event.history.map((section) => (
+            <article key={section.heading}>
+              <h3 className="text-lg font-semibold text-pool-800">
+                {section.heading}
+              </h3>
+              <div className="mt-3 space-y-3 leading-loose text-slate-600">
+                {section.paragraphs.map((p, i) => (
+                  <p key={i}>{p}</p>
+                ))}
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      {/* 数据来源 */}
+      <section className="mt-12 rounded-2xl border border-slate-200 bg-white p-6 text-sm text-slate-500">
+        <div className="font-medium text-slate-600">数据来源（截至{event.dataAsOf}）</div>
+        <ul className="mt-2 space-y-1">
+          {event.sources.map((s) => (
+            <li key={s.url}>
+              <a
+                href={s.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-pool-600 hover:text-pool-700 hover:underline"
+              >
+                {s.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+        <p className="mt-3 text-xs leading-relaxed text-slate-400">
+          纪录演进数据译自维基百科（CC BY-SA 4.0），赛事与地点名为中文译写；成绩与日期保留原文。如发现错漏，欢迎对照来源指出。
+        </p>
+      </section>
+
+      {/* 上一项 / 下一项 */}
+      <nav className="mt-10 flex items-center justify-between gap-4 border-t border-pool-100 pt-6 text-sm">
+        <Link
+          href={`/events/${prev.slug}/`}
+          className="text-slate-500 hover:text-pool-700"
+        >
+          ← {prev.name}
+        </Link>
+        <Link
+          href={`/events/${next.slug}/`}
+          className="text-slate-500 hover:text-pool-700"
+        >
+          {next.name} →
+        </Link>
+      </nav>
+    </div>
+  );
+}

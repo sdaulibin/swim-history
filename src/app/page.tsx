@@ -1,69 +1,254 @@
-import Image from "next/image";
+import Link from "next/link";
+import { events, siteConfig, strokeMeta } from "@/data";
+import { countryOf, holderZh, isRatified, toSeconds, zhDate } from "@/lib/display";
+import type { RecordEntry, Stroke } from "@/lib/types";
+
+function wrOf(event: (typeof events)[number]): RecordEntry {
+  const ratified = event.progression.filter(isRatified);
+  return ratified[ratified.length - 1];
+}
 
 export default function Home() {
+  const totalRecords = events.reduce((n, e) => n + e.progression.length, 0);
+  const ratifiedCount = events.reduce(
+    (n, e) => n + e.progression.filter(isRatified).length,
+    0,
+  );
+  const strokesInUse = Array.from(new Set(events.map((e) => e.stroke)));
+  const featured = events.find((e) => e.slug === "mens-100m-freestyle")!;
+  const featuredWr = wrOf(featured);
+  const others = events.filter((e) => e.slug !== featured.slug);
+
+  const recent = events
+    .flatMap((e) =>
+      e.progression
+        .filter(isRatified)
+        .slice(-3)
+        .map((r) => ({ event: e, record: r })),
+    )
+    .sort((a, b) => (a.record.date < b.record.date ? 1 : -1))
+    .slice(0, 6);
+
+  const firstYear = Math.min(
+    ...events.map((e) => Number(e.progression[0].date.slice(0, 4))),
+  );
+  const lastYear = Math.max(
+    ...events.map((e) => Number(wrOf(e).date.slice(0, 4))),
+  );
+
+  const stats = [
+    { label: "收录项目", value: String(events.length) },
+    { label: "纪录条目", value: `${totalRecords}` },
+    { label: "数据跨越", value: `${firstYear}–${lastYear}` },
+    { label: "已被承认", value: `${ratifiedCount} 条` },
+  ];
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <div>
+      {/* 英雄区 */}
+      <section className="relative overflow-hidden bg-gradient-to-br from-pool-950 via-pool-800 to-pool-600 text-white">
+        <svg
+          viewBox="0 0 1440 140"
+          preserveAspectRatio="none"
+          className="absolute bottom-0 left-0 h-24 w-full opacity-25"
+          aria-hidden
+        >
+          <path
+            d="M0 70 C 180 20, 360 20, 540 70 S 900 120, 1080 70 1440 70 V140 H0 Z"
+            fill="#ffffff"
+          />
+          <path
+            d="M0 100 C 240 60, 480 60, 720 100 S 1200 140, 1440 100 V140 H0 Z"
+            fill="#ffffff"
+            opacity="0.5"
+          />
+        </svg>
+        <div className="relative mx-auto max-w-6xl px-4 py-20 sm:py-24">
+          <p className="text-sm tracking-[0.3em] text-pool-200">
+            SWIMMING HISTORY · {firstYear}—{lastYear}
           </p>
+          <h1 className="mt-4 text-5xl font-bold tracking-wide sm:text-6xl">
+            {siteConfig.name}
+          </h1>
+          <p className="mt-3 text-lg text-pool-100">{siteConfig.tagline}</p>
+          <p className="mt-5 max-w-2xl leading-relaxed text-pool-100/90">
+            {siteConfig.description}
+          </p>
+          <div className="mt-8 flex flex-wrap gap-3">
+            <Link
+              href="/events/"
+              className="rounded-full bg-white px-6 py-2.5 text-sm font-medium text-pool-800 transition-colors hover:bg-pool-50"
+            >
+              浏览全部项目
+            </Link>
+            <Link
+              href="/about/"
+              className="rounded-full border border-white/40 px-6 py-2.5 text-sm text-white transition-colors hover:bg-white/10"
+            >
+              关于数据来源
+            </Link>
+          </div>
+          <div className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-4">
+            {stats.map((s) => (
+              <div
+                key={s.label}
+                className="rounded-2xl border border-white/15 bg-white/10 px-4 py-4 backdrop-blur"
+              >
+                <div className="font-mono text-2xl font-bold tabular-nums">
+                  {s.value}
+                </div>
+                <div className="mt-1 text-sm text-pool-100/80">{s.label}</div>
+              </div>
+            ))}
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+      </section>
+
+      {/* 焦点纪录 */}
+      <section className="mx-auto max-w-6xl px-4 py-16">
+        <div className="flex items-end justify-between">
+          <h2 className="text-2xl font-bold text-pool-950">焦点纪录</h2>
+          <Link
+            href="/events/"
+            className="text-sm text-pool-600 hover:text-pool-700"
           >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+            全部项目 →
+          </Link>
         </div>
-      </main>
+
+        <div className="mt-6 grid gap-4 lg:grid-cols-2">
+          <div className="flex flex-col justify-between rounded-2xl border border-amber-200 bg-gradient-to-br from-amber-50 to-white p-6">
+            <div>
+              <span className="rounded-full bg-amber-100 px-2.5 py-1 text-xs font-medium text-amber-700">
+                男子 100 米自由泳 · 现世界纪录
+              </span>
+              <div className="mt-4 font-mono text-6xl font-bold tabular-nums text-pool-900">
+                {featuredWr.time}
+              </div>
+              <div className="mt-3 text-lg font-semibold text-pool-950">
+                {holderZh(featuredWr.holder)}
+                <span className="ml-2 text-sm font-normal text-slate-400">
+                  {featuredWr.holder}
+                </span>
+              </div>
+              <p className="mt-2 text-sm leading-relaxed text-slate-600">
+                {zhDate(featuredWr.date)}，{featuredWr.meet}个人决赛。46.40
+                是该项目 120 年历史上第 52 次被承认的世界纪录，亚洲选手第一次站上男子百米自由泳之巅。
+              </p>
+            </div>
+            <Link
+              href={`/events/${featured.slug}/`}
+              className="mt-6 self-start text-sm font-medium text-pool-700 hover:text-pool-600"
+            >
+              查看完整演进（52 条纪录）→
+            </Link>
+          </div>
+
+          <div className="grid gap-4">
+            {others.map((e) => {
+              const wr = wrOf(e);
+              const c = countryOf(wr.country);
+              return (
+                <Link
+                  key={e.slug}
+                  href={`/events/${e.slug}/`}
+                  className="group flex items-center justify-between gap-4 rounded-2xl border border-slate-200 bg-white p-5 transition-all hover:border-pool-400 hover:shadow-md hover:shadow-pool-100"
+                >
+                  <div>
+                    <div className="text-xs text-slate-400">{e.name}</div>
+                    <div className="mt-1.5 font-semibold text-pool-950 group-hover:text-pool-700">
+                      {c.flag && <span className="mr-1">{c.flag}</span>}
+                      {holderZh(wr.holder)}
+                    </div>
+                    <div className="mt-0.5 text-sm text-slate-400">
+                      {zhDate(wr.date)}
+                    </div>
+                  </div>
+                  <div className="text-right">
+                    <div className="font-mono text-3xl font-bold tabular-nums text-pool-700">
+                      {wr.time}
+                    </div>
+                    <div className="text-xs text-slate-400">
+                      {e.progression.filter(isRatified).length} 条纪录
+                    </div>
+                  </div>
+                </Link>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* 按泳姿浏览 */}
+      <section className="border-y border-pool-100 bg-white/60">
+        <div className="mx-auto max-w-6xl px-4 py-14">
+          <h2 className="text-2xl font-bold text-pool-950">按泳姿浏览</h2>
+          <div className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
+            {(Object.keys(strokeMeta) as Stroke[]).map((s) => {
+              const list = events.filter((e) => e.stroke === s);
+              const active = list.length > 0;
+              const inner = (
+                <>
+                  <div className="text-lg font-semibold">{strokeMeta[s].zh}</div>
+                  <div className="mt-2 text-sm opacity-75">
+                    {active ? `${list.length} 个项目` : "即将收录"}
+                  </div>
+                </>
+              );
+              return active ? (
+                <Link
+                  key={s}
+                  href="/events/"
+                  className="rounded-2xl border border-pool-200 bg-pool-50 p-5 text-pool-800 transition-colors hover:border-pool-400 hover:bg-pool-100"
+                >
+                  {inner}
+                </Link>
+              ) : (
+                <div
+                  key={s}
+                  className="rounded-2xl border border-dashed border-slate-200 p-5 text-slate-400"
+                >
+                  {inner}
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* 最近的纪录刷新 */}
+      <section className="mx-auto max-w-6xl px-4 py-16">
+        <h2 className="text-2xl font-bold text-pool-950">最近的纪录刷新</h2>
+        <div className="mt-6 divide-y divide-slate-100 rounded-2xl border border-slate-200 bg-white">
+          {recent.map(({ event, record }) => {
+            const c = countryOf(record.country);
+            return (
+              <Link
+                key={`${event.slug}-${record.date}-${record.holder}`}
+                href={`/events/${event.slug}/`}
+                className="flex items-center justify-between gap-4 px-5 py-4 transition-colors hover:bg-pool-50/60"
+              >
+                <div className="flex min-w-0 items-center gap-4">
+                  <span className="w-24 shrink-0 text-sm tabular-nums text-slate-400">
+                    {record.date}
+                  </span>
+                  <span className="shrink-0 font-mono text-lg font-bold tabular-nums text-pool-700">
+                    {record.time}
+                  </span>
+                  <span className="truncate text-sm text-slate-600">
+                    {c.flag && <span className="mr-1">{c.flag}</span>}
+                    {holderZh(record.holder)}
+                    <span className="ml-2 text-slate-400">{event.name}</span>
+                  </span>
+                </div>
+                <span className="shrink-0 text-xs text-slate-300">
+                  {toSeconds(record.time).toFixed(2)}s
+                </span>
+              </Link>
+            );
+          })}
+        </div>
+      </section>
     </div>
   );
 }

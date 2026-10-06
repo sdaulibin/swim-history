@@ -1,26 +1,32 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@theme {
+  /* 泳池蓝主题 */
+  --color-pool-50: #f2f8fd;
+  --color-pool-100: #e3effa;
+  --color-pool-200: #c2e0f3;
+  --color-pool-300: #93cbe9;
+  --color-pool-400: #5db0da;
+  --color-pool-500: #3893c6;
+  --color-pool-600: #2676ab;
+  --color-pool-700: #1f5e8b;
+  --color-pool-800: #1d4d73;
+  --color-pool-900: #1c4161;
+  --color-pool-950: #112a44;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-sans:
+    "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC",
+    system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono:
+    ui-monospace, "SF Mono", "JetBrains Mono", "Menlo", "Cascadia Mono",
+    monospace;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-pool-50);
+  color: var(--color-pool-950);
+}
+
+::selection {
+  background-color: var(--color-pool-200);
 }
