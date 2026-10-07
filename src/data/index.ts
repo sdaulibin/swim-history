@@ -3,12 +3,16 @@ import { mens100mFreestyle } from "./events/mens-100m-freestyle";
 import { womens100mFreestyle } from "./events/womens-100m-freestyle";
 import { mens100mBreaststroke } from "./events/mens-100m-breaststroke";
 import { womens100mBreaststroke } from "./events/womens-100m-breaststroke";
+import { mens100mFreestyleChampions } from "./champions/mens-100m-freestyle";
+import { womens100mFreestyleChampions } from "./champions/womens-100m-freestyle";
+import { mens100mBreaststrokeChampions } from "./champions/mens-100m-breaststroke";
+import { womens100mBreaststrokeChampions } from "./champions/womens-100m-breaststroke";
 
 export const events = [
-  mens100mFreestyle,
-  womens100mFreestyle,
-  mens100mBreaststroke,
-  womens100mBreaststroke,
+  { ...mens100mFreestyle, champions: mens100mFreestyleChampions },
+  { ...womens100mFreestyle, champions: womens100mFreestyleChampions },
+  { ...mens100mBreaststroke, champions: mens100mBreaststrokeChampions },
+  { ...womens100mBreaststroke, champions: womens100mBreaststrokeChampions },
 ];
 
 export const strokeMeta: Record<Stroke, { zh: string }> = {

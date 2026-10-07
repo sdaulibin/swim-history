@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ProgressionChart, type ChartMark } from "@/components/ProgressionChart";
 import { RecordsTable } from "@/components/RecordsTable";
+import { ChampionsExplorer } from "@/components/ChampionsExplorer";
 import { events, genderMeta, strokeMeta } from "@/data";
 import {
   FLAG_ZH,
@@ -186,6 +187,19 @@ export default async function EventPage({ params }: PageProps) {
           />
         </div>
       </section>
+
+      {/* 历届大赛冠军 */}
+      {event.champions && event.champions.length > 0 && (
+        <section className="mt-10">
+          <h2 className="text-2xl font-bold text-pool-950">历届大赛冠军</h2>
+          <p className="mt-1 text-sm text-slate-500">
+            奥运会、世锦赛、泛太平洋锦标赛、欧锦赛与亚运会的该项冠军及夺冠成绩。
+          </p>
+          <div className="mt-4">
+            <ChampionsExplorer champions={event.champions} />
+          </div>
+        </section>
+      )}
 
       {/* 完整纪录表 */}
       <section className="mt-10">

@@ -51,6 +51,31 @@ export interface HistorySection {
   paragraphs: string[];
 }
 
+/** 大赛系列 */
+export type MeetSeries =
+  | "olympics" // 奥运会
+  | "worlds" // 世界锦标赛（长池）
+  | "panpacific" // 泛太平洋锦标赛
+  | "euros" // 欧洲锦标赛（长池）
+  | "asiangames"; // 亚运会
+
+/** 一届大赛的冠军成绩 */
+export interface ChampionEntry {
+  series: MeetSeries;
+  year: number;
+  /** 举办城市（中文，可缺省） */
+  city?: string;
+  champion: string;
+  country: string;
+  /** 冠军成绩（个别早期届次可能缺失） */
+  time?: string;
+  /** 该成绩同时是世界纪录 */
+  wr?: boolean;
+  /** 奥运纪录 */
+  or?: boolean;
+  note?: string;
+}
+
 export interface SourceLink {
   label: string;
   url: string;
@@ -73,6 +98,8 @@ export interface SwimEvent {
   dataAsOf: string;
   /** 世界纪录演进，按时间升序 */
   progression: RecordEntry[];
+  /** 历届大赛冠军（奥运会、世锦赛、泛太平洋、欧锦赛、亚运会） */
+  champions?: ChampionEntry[];
   /** 项目历史 */
   history: HistorySection[];
   sources: SourceLink[];

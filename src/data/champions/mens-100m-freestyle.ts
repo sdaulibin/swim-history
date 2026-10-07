@@ -1,0 +1,92 @@
+import type { ChampionEntry } from "@/lib/types";
+
+/**
+ * 男子 100 米自由泳 · 历届大赛冠军
+ * 奥运会、世锦赛数据来源：Wikipedia "World record progression 100 metres freestyle"
+ */
+export const mens100mFreestyleChampions: ChampionEntry[] = [
+  // —— 奥运会 ——
+  { series: "olympics", year: 2024, city: "巴黎", champion: "Pan Zhanle", country: "CHN", time: "46.40", wr: true },
+  { series: "olympics", year: 2020, city: "东京", champion: "Caeleb Dressel", country: "USA", time: "47.02" },
+  { series: "olympics", year: 2016, city: "里约热内卢", champion: "Kyle Chalmers", country: "AUS", time: "47.58" },
+  { series: "olympics", year: 2012, city: "伦敦", champion: "Nathan Adrian", country: "USA", time: "47.52" },
+  { series: "olympics", year: 2008, city: "北京", champion: "Alain Bernard", country: "FRA", time: "47.21" },
+  { series: "olympics", year: 2004, city: "雅典", champion: "Pieter van den Hoogenband", country: "NED", time: "48.17" },
+  { series: "olympics", year: 2000, city: "悉尼", champion: "Pieter van den Hoogenband", country: "NED", time: "48.30", note: "半决赛游出47.84的世界纪录" },
+  { series: "olympics", year: 1996, city: "亚特兰大", champion: "Alexander Popov", country: "RUS", time: "48.74" },
+  { series: "olympics", year: 1992, city: "巴塞罗那", champion: "Alexander Popov", country: "EUN", time: "49.02" },
+  { series: "olympics", year: 1988, city: "汉城", champion: "Matt Biondi", country: "USA", time: "48.63" },
+  { series: "olympics", year: 1984, city: "洛杉矶", champion: "Rowdy Gaines", country: "USA", time: "49.80" },
+  { series: "olympics", year: 1980, city: "莫斯科", champion: "Jörg Woithe", country: "GDR", time: "50.40" },
+  { series: "olympics", year: 1976, city: "蒙特利尔", champion: "Jim Montgomery", country: "USA", time: "49.99", wr: true },
+  { series: "olympics", year: 1972, city: "慕尼黑", champion: "Mark Spitz", country: "USA", time: "51.22", wr: true },
+  { series: "olympics", year: 1968, city: "墨西哥城", champion: "Michael Wenden", country: "AUS", time: "52.2" },
+  { series: "olympics", year: 1964, city: "东京", champion: "Don Schollander", country: "USA", time: "53.4" },
+  { series: "olympics", year: 1960, city: "罗马", champion: "John Devitt", country: "AUS", time: "55.4", note: "终点判罚有争议" },
+  { series: "olympics", year: 1956, city: "墨尔本", champion: "Jon Henricks", country: "AUS", time: "55.4" },
+  { series: "olympics", year: 1952, city: "赫尔辛基", champion: "Clarke Scholes", country: "USA", time: "57.4" },
+  { series: "olympics", year: 1948, city: "伦敦", champion: "Walter Ris", country: "USA", time: "57.3" },
+  { series: "olympics", year: 1936, city: "柏林", champion: "Ferenc Csik", country: "HUN", time: "57.6" },
+  { series: "olympics", year: 1932, city: "洛杉矶", champion: "Yasuji Miyazaki", country: "JPN", time: "58.2" },
+  { series: "olympics", year: 1928, city: "阿姆斯特丹", champion: "Johnny Weissmuller", country: "USA", time: "58.6" },
+  { series: "olympics", year: 1924, city: "巴黎", champion: "Johnny Weissmuller", country: "USA", time: "59.0" },
+  { series: "olympics", year: 1920, city: "安特卫普", champion: "Duke Kahanamoku", country: "USA", time: "1:00.4", wr: true },
+  { series: "olympics", year: 1912, city: "斯德哥尔摩", champion: "Duke Kahanamoku", country: "USA", time: "1:03.4" },
+  { series: "olympics", year: 1908, city: "伦敦", champion: "Charles Daniels", country: "USA", time: "1:05.6" },
+  { series: "olympics", year: 1904, city: "圣路易斯", champion: "Zoltán Halmay", country: "HUN", time: "1:02.8", note: "该届为100码" },
+  { series: "olympics", year: 1896, city: "雅典", champion: "Alfréd Hajós", country: "HUN", time: "1:22.2" },
+
+  // —— 世界锦标赛 ——
+  { series: "worlds", year: 2025, city: "新加坡", champion: "Jack Alexy", country: "USA", time: "46.81" },
+  { series: "worlds", year: 2024, city: "多哈", champion: "Pan Zhanle", country: "CHN", time: "47.53" },
+  { series: "worlds", year: 2023, city: "福冈", champion: "Kyle Chalmers", country: "AUS", time: "47.15" },
+  { series: "worlds", year: 2022, city: "布达佩斯", champion: "David Popovici", country: "ROU", time: "46.86", wr: true },
+  { series: "worlds", year: 2019, city: "光州", champion: "Caeleb Dressel", country: "USA", time: "46.96" },
+  { series: "worlds", year: 2017, city: "布达佩斯", champion: "Caeleb Dressel", country: "USA", time: "47.17" },
+  { series: "worlds", year: 2015, city: "喀山", champion: "Ning Zetao", country: "CHN", time: "47.84" },
+  { series: "worlds", year: 2013, city: "巴塞罗那", champion: "James Magnussen", country: "AUS", time: "47.71" },
+  { series: "worlds", year: 2011, city: "上海", champion: "James Magnussen", country: "AUS", time: "47.63" },
+  { series: "worlds", year: 2009, city: "罗马", champion: "César Cielo", country: "BRA", time: "46.91", wr: true },
+  { series: "worlds", year: 2007, city: "墨尔本", champion: "Filippo Magnini", country: "ITA", time: "48.43", note: "与查维奇并列冠军" },
+  { series: "worlds", year: 2007, city: "墨尔本", champion: "Milorad Čavić", country: "SRB", time: "48.43", note: "与马尼尼并列冠军" },
+  { series: "worlds", year: 2005, city: "蒙特利尔", champion: "Filippo Magnini", country: "ITA", time: "48.12" },
+  { series: "worlds", year: 2003, city: "巴塞罗那", champion: "Alexander Popov", country: "RUS", time: "48.42" },
+  { series: "worlds", year: 2001, city: "福冈", champion: "Anthony Ervin", country: "USA", time: "48.33" },
+  { series: "worlds", year: 1998, city: "珀斯", champion: "Alexander Popov", country: "RUS", time: "48.93" },
+  { series: "worlds", year: 1994, city: "罗马", champion: "Alexander Popov", country: "RUS", time: "49.12" },
+  { series: "worlds", year: 1991, city: "珀斯", champion: "Matt Biondi", country: "USA", time: "49.18" },
+  { series: "worlds", year: 1986, city: "马德里", champion: "Matt Biondi", country: "USA", time: "49.14" },
+  { series: "worlds", year: 1982, city: "瓜亚基尔", champion: "Jörg Woithe", country: "GDR", time: "50.31" },
+  { series: "worlds", year: 1978, city: "西柏林", champion: "David McCagg", country: "USA", time: "51.19" },
+  { series: "worlds", year: 1975, city: "卡利", champion: "Andrew Coan", country: "USA", time: "51.52" },
+  { series: "worlds", year: 1973, city: "贝尔格莱德", champion: "Jim Montgomery", country: "USA", time: "51.70" },
+
+  // —— 泛太平洋锦标赛（1985–2026） ——
+  { series: "panpacific", year: 2026, city: "尔湾", champion: "Jack Alexy", country: "USA", time: "47.14", note: "赛会纪录" },
+  { series: "panpacific", year: 2018, city: "东京", champion: "Kyle Chalmers", country: "AUS", time: "48.00" },
+  { series: "panpacific", year: 2014, city: "黄金海岸", champion: "Cameron McEvoy", country: "AUS", time: "47.82", note: "赛会纪录" },
+  { series: "panpacific", year: 2010, city: "尔湾", champion: "Nathan Adrian", country: "USA", time: "48.15", note: "当年世界最好成绩" },  { series: "panpacific", year: 2006, city: "维多利亚", champion: "Brent Hayden", country: "CAN" },
+  { series: "panpacific", year: 2002, city: "横滨", champion: "Ian Thorpe", country: "AUS" },
+  { series: "panpacific", year: 1999, city: "悉尼", champion: "Michael Klim", country: "AUS", time: "48.81", note: "赛会纪录" },
+  { series: "panpacific", year: 1997, city: "福冈", champion: "Gary Hall Jr.", country: "USA", time: "49.46" },
+  { series: "panpacific", year: 1995, city: "亚特兰大", champion: "Jon Olsen", country: "USA" },
+  { series: "panpacific", year: 1993, city: "神户", champion: "Jon Olsen", country: "USA" },
+  { series: "panpacific", year: 1991, city: "埃德蒙顿", champion: "Matt Biondi", country: "USA", time: "49.72" },
+  { series: "panpacific", year: 1989, city: "东京", champion: "Tom Jager", country: "USA" },
+  { series: "panpacific", year: 1987, city: "布里斯班", champion: "Matt Biondi", country: "USA", time: "49.73" },
+  { series: "panpacific", year: 1985, city: "东京", champion: "Matt Biondi", country: "USA", time: "49.17" },
+
+  // —— 欧洲锦标赛（长池；已核 2008/2018/2021/2022/2024/2026，其余届次待补） ——
+  { series: "euros", year: 2026, city: "巴黎", champion: "David Popovici", country: "ROU", time: "46.56", note: "赛会纪录，欧锦赛三连冠" },
+  { series: "euros", year: 2024, city: "贝尔格莱德", champion: "David Popovici", country: "ROU" },
+  { series: "euros", year: 2022, city: "罗马", champion: "David Popovici", country: "ROU", time: "46.86", wr: true },
+  { series: "euros", year: 2021, city: "布达佩斯", champion: "Kliment Kolesnikov", country: "RUS" },
+  { series: "euros", year: 2018, city: "格拉斯哥", champion: "Alessandro Miressi", country: "ITA" },
+  { series: "euros", year: 2008, city: "埃因霍温", champion: "Alain Bernard", country: "FRA", time: "47.50", wr: true },
+
+  // —— 亚运会（已核 2014 起四届） ——
+  { series: "asiangames", year: 2026, city: "名古屋", champion: "Pan Zhanle", country: "CHN", time: "47.61", note: "卫冕" },
+  { series: "asiangames", year: 2022, city: "杭州", champion: "Pan Zhanle", country: "CHN", time: "46.97", note: "亚洲纪录，亚洲人首次游进47秒；赛事于2023年举行" },
+  { series: "asiangames", year: 2018, city: "雅加达", champion: "Shinri Shioura", country: "JPN", time: "48.71" },
+  { series: "asiangames", year: 2014, city: "仁川", champion: "Ning Zetao", country: "CHN", time: "47.70", note: "亚洲纪录，亚洲人首次游进48秒" },
+];

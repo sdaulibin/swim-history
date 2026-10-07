@@ -1,5 +1,17 @@
 import { zhNames } from "@/data/names";
-import type { RecordFlag } from "@/lib/types";
+import type { MeetSeries, RecordFlag } from "@/lib/types";
+
+/** 大赛系列元信息 */
+export const SERIES_META: Record<
+  MeetSeries,
+  { zh: string; color: string }
+> = {
+  olympics: { zh: "奥运会", color: "bg-amber-100 text-amber-700" },
+  worlds: { zh: "世锦赛", color: "bg-pool-100 text-pool-700" },
+  panpacific: { zh: "泛太平洋", color: "bg-teal-100 text-teal-700" },
+  euros: { zh: "欧锦赛", color: "bg-indigo-100 text-indigo-700" },
+  asiangames: { zh: "亚运会", color: "bg-rose-100 text-rose-700" },
+};
 
 /** 国家/地区：中文名 + 旗帜 emoji（历史上已消失的国家无对应 emoji） */
 export const COUNTRIES: Record<string, { zh: string; flag: string | null }> = {
@@ -24,6 +36,15 @@ export const COUNTRIES: Record<string, { zh: string; flag: string | null }> = {
   LTU: { zh: "立陶宛", flag: "🇱🇹" },
   UKR: { zh: "乌克兰", flag: "🇺🇦" },
   YUG: { zh: "南斯拉夫", flag: null },
+  CAN: { zh: "加拿大", flag: "🇨🇦" },
+  ITA: { zh: "意大利", flag: "🇮🇹" },
+  SRB: { zh: "塞尔维亚", flag: "🇷🇸" },
+  HKG: { zh: "中国香港", flag: "🇭🇰" },
+  EUN: { zh: "独联体", flag: null },
+  EST: { zh: "爱沙尼亚", flag: "🇪🇪" },
+  DEN: { zh: "丹麦", flag: "🇩🇰" },
+  BUL: { zh: "保加利亚", flag: "🇧🇬" },
+  NOR: { zh: "挪威", flag: "🇳🇴" },
 };
 
 export const FLAG_ZH: Record<RecordFlag, string> = {
