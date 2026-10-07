@@ -15,6 +15,7 @@ export interface EventCardData {
   wrDate: string;
   count: number;
   firstYear: number;
+  championCount: number;
 }
 
 export function EventCard({ ev }: { ev: EventCardData }) {
@@ -45,6 +46,11 @@ export function EventCard({ ev }: { ev: EventCardData }) {
       <div className="mt-1 text-xs text-slate-400">{ev.wrDateLabel}</div>
       <div className="mt-4 border-t border-slate-100 pt-3 text-xs text-slate-400">
         {ev.count} 条世界纪录 · {ev.firstYear} 年至今
+        {ev.championCount > 0 && (
+          <span className="mt-1 block text-pool-600">
+            🏆 历届大赛冠军 {ev.championCount} 条（奥运 / 世锦赛 / 泛太 / 欧锦 / 亚运）
+          </span>
+        )}
       </div>
     </Link>
   );

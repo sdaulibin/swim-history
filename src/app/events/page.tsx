@@ -29,6 +29,7 @@ export default function EventsPage() {
       wrDate: wr.date,
       count: ratified.length,
       firstYear: Number(e.progression[0].date.slice(0, 4)),
+      championCount: e.champions?.length ?? 0,
     };
   });
 
@@ -36,7 +37,7 @@ export default function EventsPage() {
     <div className="mx-auto max-w-6xl px-4 py-12">
       <h1 className="text-3xl font-bold text-pool-950">全部项目</h1>
       <p className="mt-2 text-slate-500">
-        目前收录长池（50 米池）四个项目的完整世界纪录演进，更多项目与短池数据持续补充中。
+        每个项目包含完整的世界纪录演进，以及奥运会、世锦赛、泛太平洋、欧锦赛、亚运会五大系列的历届冠军榜。
       </p>
       <div className="mt-8">
         <EventsExplorer events={cards} />

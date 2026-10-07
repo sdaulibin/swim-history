@@ -10,10 +10,6 @@ function wrOf(event: (typeof events)[number]): RecordEntry {
 
 export default function Home() {
   const totalRecords = events.reduce((n, e) => n + e.progression.length, 0);
-  const ratifiedCount = events.reduce(
-    (n, e) => n + e.progression.filter(isRatified).length,
-    0,
-  );
   const strokesInUse = Array.from(new Set(events.map((e) => e.stroke)));
   const featured = events.find((e) => e.slug === "mens-100m-freestyle")!;
   const featuredWr = wrOf(featured);
@@ -36,11 +32,15 @@ export default function Home() {
     ...events.map((e) => Number(wrOf(e).date.slice(0, 4))),
   );
 
+  const totalChampions = events.reduce(
+    (n, e) => n + (e.champions?.length ?? 0),
+    0,
+  );
   const stats = [
     { label: "收录项目", value: String(events.length) },
     { label: "纪录条目", value: `${totalRecords}` },
+    { label: "历届大赛冠军", value: `${totalChampions} 条` },
     { label: "数据跨越", value: `${firstYear}–${lastYear}` },
-    { label: "已被承认", value: `${ratifiedCount} 条` },
   ];
 
   return (
@@ -73,6 +73,7 @@ export default function Home() {
           <p className="mt-3 text-lg text-pool-100">{siteConfig.tagline}</p>
           <p className="mt-5 max-w-2xl leading-relaxed text-pool-100/90">
             {siteConfig.description}
+            每个项目还收录奥运会、世锦赛、泛太平洋、欧锦赛、亚运会五大系列的历届冠军与夺冠成绩。
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Link
