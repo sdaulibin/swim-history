@@ -68,8 +68,9 @@ export const womens100mBreaststrokeChampions: ChampionEntry[] = [
   { series: "euros", year: 2024, city: "贝尔格莱德", champion: "Eneli Jefimova", country: "EST" },
   { series: "euros", year: 2022, city: "罗马", champion: "Benedetta Pilato", country: "ITA" },
 
-  // —— 亚运会（已核 2018 起三届） ——
+  // —— 亚运会（2014 仁川起四届已核） ——
   { series: "asiangames", year: 2026, city: "名古屋", champion: "Tang Qianting", country: "CHN", time: "1:04.98", note: "赛会纪录" },
   { series: "asiangames", year: 2022, city: "杭州", champion: "Reona Aoki", country: "JPN", time: "1:06.81", note: "唐钱婷夺得同届50米蛙泳金牌；赛事于2023年举行" },
   { series: "asiangames", year: 2018, city: "雅加达", champion: "Satomi Suzuki", country: "JPN", time: "1:06.40", note: "赛会纪录" },
+  { series: "asiangames", year: 2014, city: "仁川", champion: "Shi Jinglin", country: "CHN", time: "1:06.67", note: "赛会纪录，破罗雪娟2002年创下的纪录" },
 ];

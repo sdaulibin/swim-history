@@ -314,8 +314,22 @@ export const zhNames: Record<string, string> = {
   "East Germany": "民主德国队",
   "Great Britain": "英国队",
   "China": "中国队",
+  "Japan": "日本队",
   "Hungary": "匈牙利队",
   "France": "法国队",
   "Italy": "意大利队",
   "South Africa": "南非队",
+
+  // —— 亚运会与 2026 泛太/欧锦补遗 ——
+  "Hwang Sun-woo": "黄善宇",
+  "Shen Duo": "沈铎",
+  "Zhang Yuhan": "张雨涵",
+  "Wang Jianjiahe": "王简嘉禾",
+  "Shi Jinglin": "史婧琳",
+  "Dmitriy Balandin": "德米特里·巴兰丁",
+  "Luke Hobson": "卢克·霍布森",
+  "Léon Marchand": "莱昂·马尔尚",
+  "Lani Pallister": "拉妮·帕利斯特",
+  "Barbora Seemanová": "芭博拉·塞玛诺娃",
+  "Kristóf Milák": "克里斯托夫·米拉克",
 };

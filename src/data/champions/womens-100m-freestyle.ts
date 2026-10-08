@@ -79,8 +79,9 @@ export const womens100mFreestyleChampions: ChampionEntry[] = [
   { series: "euros", year: 2024, city: "贝尔格莱德", champion: "Marrit Steenbergen", country: "NED", note: "同届加冕100/200米自由泳双冠" },
   { series: "euros", year: 2022, city: "罗马", champion: "Marrit Steenbergen", country: "NED" },
 
-  // —— 亚运会（已核 2018 起三届） ——
+  // —— 亚运会（2014 仁川起四届已核） ——
   { series: "asiangames", year: 2026, city: "名古屋", champion: "Siobhán Haughey", country: "HKG", time: "52.45", note: "卫冕" },
   { series: "asiangames", year: 2022, city: "杭州", champion: "Siobhán Haughey", country: "HKG", time: "52.17", note: "亚洲纪录；赛事于2023年举行" },
   { series: "asiangames", year: 2018, city: "雅加达", champion: "Rikako Ikee", country: "JPN", time: "53.27", note: "赛会纪录；当届独得6金" },
+  { series: "asiangames", year: 2014, city: "仁川", champion: "Shen Duo", country: "CHN", time: "54.37", note: "唐奕54.45摘银，中国队包揽冠亚军" },
 ];

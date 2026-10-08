@@ -47,6 +47,8 @@ export const COUNTRIES: Record<string, { zh: string; flag: string | null }> = {
   NOR: { zh: "挪威", flag: "🇳🇴" },
   TUN: { zh: "突尼斯", flag: "🇹🇳" },
   KOR: { zh: "韩国", flag: "🇰🇷" },
+  KAZ: { zh: "哈萨克斯坦", flag: "🇰🇿" },
+  CZE: { zh: "捷克", flag: "🇨🇿" },
   NZL: { zh: "新西兰", flag: "🇳🇿" },
   ARG: { zh: "阿根廷", flag: "🇦🇷" },
   CRC: { zh: "哥斯达黎加", flag: "🇨🇷" },

@@ -50,14 +50,15 @@ export const womens200mFreestyleChampions: ChampionEntry[] = [
   // —— 1973 贝尔格莱德冠军待核实，暂缺 ——
 
   // —— 泛太平洋锦标赛（1985 年起；1985–2018 各届待核实暂缺） ——
-  { series: "panpacific", year: 2026, city: "尔湾", champion: "Mollie O'Callaghan", country: "AUS", time: "1:53.10", note: "泛太复办届，生涯第二快成绩" },
+  { series: "panpacific", year: 2026, city: "尔湾", champion: "Lani Pallister", country: "AUS", time: "1:53.67", note: "麦金托什1:53.86摘银" },
 
   // —— 欧洲锦标赛（长池；2024 起已核，2022 及更早届次待补） ——
-  { series: "euros", year: 2026, city: "巴黎", champion: "Marrit Steenbergen", country: "NED", time: "1:54.85", note: "同届加冕100/200米自由泳双冠" },
+  { series: "euros", year: 2026, city: "巴黎", champion: "Barbora Seemanová", country: "CZE", note: "赛会纪录，斯滕贝根摘银" },
   { series: "euros", year: 2024, city: "贝尔格莱德", champion: "Marrit Steenbergen", country: "NED" },
 
-  // —— 亚运会（2018 起已核；2014 仁川待核实暂缺） ——
-  { series: "asiangames", year: 2026, city: "名古屋", champion: "Siobhán Haughey", country: "HKG", time: "1:53.85", note: "同届加冕100/200米自由泳双冠" },
-  { series: "asiangames", year: 2022, city: "杭州", champion: "Li Bingjie", country: "CHN", note: "赛事于2023年举行" },
-  { series: "asiangames", year: 2018, city: "雅加达", champion: "Siobhán Haughey", country: "HKG" },
+  // —— 亚运会（2014 仁川起四届已核） ——
+  { series: "asiangames", year: 2026, city: "名古屋", champion: "Siobhán Haughey", country: "HKG", time: "1:54.96", note: "卫冕；同届加冕100/200米自由泳双冠" },
+  { series: "asiangames", year: 2022, city: "杭州", champion: "Siobhán Haughey", country: "HKG", time: "1:54.12", note: "赛会纪录，李冰洁1:56.00摘银；赛事于2023年举行" },
+  { series: "asiangames", year: 2018, city: "雅加达", champion: "Li Bingjie", country: "CHN", time: "1:56.74" },
+  { series: "asiangames", year: 2014, city: "仁川", champion: "Shen Duo", country: "CHN", time: "1:57.66", note: "她当届亚运第4金" },
 ];

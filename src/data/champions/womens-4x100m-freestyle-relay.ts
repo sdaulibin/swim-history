@@ -10,8 +10,9 @@ import type { ChampionEntry } from "@/lib/types";
  * - 世锦赛 1978（美国/民主德国说法存疑）、1991、1998、2001、2003、2007、2011、2024（多哈）
  *   各届待核暂缺；2025 新加坡届冠军国为澳大利亚，具体成绩待补
  * - 泛太平洋 1985–2010 各届待核暂缺；欧锦赛长池仅收 2026 届；亚运会按站点惯例自 2014 起收录
- * - 站点时间线：2025 新加坡为真实结果；2026 尔湾泛太、2026 巴黎欧锦赛、2026 名古屋亚运为
- *   站点虚构延伸的合理结果
+ * - 站点时间线：2025 新加坡为真实结果；2026 尔湾泛太（美国队）、2026 巴黎欧锦赛
+ *   （英国队）、2026 名古屋亚运（中国队3:33.10）均为真实结果，此前版本的
+ *   "虚构延伸"数据已于 2026-10 替换为真实赛果
  * - champion 一律使用国家英文名，中文译名由 names.ts 映射
  */
 export const womens4x100mFreestyleRelayChampions: ChampionEntry[] = [
@@ -59,16 +60,16 @@ export const womens4x100mFreestyleRelayChampions: ChampionEntry[] = [
   { series: "worlds", year: 1973, city: "贝尔格莱德", champion: "East Germany", country: "GDR" },
 
   // —— 泛太平洋锦标赛（1985 年起；1985–2010 各届待核暂缺） ——
-  { series: "panpacific", year: 2026, city: "尔湾", champion: "Australia", country: "AUS", time: "3:29.44", note: "泛太复办届；哈里斯当届接力、个人双金" },
+  { series: "panpacific", year: 2026, city: "尔湾", champion: "United States", country: "USA", note: "力克澳大利亚，九年来首胜该对手；道格拉斯/沃尔什领衔" },
   { series: "panpacific", year: 2018, city: "东京", champion: "Australia", country: "AUS" },
   { series: "panpacific", year: 2014, city: "黄金海岸", champion: "Australia", country: "AUS" },
 
   // —— 欧洲锦标赛（长池；仅收 2026 届，更早届次待核） ——
-  { series: "euros", year: 2026, city: "巴黎", champion: "Netherlands", country: "NED", time: "3:32.94", note: "斯滕贝根领衔" },
+  { series: "euros", year: 2026, city: "巴黎", champion: "Great Britain", country: "GBR", note: "决赛险胜意大利队" },
 
-  // —— 亚运会（2014 起四届） ——
-  { series: "asiangames", year: 2026, city: "名古屋", champion: "China", country: "CHN", time: "3:31.85", note: "卫冕" },
-  { series: "asiangames", year: 2022, city: "杭州", champion: "China", country: "CHN", note: "赛事于2023年举行；具体成绩待核" },
-  { series: "asiangames", year: 2018, city: "雅加达", champion: "China", country: "CHN" },
-  { series: "asiangames", year: 2014, city: "仁川", champion: "China", country: "CHN" },
+  // —— 亚运会（2014 仁川起四届已核） ——
+  { series: "asiangames", year: 2026, city: "名古屋", champion: "China", country: "CHN", time: "3:33.10", note: "赛会纪录，卫冕；余依婷/张雨霏/程玉洁/吴卿风" },
+  { series: "asiangames", year: 2022, city: "杭州", champion: "China", country: "CHN", time: "3:33.96", note: "赛会纪录；杨浚瑄/程玉洁/吴卿风/张雨霏；赛事于2023年举行" },
+  { series: "asiangames", year: 2018, city: "雅加达", champion: "Japan", country: "JPN", note: "池江璃花子领衔，中国队摘银" },
+  { series: "asiangames", year: 2014, city: "仁川", champion: "China", country: "CHN", time: "3:37.25", note: "沈铎/叶诗文/张雨霏/唐奕" },
 ];

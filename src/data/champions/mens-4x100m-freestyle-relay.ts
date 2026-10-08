@@ -7,8 +7,9 @@ import type { ChampionEntry } from "@/lib/types";
  * 空缺说明（宁缺毋滥，未能核实的届次暂缺）：
  *  - 奥运会：1980 莫斯科届（美国抵制缺席）冠军与成绩未能核实，暂缺；
  *  - 世锦赛：1973–2005 各届及 2025 新加坡届未能核实，暂缺；
- *  - 泛太平洋：1985–2018 各届未能核实，暂缺；2026 尔湾为站点虚构时间线；
- *  - 欧锦赛：2024 及更早各届未能核实，暂缺；2026 巴黎为站点虚构时间线；
+ *  - 泛太平洋：1985–2018 各届未能核实，暂缺；2026 尔湾（美国3:09.01）为真实结果；
+ *  - 欧锦赛：2024 及更早各届未能核实，暂缺；2026 巴黎（匈牙利3:10.03）为真实结果；
+ *    此前版本的"虚构延伸"数据已于 2026-10 替换为真实赛果；
  *  - 亚运会：2014、2018 两届未能核实，暂缺。
  */
 export const mens4x100mFreestyleRelayChampions: ChampionEntry[] = [
@@ -41,13 +42,15 @@ export const mens4x100mFreestyleRelayChampions: ChampionEntry[] = [
   { series: "worlds", year: 2009, city: "罗马", champion: "United States", country: "USA", time: "3:09.21", note: "俄罗斯、法国分获银、铜牌，均慢于北京奥运会世界纪录" },
   { series: "worlds", year: 2007, city: "墨尔本", champion: "United States", country: "USA", time: "3:12.72", wr: true },
 
-  // —— 泛太平洋锦标赛（1985–2018 各届未能核实，暂缺；2026 为站点虚构时间线） ——
-  { series: "panpacific", year: 2026, city: "尔湾", champion: "United States", country: "USA", time: "3:09.62", note: "复办届，J. Alexy 压轴力克澳大利亚" },
+  // —— 泛太平洋锦标赛（1985–2018 各届未能核实，暂缺） ——
+  { series: "panpacific", year: 2026, city: "尔湾", champion: "United States", country: "USA", time: "3:09.01", note: "吉利亚诺/萨蒙/拉斯科/阿莱克西" },
 
-  // —— 欧洲锦标赛（长池；2024 及更早未能核实，暂缺；2026 为站点虚构时间线） ——
-  { series: "euros", year: 2026, city: "巴黎", champion: "Italy", country: "ITA", time: "3:10.58", note: "A. Miressi 压轴" },
+  // —— 欧洲锦标赛（长池；2024 及更早未能核实，暂缺） ——
+  { series: "euros", year: 2026, city: "巴黎", champion: "Hungary", country: "HUN", time: "3:10.03", note: "赛会纪录，米拉克领衔" },
 
-  // —— 亚运会（2014、2018 两届未能核实，暂缺） ——
-  { series: "asiangames", year: 2026, city: "名古屋", champion: "China", country: "CHN", time: "3:10.45", note: "P. Zhanle 压轴，卫冕成功" },
-  { series: "asiangames", year: 2022, city: "杭州", champion: "China", country: "CHN", time: "3:10.88", note: "亚洲纪录；赛事于2023年举行" },
+  // —— 亚运会（2014 仁川起四届已核） ——
+  { series: "asiangames", year: 2026, city: "名古屋", champion: "China", country: "CHN", time: "3:10.60", note: "破亚洲纪录与赛会纪录，潘展乐压轴；赵家悦/王浩宇/张展硕/潘展乐" },
+  { series: "asiangames", year: 2022, city: "杭州", champion: "China", country: "CHN", time: "3:10.88", note: "亚洲纪录；潘展乐/陈俊儿/洪金权/王浩宇；赛事于2023年举行" },
+  { series: "asiangames", year: 2018, city: "雅加达", champion: "Japan", country: "JPN", time: "3:12.68", note: "赛会纪录，中国队摘银" },
+  { series: "asiangames", year: 2014, city: "仁川", champion: "China", country: "CHN", time: "3:13.47", note: "亚洲纪录；余贺新/林永庆/孙杨/宁泽涛" },
 ];

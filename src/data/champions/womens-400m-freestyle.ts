@@ -9,7 +9,9 @@ import type { ChampionEntry } from "@/lib/types";
  * 核实说明：
  * - 1920 年安特卫普奥运会未设女子 400 米自由泳（该届中距离项目为 300 米，由
  *   布莱布特里夺冠）；项目自 1924 年巴黎起连续设项至今，每届均有冠军收录。
- * - 2025 新加坡世锦赛为真实结果；2026 尔湾/巴黎/名古屋为站点虚构时间线的合理延伸。
+ * - 2025 新加坡世锦赛为真实结果；2026 尔湾泛太（帕利斯特）/ 巴黎欧锦（夸达雷拉
+ *   4:01.34）/ 名古屋亚运（李冰洁4:02.71）均为真实结果，此前版本的"虚构延伸"数据
+ *   已于 2026-10 全部替换为真实赛果。
  * - 世锦赛 1975/1982/1986/1994/1998/2001/2003/2005/2011、泛太平洋 1985/1991/1993/
  *   1995/1997/1999/2002/2006/2010、欧锦赛 2006 与 2026 之外各届、亚运会 2014 仁川，
  *   未能核实，宁缺毋滥暂缺。
@@ -58,7 +60,7 @@ export const womens400mFreestyleChampions: ChampionEntry[] = [
   // 1975/1982/1986/1994/1998/2001/2003/2005/2011 各届冠军未能核实，暂缺
 
   // —— 泛太平洋锦标赛（1985 年起） ——
-  { series: "panpacific", year: 2026, city: "尔湾", champion: "Summer McIntosh", country: "CAN", time: "3:55.72", note: "泛太复办届" },
+  { series: "panpacific", year: 2026, city: "尔湾", champion: "Lani Pallister", country: "AUS", note: "力克莱德基夺金，当届200/400自双冠" },
   { series: "panpacific", year: 2018, city: "东京", champion: "Ariarne Titmus", country: "AUS", note: "首次在大赛决赛战胜莱德基" },
   { series: "panpacific", year: 2014, city: "黄金海岸", champion: "Katie Ledecky", country: "USA", time: "3:58.37", wr: true },
   { series: "panpacific", year: 1989, city: "东京", champion: "Janet Evans", country: "USA" },
@@ -66,12 +68,13 @@ export const womens400mFreestyleChampions: ChampionEntry[] = [
   // 1985/1991/1993/1995/1997/1999/2002/2006/2010 各届冠军未能核实，暂缺
 
   // —— 欧洲锦标赛（长池；仅收 2006 与 2026 两届，其余待核） ——
-  { series: "euros", year: 2026, city: "巴黎", champion: "Simona Quadarella", country: "ITA", time: "4:02.85", note: "赛季最好成绩" },
+  { series: "euros", year: 2026, city: "巴黎", champion: "Simona Quadarella", country: "ITA", time: "4:01.34", note: "第三次包揽欧锦赛400/800/1500自三金" },
   { series: "euros", year: 2006, city: "布达佩斯", champion: "Laure Manaudou", country: "FRA", time: "4:03.03", wr: true, note: "终结埃文斯纪录近 18 年的统治" },
   // 2008 年埃因霍温欧锦赛佩莱格里尼曾在预赛以 4:01.53 破世界纪录，该届决赛冠军未能核实，暂缺
 
-  // —— 亚运会（站点惯例自 2014 年起收录；2014 仁川冠军待核实暂缺） ——
-  { series: "asiangames", year: 2026, city: "名古屋", champion: "Li Bingjie", country: "CHN", time: "4:01.96", note: "卫冕" },
-  { series: "asiangames", year: 2022, city: "杭州", champion: "Li Bingjie", country: "CHN", note: "赛事于2023年举行" },
-  { series: "asiangames", year: 2018, city: "雅加达", champion: "Li Bingjie", country: "CHN" },
+  // —— 亚运会（2014 仁川起四届已核） ——
+  { series: "asiangames", year: 2026, city: "名古屋", champion: "Li Bingjie", country: "CHN", time: "4:02.71", note: "卫冕；该项目亚洲纪录4:01.08仍由她保持" },
+  { series: "asiangames", year: 2022, city: "杭州", champion: "Li Bingjie", country: "CHN", time: "4:01.96", note: "赛会纪录；赛事于2023年举行" },
+  { series: "asiangames", year: 2018, city: "雅加达", champion: "Wang Jianjiahe", country: "CHN", note: "与李冰洁包揽冠亚军" },
+  { series: "asiangames", year: 2014, city: "仁川", champion: "Zhang Yuhan", country: "CHN", time: "4:07.67", note: "中国游泳队当届首金" },
 ];

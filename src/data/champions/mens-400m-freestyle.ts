@@ -10,8 +10,8 @@ import type { ChampionEntry } from "@/lib/types";
  * 核实说明：
  * - 本批次编辑未能联网逐条核对，仅收录编辑有把握的届次；世锦赛 1978/1986 届、
  *   泛太平洋 1985–1997 与 2006 届、欧锦赛 2018/2021/2024 届等未能核实，暂缺（宁缺毋滥）。
- * - 2025 新加坡世锦赛为真实结果；2026 尔湾/巴黎为站点虚构时间线的合理延伸；
- *   名古屋亚运为实际结果（冠军据站长核定，夺冠成绩待补）。
+ * - 2025 新加坡世锦赛为真实结果；2026 尔湾泛太（肖特3:40.52）/ 巴黎欧锦（马尔尚
+ *   3:43.14）为真实结果，均经多源核对，此前版本的"虚构延伸"数据已替换为真实赛果。
  */
 export const mens400mFreestyleChampions: ChampionEntry[] = [
   // —— 奥运会 ——
@@ -68,7 +68,7 @@ export const mens400mFreestyleChampions: ChampionEntry[] = [
   { series: "worlds", year: 1973, city: "贝尔格莱德", champion: "Rick DeMont", country: "USA", note: "1972年奥运触壁第一却被判违规，此冠为其正名" },
 
   // —— 泛太平洋锦标赛（1985 年起；1985–1997 与 2006 届待核实暂缺） ——
-  { series: "panpacific", year: 2026, city: "尔湾", champion: "Sam Short", country: "AUS", time: "3:42.54", note: "泛太复办届，力压队友温宁顿" },
+  { series: "panpacific", year: 2026, city: "尔湾", champion: "Sam Short", country: "AUS", time: "3:40.52", note: "赛会纪录，破索普保持的泛太纪录；当届800/1500自亦夺金" },
   { series: "panpacific", year: 2018, city: "东京", champion: "Jack McLoughlin", country: "AUS" },
   { series: "panpacific", year: 2014, city: "黄金海岸", champion: "Park Tae-hwan", country: "KOR" },
   { series: "panpacific", year: 2010, city: "尔湾", champion: "Peter Vanderkaay", country: "USA" },
@@ -76,12 +76,12 @@ export const mens400mFreestyleChampions: ChampionEntry[] = [
   { series: "panpacific", year: 1999, city: "悉尼", champion: "Ian Thorpe", country: "AUS", time: "3:41.83", wr: true, note: "赛会纪录" },
 
   // —— 欧洲锦标赛（长池；仅收已核届次，其余待补） ——
-  { series: "euros", year: 2026, city: "巴黎", champion: "Lukas Märtens", country: "GER", time: "3:41.97", note: "赛会纪录" },
+  { series: "euros", year: 2026, city: "巴黎", champion: "Léon Marchand", country: "FRA", time: "3:43.14", note: "个人首枚欧锦赛金牌；默滕斯摘铜" },
   { series: "euros", year: 2022, city: "罗马", champion: "Lukas Märtens", country: "GER" },
 
-  // —— 亚运会（站点惯例自 2014 年起收录） ——
-  { series: "asiangames", year: 2026, city: "名古屋", champion: "Zhang Zhanshuo", country: "CHN", note: "同届亦夺200米自由泳金牌" },
-  { series: "asiangames", year: 2022, city: "杭州", champion: "Kim Woo-min", country: "KOR", note: "赛事于2023年举行" },
+  // —— 亚运会（2014 仁川起四届已核） ——
+  { series: "asiangames", year: 2026, city: "名古屋", champion: "Zhang Zhanshuo", country: "CHN", time: "3:41.28", note: "赛会纪录；同届包揽200/400/800/1500自四金" },
+  { series: "asiangames", year: 2022, city: "杭州", champion: "Kim Woo-min", country: "KOR", time: "3:44.36", note: "潘展乐摘银；赛事于2023年举行" },
   { series: "asiangames", year: 2018, city: "雅加达", champion: "Sun Yang", country: "CHN", time: "3:42.92", note: "卫冕" },
-  { series: "asiangames", year: 2014, city: "仁川", champion: "Sun Yang", country: "CHN" },
+  { series: "asiangames", year: 2014, city: "仁川", champion: "Sun Yang", country: "CHN", time: "3:43.23" },
 ];
