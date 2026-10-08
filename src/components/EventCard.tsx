@@ -3,6 +3,7 @@ import Link from "next/link";
 export interface EventCardData {
   slug: string;
   name: string;
+  stroke: string;
   strokeZh: string;
   genderZh: string;
   distance: number;

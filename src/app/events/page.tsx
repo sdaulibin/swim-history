@@ -17,6 +17,7 @@ export default function EventsPage() {
     return {
       slug: e.slug,
       name: e.name,
+      stroke: e.stroke,
       strokeZh: strokeMeta[e.stroke].zh,
       genderZh: genderMeta[e.gender].zh,
       distance: e.distance,
