@@ -84,6 +84,18 @@ export const womens100mFreestyle: SwimEvent = {
     { time: "51.71", holder: "Sarah Sjöström", country: "SWE", date: "2017-07-23", meet: "世界锦标赛", place: "布达佩斯", flags: ["r"], note: "4×100米自由泳接力决赛第一棒" },
     { time: "51.68", holder: "Marrit Steenbergen", country: "NED", date: "2026-06-27", meet: "塞特科利杯", place: "罗马", note: "现世界纪录" },
   ],
+
+  asianRecord: {
+    time: "52.17", holder: "Siobhán Haughey", country: "HKG",
+    date: "2023-09-27", meet: "杭州亚运会", place: "杭州",
+    note: "决赛夺冠并刷新亚洲纪录（长池）",
+  },
+  chineseRecord: {
+    time: "52.44", holder: "Yang Junxuan", country: "CHN",
+    date: "2024-07-28", meet: "2024年巴黎奥运会", place: "巴黎",
+    note: "4×100自接力第一棒；个人赛全国纪录为其52.68（2024年4月全国冠军赛）",
+  },
+
   history: [
     {
       heading: "1912：女子游泳登上奥运舞台",

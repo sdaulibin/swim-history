@@ -32,6 +32,17 @@ export const mens4x100mFreestyleRelay: SwimEvent = {
     { time: "3:12.72", holder: "United States", country: "USA", date: "2007-03-25", meet: "世界锦标赛", place: "墨尔本" },
     { time: "3:08.24", holder: "United States", country: "USA", date: "2008-08-11", meet: "2008年北京奥运会", place: "北京", note: "M. Phelps · G. Weber-Gale · C. Jones · J. Lezak（最后一棒 46.06，现世界纪录，至今未被打破）" },
   ],
+
+  asianRecord: {
+    time: "3:10.60", holder: "China", country: "CHN",
+    date: "2026-09-24", meet: "名古屋亚运会",
+    note: "决赛破亚洲纪录与赛会纪录",
+  },
+  chineseRecord: {
+    time: "3:10.60", holder: "China", country: "CHN",
+    date: "2026-09-24", meet: "名古屋亚运会",
+  },
+
   history: [
     {
       heading: "从东京起航：美国王朝",

@@ -32,6 +32,17 @@ export const womens400mFreestyle: SwimEvent = {
     { time: "3:55.38", holder: "Ariarne Titmus", country: "AUS", date: "2023-04-13", meet: "澳大利亚锦标赛", place: "黄金海岸", note: "首次突破 3:56" },
     { time: "3:54.18", holder: "Summer McIntosh", country: "CAN", date: "2025-06-26", meet: "加拿大选拔赛", place: "维多利亚", note: "现世界纪录；首次突破 3:55" },
   ],
+
+  asianRecord: {
+    time: "4:01.08", holder: "Li Bingjie", country: "CHN",
+    date: "2021-07", meet: "2020年东京奥运会", place: "东京",
+    note: "决赛摘铜并刷新亚洲纪录",
+  },
+  chineseRecord: {
+    time: "4:01.08", holder: "Li Bingjie", country: "CHN",
+    date: "2021-07", meet: "2020年东京奥运会", place: "东京",
+  },
+
   history: [
     {
       heading: "1924：从 300 米到 400 米",

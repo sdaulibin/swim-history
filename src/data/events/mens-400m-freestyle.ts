@@ -29,6 +29,17 @@ export const mens400mFreestyle: SwimEvent = {
     { time: "3:40.08", holder: "Ian Thorpe", country: "AUS", date: "2002-07-28", meet: "英联邦运动会", place: "曼彻斯特", note: "纺织泳衣时代的极限，尘封七年" },
     { time: "3:40.07", holder: "Paul Biedermann", country: "GER", date: "2009-07-26", meet: "世界锦标赛", place: "罗马", note: "现世界纪录；聚氨酯快速泳衣时代产物，至今未被打破" },
   ],
+
+  asianRecord: {
+    time: "3:40.14", holder: "Sun Yang", country: "CHN",
+    date: "2012-07-28", meet: "2012年伦敦奥运会", place: "伦敦",
+    note: "保持至今；张展硕2026年亚运的3:41.28最为接近",
+  },
+  chineseRecord: {
+    time: "3:40.14", holder: "Sun Yang", country: "CHN",
+    date: "2012-07-28", meet: "2012年伦敦奥运会", place: "伦敦",
+  },
+
   history: [
     {
       heading: "1908：泰勒与中距离的起点",

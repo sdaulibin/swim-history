@@ -81,6 +81,26 @@ export interface SourceLink {
   url: string;
 }
 
+/** 区域级纪录（亚洲纪录 / 中国纪录等，长池） */
+export interface SecondaryRecord {
+  /** 成绩原文写法 */
+  time: string;
+  /** 运动员姓名（个人项目）或国家英文名（接力项目） */
+  holder: string;
+  /** 国家/地区代码（IOC） */
+  country: string;
+  /** 日期，ISO 格式；个别无法核实到日的可只写 yyyy 或 yyyy-mm */
+  date?: string;
+  /** 赛事（中文名，可缺省） */
+  meet?: string;
+  /** 地点（中文，可缺省） */
+  place?: string;
+  /** 该成绩同时为世界纪录 */
+  wr?: boolean;
+  /** 备注 */
+  note?: string;
+}
+
 export interface SwimEvent {
   /** URL 路径标识，如 mens-100m-freestyle */
   slug: string;
@@ -100,6 +120,10 @@ export interface SwimEvent {
   progression: RecordEntry[];
   /** 历届大赛冠军（奥运会、世锦赛、泛太平洋、欧锦赛、亚运会） */
   champions?: ChampionEntry[];
+  /** 亚洲纪录（长池；未能核实则缺省） */
+  asianRecord?: SecondaryRecord;
+  /** 中国纪录（长池；未能核实则缺省） */
+  chineseRecord?: SecondaryRecord;
   /** 项目历史 */
   history: HistorySection[];
   sources: SourceLink[];

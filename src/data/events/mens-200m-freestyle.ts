@@ -33,6 +33,17 @@ export const mens200mFreestyle: SwimEvent = {
     { time: "1:42.96", holder: "Michael Phelps", country: "USA", date: "2008-08-12", meet: "2008年北京奥运会", place: "北京", note: "决赛夺冠；人类首次突破1:43" },
     { time: "1:42.00", holder: "Paul Biedermann", country: "GER", date: "2009-07-28", meet: "世界锦标赛", place: "罗马", note: "身着聚氨酯泳衣击败菲尔普斯；现世界纪录，至今未被打破" },
   ],
+
+  asianRecord: {
+    time: "1:43.49", holder: "Zhang Zhanshuo", country: "CHN",
+    date: "2026-09", meet: "名古屋亚运会",
+    note: "决赛刷新亚洲纪录",
+  },
+  chineseRecord: {
+    time: "1:43.49", holder: "Zhang Zhanshuo", country: "CHN",
+    date: "2026-09", meet: "名古屋亚运会",
+  },
+
   history: [
     {
       heading: "迟到六十年的奥运项目",

@@ -31,6 +31,18 @@ export const womens200mFreestyle: SwimEvent = {
     { time: "1:54.82", holder: "Federica Pellegrini", country: "ITA", date: "2008-08-13", meet: "2008年北京奥运会", place: "北京", note: "决赛夺冠" },
     { time: "1:52.98", holder: "Federica Pellegrini", country: "ITA", date: "2009-07-29", meet: "世界锦标赛", place: "罗马", note: "现世界纪录；快速泳衣时代的产物，至今未被打破" },
   ],
+
+  asianRecord: {
+    time: "1:53.92", holder: "Siobhán Haughey", country: "HKG",
+    date: "2021-07-28", meet: "2020年东京奥运会", place: "东京",
+    note: "决赛摘银并刷新亚洲纪录",
+  },
+  chineseRecord: {
+    time: "1:54.57", holder: "Yang Junxuan", country: "CHN",
+    date: "2021-05", meet: "2021年全国游泳冠军赛",
+    note: "当时亦为亚洲纪录",
+  },
+
   history: [
     {
       heading: "1968：女子 200 米自由泳入奥",

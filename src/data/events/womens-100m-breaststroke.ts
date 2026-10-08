@@ -62,6 +62,17 @@ export const womens100mBreaststroke: SwimEvent = {
     { time: "1:04.35", holder: "Rūta Meilutytė", country: "LTU", date: "2013-07-29", meet: "世界锦标赛", place: "巴塞罗那", flags: ["sf"] },
     { time: "1:04.13", holder: "Lilly King", country: "USA", date: "2017-07-25", meet: "世界锦标赛", place: "布达佩斯", note: "现世界纪录" },
   ],
+
+  asianRecord: {
+    time: "1:04.39", holder: "Tang Qianting", country: "CHN",
+    date: "2024-04", meet: "2024年全国游泳冠军赛", place: "深圳",
+    note: "24小时内两破亚洲纪录（半决赛1:04.68）",
+  },
+  chineseRecord: {
+    time: "1:04.39", holder: "Tang Qianting", country: "CHN",
+    date: "2024-04", meet: "2024年全国游泳冠军赛", place: "深圳",
+  },
+
   history: [
     {
       heading: "东德时代起步",

@@ -5,6 +5,7 @@ import { ProgressionChart, type ChartMark } from "@/components/ProgressionChart"
 import { RecordsTable } from "@/components/RecordsTable";
 import { ChampionsExplorer } from "@/components/ChampionsExplorer";
 import { events, genderMeta, strokeMeta } from "@/data";
+import { zhNames } from "@/data/names";
 import {
   FLAG_ZH,
   countryOf,
@@ -196,6 +197,62 @@ export default async function EventPage({ params }: PageProps) {
           </div>
         </div>
       </section>
+
+      {/* 亚洲纪录 / 中国纪录 */}
+      {(event.asianRecord || event.chineseRecord) && (
+        <section className="mt-4 grid gap-4 sm:grid-cols-2">
+          {[
+            { rec: event.asianRecord, key: "asian", label: "亚洲纪录（长池）", chip: "bg-rose-100 text-rose-700" },
+            { rec: event.chineseRecord, key: "chinese", label: "中国纪录（长池）", chip: "bg-amber-100 text-amber-700" },
+          ]
+            .filter(({ rec }) => Boolean(rec))
+            .map(({ rec, key, label, chip }) => {
+              const r = rec!;
+              const rc = countryOf(r.country);
+              return (
+                <div
+                  key={key}
+                  className="rounded-2xl border border-slate-200 bg-white p-5"
+                >
+                  <div className="flex items-center justify-between">
+                    <span
+                      className={`rounded-full px-2.5 py-1 text-xs font-medium ${chip}`}
+                    >
+                      {label}
+                    </span>
+                    {r.wr && (
+                      <span className="text-xs font-medium text-amber-600">
+                        世界纪录
+                      </span>
+                    )}
+                  </div>
+                  <div className="mt-3 font-mono text-4xl font-bold tabular-nums text-pool-800">
+                    {r.time}
+                  </div>
+                  <div className="mt-2 text-slate-700">
+                    {rc.flag && <span className="mr-1">{rc.flag}</span>}
+                    {holderZh(r.holder)}
+                    {zhNames[r.holder] && (
+                      <span className="ml-1.5 text-xs text-slate-400">
+                        {r.holder}
+                      </span>
+                    )}
+                  </div>
+                  <div className="mt-1 text-xs text-slate-400">
+                    {[r.meet, r.place, r.date?.replace(/-/g, ".")]
+                      .filter(Boolean)
+                      .join(" · ")}
+                  </div>
+                  {r.note && (
+                    <div className="mt-2 text-xs leading-relaxed text-slate-500">
+                      {r.note}
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+        </section>
+      )}
 
       {/* 纪录演进图 */}
       <section className="mt-10">

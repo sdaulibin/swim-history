@@ -60,6 +60,10 @@ src/
 
 **录入纪律（重要）**：每条冠军数据必须先经至少两个独立来源核对（维基百科当届成绩表直读 + World Aquatics 奖牌库 / Olympedia / 名人堂小传 / 当届权威媒体报道任一），无法核实者宁可不录，在文件注释中说明缺口；`time` 缺失时留空，页面上显示"—"。
 
+### 标注亚洲纪录 / 中国纪录
+
+在事件文件（`src/data/events/<slug>.ts`）中填写 `asianRecord` / `chineseRecord` 字段（`SecondaryRecord` 类型：`time / holder / country / date / meet / place / wr / note`，长池口径，日期可只写到年月），项目详情页会在现世界纪录下方并列展示两张纪录卡。同样要求至少两个独立来源核对；短池成绩（如世界杯、ISL）不计入。
+
 ## 数据来源与维护
 
 - 纪录演进：[Wikipedia · World record progression 系列](https://en.wikipedia.org/wiki/World_record_progression_100_metres_freestyle)（CC BY-SA 4.0）

@@ -70,6 +70,18 @@ export const mens100mFreestyle: SwimEvent = {
     { time: "46.80", holder: "Pan Zhanle", country: "CHN", date: "2024-02-11", meet: "世界锦标赛", place: "多哈", flags: ["r"], note: "4×100米自由泳接力决赛第一棒" },
     { time: "46.40", holder: "Pan Zhanle", country: "CHN", date: "2024-07-31", meet: "2024年巴黎奥运会", place: "巴黎", note: "现世界纪录；巴黎奥运会个人决赛夺冠" },
   ],
+
+  asianRecord: {
+    time: "46.40", holder: "Pan Zhanle", country: "CHN",
+    date: "2024-07-31", meet: "2024年巴黎奥运会", place: "巴黎",
+    wr: true, note: "亦为世界纪录",
+  },
+  chineseRecord: {
+    time: "46.40", holder: "Pan Zhanle", country: "CHN",
+    date: "2024-07-31", meet: "2024年巴黎奥运会", place: "巴黎",
+    note: "与亚洲纪录、世界纪录为同一成绩",
+  },
+
   history: [
     {
       heading: "从「任意泳姿」到爬泳一统",

@@ -73,6 +73,16 @@ export const mens100mBreaststroke: SwimEvent = {
     { time: "57.10", holder: "Adam Peaty", country: "GBR", date: "2018-08-04", meet: "欧洲锦标赛", place: "格拉斯哥" },
     { time: "56.88", holder: "Adam Peaty", country: "GBR", date: "2019-07-21", meet: "世界锦标赛", place: "光州", flags: ["sf"], note: "现世界纪录" },
   ],
+
+  asianRecord: {
+    time: "57.69", holder: "Qin Haiyang", country: "CHN",
+    date: "2023-07-24", meet: "2023年福冈世锦赛", place: "福冈",
+  },
+  chineseRecord: {
+    time: "57.69", holder: "Qin Haiyang", country: "CHN",
+    date: "2023-07-24", meet: "2023年福冈世锦赛", place: "福冈",
+  },
+
   history: [
     {
       heading: "最古老的泳姿",

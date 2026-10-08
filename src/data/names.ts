@@ -321,6 +321,7 @@ export const zhNames: Record<string, string> = {
   "South Africa": "南非队",
 
   // —— 亚运会与 2026 泛太/欧锦补遗 ——
+  "Yang Junxuan": "杨浚瑄",
   "Hwang Sun-woo": "黄善宇",
   "Shen Duo": "沈铎",
   "Zhang Yuhan": "张雨涵",

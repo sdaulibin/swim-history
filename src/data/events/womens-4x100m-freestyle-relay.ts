@@ -37,6 +37,17 @@ export const womens4x100mFreestyleRelay: SwimEvent = {
     { time: "3:29.69", holder: "Australia", country: "AUS", date: "2021-07-25", meet: "2020年东京奥运会", place: "东京", note: "首次游进3分30秒" },
     { time: "3:27.96", holder: "Australia", country: "AUS", date: "2023-07-23", meet: "世界锦标赛", place: "福冈", note: "现世界纪录；首破3分28秒" },
   ],
+
+  asianRecord: {
+    time: "3:30.30", holder: "China", country: "CHN",
+    date: "2024-07-27", meet: "2024年巴黎奥运会", place: "巴黎",
+    note: "决赛摘铜并刷新亚洲纪录",
+  },
+  chineseRecord: {
+    time: "3:30.30", holder: "China", country: "CHN",
+    date: "2024-07-27", meet: "2024年巴黎奥运会", place: "巴黎",
+  },
+
   history: [
     {
       heading: "1912：与女子游泳一同入奥",
