@@ -44,6 +44,22 @@ export const mens200mFreestyle: SwimEvent = {
     date: "2026-09", meet: "名古屋亚运会",
   },
 
+
+  top10: [
+    { time: "1:42.00", holder: "Paul Biedermann", country: "GER", date: "2009-07-28", meet: "2009年罗马世锦赛", wr: true },
+    { time: "1:42.96", holder: "Michael Phelps", country: "USA", date: "2008-08", meet: "2008年北京奥运会" },
+    { time: "1:42.97", holder: "David Popovici", country: "ROU", date: "2022-08-15", meet: "2022年罗马欧锦赛", note: "纺织品泳衣时代最快" },
+    { time: "1:43.14", holder: "Yannick Agnel", country: "FRA", date: "2012-07", meet: "2012年伦敦奥运会" },
+    { time: "1:43.49", holder: "Zhang Zhanshuo", country: "CHN", date: "2026-09", meet: "名古屋亚运会", note: "亚洲纪录" },
+    { time: "1:43.86", holder: "Michael Phelps", country: "USA", date: "2007-07", meet: "2007年墨尔本世锦赛" },
+    { time: "1:44.22", holder: "Tom Dean", country: "GBR", date: "2021-07", meet: "2020年东京奥运会" },
+    { time: "1:44.30", holder: "Matthew Richards", country: "GBR", date: "2023-07-25", meet: "2023年福冈世锦赛" },
+    { time: "1:44.32", holder: "Tom Dean", country: "GBR", date: "2023-07-25", meet: "2023年福冈世锦赛" },
+    { time: "1:44.39", holder: "Sun Yang", country: "CHN", date: "2017-07", meet: "2017年布达佩斯世锦赛" },
+  ],
+  top10Note:
+    "黄善宇1:44.42（2023杭州亚运）、孙杨1:44.65（2016里约）、索普1:44.71（2001/2004两游）紧随其后未入列；另有比德曼1:42.81、波波维奇1:43.13的说法待核，未采信。",
+
   history: [
     {
       heading: "迟到六十年的奥运项目",

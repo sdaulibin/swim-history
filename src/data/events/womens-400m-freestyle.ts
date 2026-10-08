@@ -29,8 +29,9 @@ export const womens400mFreestyle: SwimEvent = {
     { time: "3:58.86", holder: "Katie Ledecky", country: "USA", date: "2014-06-21", place: "伍德兰兹", note: "在得克萨斯一场小型邀请赛打破佩莱格里尼尘封近五年的纪录" },
     { time: "3:58.37", holder: "Katie Ledecky", country: "USA", date: "2014-08-22", meet: "泛太平洋锦标赛", place: "黄金海岸" },
     { time: "3:56.46", holder: "Katie Ledecky", country: "USA", date: "2016-08-07", meet: "2016年里约热内卢奥运会", place: "里约热内卢", note: "首次突破 3:57；此后又保持 9 年" },
-    { time: "3:55.38", holder: "Ariarne Titmus", country: "AUS", date: "2023-04-13", meet: "澳大利亚锦标赛", place: "黄金海岸", note: "首次突破 3:56" },
-    { time: "3:54.18", holder: "Summer McIntosh", country: "CAN", date: "2025-06-26", meet: "加拿大选拔赛", place: "维多利亚", note: "现世界纪录；首次突破 3:55" },
+    { time: "3:56.08", holder: "Summer McIntosh", country: "CAN", date: "2023-06", meet: "加拿大选拔赛" },
+    { time: "3:55.38", holder: "Ariarne Titmus", country: "AUS", date: "2023-07-23", meet: "2023年福冈世锦赛", place: "福冈", note: "「世纪之战」决赛力克莱德基与麦金托什" },
+    { time: "3:54.18", holder: "Summer McIntosh", country: "CAN", date: "2025-06", meet: "加拿大选拔赛", place: "维多利亚", note: "现世界纪录；首次突破 3:55" },
   ],
 
   asianRecord: {
@@ -42,6 +43,22 @@ export const womens400mFreestyle: SwimEvent = {
     time: "4:01.08", holder: "Li Bingjie", country: "CHN",
     date: "2021-07", meet: "2020年东京奥运会", place: "东京",
   },
+
+
+  top10: [
+    { time: "3:54.18", holder: "Summer McIntosh", country: "CAN", date: "2025-06", meet: "加拿大选拔赛", wr: true },
+    { time: "3:55.38", holder: "Ariarne Titmus", country: "AUS", date: "2023-07-23", meet: "2023年福冈世锦赛", note: "「世纪之战」" },
+    { time: "3:56.08", holder: "Summer McIntosh", country: "CAN", date: "2023-06", meet: "加拿大选拔赛" },
+    { time: "3:56.46", holder: "Katie Ledecky", country: "USA", date: "2016-08-07", meet: "2016年里约奥运会" },
+    { time: "3:56.69", holder: "Ariarne Titmus", country: "AUS", date: "2021-07", meet: "2020年东京奥运会" },
+    { time: "3:57.49", holder: "Ariarne Titmus", country: "AUS", date: "2024-07", meet: "2024年巴黎奥运会" },
+    { time: "3:58.34", holder: "Katie Ledecky", country: "USA", date: "2017-07", meet: "2017年布达佩斯世锦赛" },
+    { time: "3:58.37", holder: "Katie Ledecky", country: "USA", date: "2014-08", meet: "泛太平洋锦标赛" },
+    { time: "3:59.13", holder: "Katie Ledecky", country: "USA", date: "2015-08", meet: "2015年喀山世锦赛" },
+    { time: "3:59.15", holder: "Federica Pellegrini", country: "ITA", date: "2009-07-26", meet: "2009年罗马世锦赛" },
+  ],
+  top10Note:
+    "费尔韦瑟3:59.44（2024多哈）列第十一未入列；李冰洁4:01.08（亚洲纪录，2021东京）尚在榜单之外。",
 
   history: [
     {

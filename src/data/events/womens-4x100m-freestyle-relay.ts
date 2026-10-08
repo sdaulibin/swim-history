@@ -48,6 +48,22 @@ export const womens4x100mFreestyleRelay: SwimEvent = {
     date: "2024-07-27", meet: "2024年巴黎奥运会", place: "巴黎",
   },
 
+
+  top10: [
+    { time: "3:27.96", holder: "Australia", country: "AUS", date: "2023-07-23", meet: "2023年福冈世锦赛", wr: true },
+    { time: "3:28.92", holder: "Australia", country: "AUS", date: "2024-07-27", meet: "2024年巴黎奥运会" },
+    { time: "3:29.32", holder: "United States", country: "USA", date: "2026-08", meet: "2026年泛太平洋锦标赛", note: "美国纪录（预赛/决赛口径存疑）" },
+    { time: "3:29.69", holder: "Australia", country: "AUS", date: "2021-07-25", meet: "2020年东京奥运会" },
+    { time: "3:30.21", holder: "Australia", country: "AUS", date: "2019-07-21", meet: "2019年光州世锦赛" },
+    { time: "3:30.30", holder: "China", country: "CHN", date: "2024-07-27", meet: "2024年巴黎奥运会", note: "亚洲纪录" },
+    { time: "3:30.65", holder: "Australia", country: "AUS", date: "2016-08-13", meet: "2016年里约奥运会" },
+    { time: "3:31.72", holder: "Netherlands", country: "NED", date: "2009-08-02", meet: "2009年罗马世锦赛" },
+    { time: "3:31.72", holder: "Australia", country: "AUS", date: "2017-07", meet: "2017年布达佩斯世锦赛", note: "与荷兰队世界纪录恰好相同" },
+    { time: "3:31.93", holder: "United States", country: "USA", date: "2023-07-23", meet: "2023年福冈世锦赛" },
+  ],
+  top10Note:
+    "澳大利亚几乎垄断榜首；中国队3:30.30（2024巴黎铜牌）为亚洲纪录。英国队2026欧锦赛夺冠成绩待核，未入列。",
+
   history: [
     {
       heading: "1912：与女子游泳一同入奥",

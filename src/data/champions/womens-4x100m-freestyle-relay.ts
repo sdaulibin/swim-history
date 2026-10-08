@@ -46,9 +46,9 @@ export const womens4x100mFreestyleRelayChampions: ChampionEntry[] = [
 
   // —— 世界锦标赛（1978/1991/1998/2001/2003/2007/2011/2024 待核暂缺） ——
   { series: "worlds", year: 2025, city: "新加坡", champion: "Australia", country: "AUS" },
-  { series: "worlds", year: 2023, city: "福冈", champion: "Australia", country: "AUS", time: "3:27.96", wr: true, note: "现世界纪录" },
+  { series: "worlds", year: 2023, city: "福冈", champion: "Australia", country: "AUS", time: "3:27.96", wr: true, note: "现世界纪录；美国队3:31.93摘银" },
   { series: "worlds", year: 2022, city: "布达佩斯", champion: "Australia", country: "AUS" },
-  { series: "worlds", year: 2019, city: "光州", champion: "Australia", country: "AUS" },
+  { series: "worlds", year: 2019, city: "光州", champion: "Australia", country: "AUS", time: "3:30.21" },
   { series: "worlds", year: 2017, city: "布达佩斯", champion: "Australia", country: "AUS", time: "3:31.72", note: "成绩恰好与2009年荷兰队的世界纪录同为3:31.72" },
   { series: "worlds", year: 2015, city: "喀山", champion: "Australia", country: "AUS" },
   { series: "worlds", year: 2013, city: "巴塞罗那", champion: "Australia", country: "AUS" },

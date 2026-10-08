@@ -32,7 +32,7 @@ export const mens4x100mFreestyleRelayChampions: ChampionEntry[] = [
 
   // —— 世界锦标赛（1973–2005 各届及 2025 届未能核实，暂缺） ——
   { series: "worlds", year: 2024, city: "多哈", champion: "China", country: "CHN", note: "P. Zhanle 第一棒 46.80 刷新百米自由泳世界纪录，中国队首夺该项目世界冠军" },
-  { series: "worlds", year: 2023, city: "福冈", champion: "Australia", country: "AUS" },
+  { series: "worlds", year: 2023, city: "福冈", champion: "Australia", country: "AUS", time: "3:10.16", note: "意大利3:10.49银，美国3:10.81铜" },
   { series: "worlds", year: 2022, city: "布达佩斯", champion: "United States", country: "USA" },
   { series: "worlds", year: 2019, city: "光州", champion: "United States", country: "USA" },
   { series: "worlds", year: 2017, city: "布达佩斯", champion: "United States", country: "USA" },

@@ -43,6 +43,22 @@ export const mens4x100mFreestyleRelay: SwimEvent = {
     date: "2026-09-24", meet: "名古屋亚运会",
   },
 
+
+  top10: [
+    { time: "3:08.24", holder: "United States", country: "USA", date: "2008-08-11", meet: "2008年北京奥运会", wr: true, note: "利扎克46.06传奇一棒" },
+    { time: "3:08.32", holder: "France", country: "FRA", date: "2008-08-11", meet: "2008年北京奥运会", note: "欧洲纪录" },
+    { time: "3:08.97", holder: "United States", country: "USA", date: "2021-07", meet: "2020年东京奥运会" },
+    { time: "3:09.01", holder: "United States", country: "USA", date: "2026-08", meet: "2026年泛太平洋锦标赛" },
+    { time: "3:09.21", holder: "United States", country: "USA", date: "2009-07-26", meet: "2009年罗马世锦赛" },
+    { time: "3:09.28", holder: "United States", country: "USA", date: "2024-07-27", meet: "2024年巴黎奥运会" },
+    { time: "3:10.16", holder: "Australia", country: "AUS", date: "2023-07-22", meet: "2023年福冈世锦赛" },
+    { time: "3:10.35", holder: "Australia", country: "AUS", date: "2024-07-27", meet: "2024年巴黎奥运会" },
+    { time: "3:10.49", holder: "Italy", country: "ITA", date: "2023-07-22", meet: "2023年福冈世锦赛" },
+    { time: "3:10.60", holder: "China", country: "CHN", date: "2026-09-24", meet: "名古屋亚运会", note: "亚洲纪录" },
+  ],
+  top10Note:
+    "意大利3:10.70（2024巴黎铜牌）、美国3:10.81（2023福冈铜牌）紧随其后；3:08.24为现存最古老的长池游泳世界纪录。",
+
   history: [
     {
       heading: "从东京起航：美国王朝",

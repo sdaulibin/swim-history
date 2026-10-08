@@ -13,7 +13,7 @@ export const mens200mFreestyleChampions: ChampionEntry[] = [
   // —— 奥运会（该项目 1968 年首次入奥；全届次收录） ——
   { series: "olympics", year: 2024, city: "巴黎", champion: "David Popovici", country: "ROU", time: "1:44.72" },
   { series: "olympics", year: 2020, city: "东京", champion: "Tom Dean", country: "GBR", time: "1:44.22", note: "英国包揽金银" },
-  { series: "olympics", year: 2016, city: "里约热内卢", champion: "Sun Yang", country: "CHN", time: "1:44.39", note: "首位夺得该项目奥运金牌的亚洲选手" },
+  { series: "olympics", year: 2016, city: "里约热内卢", champion: "Sun Yang", country: "CHN", time: "1:44.65", note: "首位夺得该项目奥运金牌的亚洲选手" },
   { series: "olympics", year: 2012, city: "伦敦", champion: "Yannick Agnel", country: "FRA", time: "1:43.14" },
   { series: "olympics", year: 2008, city: "北京", champion: "Michael Phelps", country: "USA", time: "1:42.96", wr: true },
   { series: "olympics", year: 2004, city: "雅典", champion: "Ian Thorpe", country: "AUS", time: "1:44.71", or: true, note: "「世纪之战」力克范登霍根班德与菲尔普斯；追平自己保持的世界纪录" },
@@ -29,8 +29,8 @@ export const mens200mFreestyleChampions: ChampionEntry[] = [
 
   // —— 世界锦标赛（1973 年起；1973/1975/1978/1982/1994/1998/2005 各届未能核实，暂缺） ——
   // 2025 新加坡、2024 多哈：冠军未能核实，暂缺
-  { series: "worlds", year: 2023, city: "福冈", champion: "Ahmed Hafnaoui", country: "TUN", note: "爆冷夺冠" },
-  { series: "worlds", year: 2022, city: "布达佩斯", champion: "David Popovici", country: "ROU" },
+  { series: "worlds", year: 2023, city: "福冈", champion: "Matthew Richards", country: "GBR", time: "1:44.30", note: "英国包揽冠亚军：迪恩1:44.32银，黄善宇1:44.42铜，卫冕冠军波波维奇仅列第四" },
+  { series: "worlds", year: 2022, city: "布达佩斯", champion: "David Popovici", country: "ROU", time: "1:43.21" },
   { series: "worlds", year: 2019, city: "光州", champion: "Sun Yang", country: "CHN" },
   { series: "worlds", year: 2017, city: "布达佩斯", champion: "Sun Yang", country: "CHN" },
   { series: "worlds", year: 2015, city: "喀山", champion: "James Guy", country: "GBR", time: "1:45.14" },
@@ -51,7 +51,7 @@ export const mens200mFreestyleChampions: ChampionEntry[] = [
 
   // —— 欧洲锦标赛（长池；已核 2022/2026，其余届次待补） ——
   { series: "euros", year: 2026, city: "巴黎", champion: "David Popovici", country: "ROU", time: "1:44.15", note: "欧锦赛200自三连冠，同届亦夺100自" },
-  { series: "euros", year: 2022, city: "罗马", champion: "David Popovici", country: "ROU", time: "1:43.21", note: "世界青年纪录" },
+  { series: "euros", year: 2022, city: "罗马", champion: "David Popovici", country: "ROU", time: "1:42.97", note: "世界青年纪录，纺织品泳衣时代最快" },
 
   // —— 亚运会（2014 仁川起四届已核） ——
   { series: "asiangames", year: 2026, city: "名古屋", champion: "Zhang Zhanshuo", country: "CHN", time: "1:43.49", note: "亚洲纪录；同届包揽200/400/800/1500自四金" },

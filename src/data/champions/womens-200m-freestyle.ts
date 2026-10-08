@@ -11,7 +11,7 @@ import type { ChampionEntry } from "@/lib/types";
  */
 export const womens200mFreestyleChampions: ChampionEntry[] = [
   // —— 奥运会 ——
-  { series: "olympics", year: 2024, city: "巴黎", champion: "Mollie O'Callaghan", country: "AUS", time: "1:53.07", or: true, note: "历史第二快成绩，距世界纪录仅0.09秒" },
+  { series: "olympics", year: 2024, city: "巴黎", champion: "Mollie O'Callaghan", country: "AUS", time: "1:53.07", or: true, note: "奥运纪录" },
   { series: "olympics", year: 2020, city: "东京", champion: "Ariarne Titmus", country: "AUS", time: "1:53.50", or: true },
   { series: "olympics", year: 2016, city: "里约热内卢", champion: "Katie Ledecky", country: "USA", time: "1:53.73" },
   { series: "olympics", year: 2012, city: "伦敦", champion: "Allison Schmitt", country: "USA", time: "1:53.61", or: true },
@@ -28,9 +28,9 @@ export const womens200mFreestyleChampions: ChampionEntry[] = [
   { series: "olympics", year: 1968, city: "墨西哥城", champion: "Debbie Meyer", country: "USA", time: "2:10.5", note: "该项目首次入奥；当届200/400/800米三金" },
 
   // —— 世界锦标赛 ——
-  { series: "worlds", year: 2025, city: "新加坡", champion: "Summer McIntosh", country: "CAN" },
+  { series: "worlds", year: 2025, city: "新加坡", champion: "Summer McIntosh", country: "CAN", time: "1:53.65" },
   // —— 2024 多哈冠军待核实，暂缺 ——
-  { series: "worlds", year: 2023, city: "福冈", champion: "Ariarne Titmus", country: "AUS" },
+  { series: "worlds", year: 2023, city: "福冈", champion: "Ariarne Titmus", country: "AUS", time: "1:52.67", note: "当时的世界纪录" },
   { series: "worlds", year: 2022, city: "布达佩斯", champion: "Mollie O'Callaghan", country: "AUS", time: "1:55.86" },
   { series: "worlds", year: 2019, city: "光州", champion: "Ariarne Titmus", country: "AUS" },
   { series: "worlds", year: 2017, city: "布达佩斯", champion: "Federica Pellegrini", country: "ITA" },

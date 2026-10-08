@@ -29,7 +29,9 @@ export const womens200mFreestyle: SwimEvent = {
     { time: "1:56.47", holder: "Federica Pellegrini", country: "ITA", date: "2007-03-28", meet: "世界锦标赛", place: "墨尔本", note: "首个世界冠军暨首个世界纪录" },
     { time: "1:55.93", holder: "Federica Pellegrini", country: "ITA", date: "2008-03-21", meet: "欧洲锦标赛", place: "埃因霍温" },
     { time: "1:54.82", holder: "Federica Pellegrini", country: "ITA", date: "2008-08-13", meet: "2008年北京奥运会", place: "北京", note: "决赛夺冠" },
-    { time: "1:52.98", holder: "Federica Pellegrini", country: "ITA", date: "2009-07-29", meet: "世界锦标赛", place: "罗马", note: "现世界纪录；快速泳衣时代的产物，至今未被打破" },
+    { time: "1:52.98", holder: "Federica Pellegrini", country: "ITA", date: "2009-07-29", meet: "世界锦标赛", place: "罗马", note: "快速泳衣时代的产物，沉睡十四年后被改写" },
+    { time: "1:52.67", holder: "Ariarne Titmus", country: "AUS", date: "2023-07-26", meet: "2023年福冈世锦赛", place: "福冈" },
+    { time: "1:52.23", holder: "Ariarne Titmus", country: "AUS", date: "2024-06", meet: "澳大利亚奥运选拔赛", place: "布里斯班", note: "现世界纪录；同场奥卡拉汉游出1:52.48" },
   ],
 
   asianRecord: {
@@ -42,6 +44,22 @@ export const womens200mFreestyle: SwimEvent = {
     date: "2021-05", meet: "2021年全国游泳冠军赛",
     note: "当时亦为亚洲纪录",
   },
+
+
+  top10: [
+    { time: "1:52.23", holder: "Ariarne Titmus", country: "AUS", date: "2024-06", meet: "澳大利亚奥运选拔赛", wr: true },
+    { time: "1:52.48", holder: "Mollie O'Callaghan", country: "AUS", date: "2024-06", meet: "澳大利亚奥运选拔赛", note: "同场位列第二" },
+    { time: "1:52.67", holder: "Ariarne Titmus", country: "AUS", date: "2023-07-26", meet: "2023年福冈世锦赛" },
+    { time: "1:52.98", holder: "Federica Pellegrini", country: "ITA", date: "2009-07-29", meet: "2009年罗马世锦赛" },
+    { time: "1:53.07", holder: "Mollie O'Callaghan", country: "AUS", date: "2024-08", meet: "2024年巴黎奥运会" },
+    { time: "1:53.50", holder: "Ariarne Titmus", country: "AUS", date: "2021-07", meet: "2020年东京奥运会" },
+    { time: "1:53.61", holder: "Allison Schmitt", country: "USA", date: "2012-07", meet: "2012年伦敦奥运会" },
+    { time: "1:53.65", holder: "Summer McIntosh", country: "CAN", date: "2025-07", meet: "2025年新加坡世锦赛" },
+    { time: "1:53.73", holder: "Katie Ledecky", country: "USA", date: "2016-08", meet: "2016年里约奥运会" },
+    { time: "1:53.92", holder: "Siobhán Haughey", country: "HKG", date: "2021-07", meet: "2020年东京奥运会", note: "亚洲纪录" },
+  ],
+  top10Note:
+    "蒂特姆斯2019年光州的1:53.66为单源待核，若属实应列第九；何诗蓓1:53.92与杨浚瑄1:54.57（中国纪录）之后未入列。",
 
   history: [
     {

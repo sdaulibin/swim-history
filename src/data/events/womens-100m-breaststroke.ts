@@ -73,6 +73,20 @@ export const womens100mBreaststroke: SwimEvent = {
     date: "2024-04", meet: "2024年全国游泳冠军赛", place: "深圳",
   },
 
+
+  top10: [
+    { time: "1:04.13", holder: "Lilly King", country: "USA", date: "2017-07-25", meet: "2017年布达佩斯世锦赛", wr: true },
+    { time: "1:04.13", holder: "Lilly King", country: "USA", date: "2019-07-22", meet: "2019年光州世锦赛", note: "与个人世界纪录完全相同" },
+    { time: "1:04.35", holder: "Rūta Meilutytė", country: "LTU", date: "2013-08", meet: "2013年巴塞罗那世锦赛", flags: ["sf"] },
+    { time: "1:04.36", holder: "Yuliya Efimova", country: "RUS", date: "2017-07", meet: "2017年布达佩斯世锦赛" },
+    { time: "1:04.39", holder: "Tang Qianting", country: "CHN", date: "2024-04", meet: "2024年全国游泳冠军赛", place: "深圳", note: "亚洲纪录" },
+    { time: "1:04.42", holder: "Rūta Meilutytė", country: "LTU", date: "2013-08", meet: "2013年巴塞罗那世锦赛" },
+    { time: "1:04.62", holder: "Rūta Meilutytė", country: "LTU", date: "2023-07", meet: "2023年福冈世锦赛" },
+    { time: "1:04.95", holder: "Lydia Jacoby", country: "USA", date: "2021-07", meet: "2020年东京奥运会" },
+  ],
+  top10Note:
+    "第9-10位（斯库恩梅克、埃文斯等1:05区间成绩）待逐条双源核实后补入，宁缺毋滥。",
+
   history: [
     {
       heading: "东德时代起步",
