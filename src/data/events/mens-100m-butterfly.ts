@@ -68,7 +68,11 @@ export const mens100mButterfly: SwimEvent = {
     date: "2016-08-12", meet: "2016年里约奥运会", place: "里约热内卢",
     note: "决赛击败菲尔普斯夺金，同时为奥运会纪录，亦是亚洲选手历史最快成绩",
   },
-  // 中国纪录（长池）未能核实到可靠来源，暂缺
+  chineseRecord: {
+    time: "50.73", holder: "Xu Fang", country: "CHN",
+    date: "2026-06-19", meet: "2026年全国游泳冠军赛", place: "杭州",
+    note: "打破李朱濠2017年创造的全国纪录；名古屋亚运决赛追平此成绩获银",
+  },
 
   top10: [
     { time: "49.45", holder: "Caeleb Dressel", country: "USA", date: "2021-07-31", meet: "2020年东京奥运会", wr: true },

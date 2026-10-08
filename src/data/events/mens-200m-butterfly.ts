@@ -47,7 +47,11 @@ export const mens200mButterfly: SwimEvent = {
     date: "2019-07-24", meet: "2019年光州世锦赛", place: "光州",
     note: "决赛次于米拉克的世界纪录摘银，为亚洲选手历史最快",
   },
-  // 中国纪录（长池）未能核实到可靠来源，暂缺
+  chineseRecord: {
+    time: "1:54.16", holder: "Chen Jun'er", country: "CHN",
+    date: "2023-05", meet: "2023年全国游泳冠军赛", place: "杭州",
+    note: "打破吴鹏保持15年的全国纪录（1:54.35）",
+  },
 
   top10: [
     { time: "1:50.34", holder: "Kristóf Milák", country: "HUN", date: "2022-06-21", meet: "2022年布达佩斯世锦赛", wr: true },
