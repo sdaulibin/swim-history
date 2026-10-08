@@ -61,4 +61,12 @@ export const mens400mMedleyChampions: ChampionEntry[] = [
   { series: "panpacific", year: 2006, city: "维多利亚", champion: "Michael Phelps", country: "USA", note: "夺冠成绩待核" },
   { series: "panpacific", year: 1995, city: "亚特兰大", champion: "Tom Dolan", country: "USA", note: "当届包揽200/400混两项冠军" },
   { series: "panpacific", year: 1987, city: "布里斯班", champion: "David Wharton", country: "USA", time: "4:16.12", wr: true },
+
+  // —— 亚运会（2006 多哈起六届已核） ——
+  { series: "asiangames", year: 2026, city: "名古屋", champion: "Yuki Kojima", country: "JPN", time: "4:07.02", note: "赛会纪录；松下知之4:09.64获银，汪顺4:14.59摘铜" },
+  { series: "asiangames", year: 2022, city: "杭州", champion: "Tomoshi Honda", country: "JPN", time: "4:11.40", note: "濑户大也4:12.88获银，汪顺4:15.12摘铜；赛事于2023年举行" },
+  { series: "asiangames", year: 2018, city: "雅加达", champion: "Daiya Seto", country: "JPN", time: "4:08.79", note: "日本四连冠；萩野公介4:10.30获银，汪顺4:12.31摘铜" },
+  { series: "asiangames", year: 2014, city: "仁川", champion: "Kosuke Hagino", country: "JPN", time: "4:08.90", note: "赛会纪录，当届个人四枚金牌之一" },
+  { series: "asiangames", year: 2010, city: "广州", champion: "Yuuya Horihata", country: "JPN", time: "4:13.35", note: "黄朝升0.03秒之差摘银" },
+  { series: "asiangames", year: 2006, city: "多哈", champion: "Hidemasa Sano", country: "JPN", time: "4:16.18" },
 ];

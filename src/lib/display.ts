@@ -93,6 +93,8 @@ export function formatSeconds(sec: number): string {
 /** "1961-05-02" -> "1961年5月2日" */
 export function zhDate(iso: string): string {
   const [y, m, d] = iso.split("-").map(Number);
+  if (!m) return `${y}年`;
+  if (!d) return `${y}年${m}月`;
   return `${y}年${m}月${d}日`;
 }
 

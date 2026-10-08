@@ -59,6 +59,11 @@ export const mens200mMedleyChampions: ChampionEntry[] = [
   { series: "panpacific", year: 1995, city: "亚特兰大", champion: "Tom Dolan", country: "USA", note: "当届包揽200/400混两项冠军" },
   { series: "panpacific", year: 1989, city: "东京", champion: "David Wharton", country: "USA", time: "2:00.11", wr: true },
 
-  // —— 亚运会（2014 起；2014/2018/2026 待核，暂缺） ——
+  // —— 亚运会（2006 多哈起六届已核） ——
+  { series: "asiangames", year: 2026, city: "名古屋", champion: "Tomoyuki Matsushita", country: "JPN", time: "1:55.30", note: "小岛梦贵1:55.36获银并创世界青年纪录，汪顺摘铜" },
   { series: "asiangames", year: 2022, city: "杭州", champion: "Wang Shun", country: "CHN", time: "1:54.62", note: "亚洲纪录；赛事于2023年举行" },
+  { series: "asiangames", year: 2018, city: "雅加达", champion: "Wang Shun", country: "CHN", time: "1:56.52", note: "力压萩野公介，中国继2002年后再夺该项目冠军" },
+  { series: "asiangames", year: 2014, city: "仁川", champion: "Kosuke Hagino", country: "JPN", time: "1:55.34", note: "亚洲纪录；汪顺1:59.10摘铜" },
+  { series: "asiangames", year: 2010, city: "广州", champion: "Ken Takakuwa", country: "JPN", time: "1:58.31", note: "汪顺摘银，堀畑裕也获铜" },
+  { series: "asiangames", year: 2006, city: "多哈", champion: "Hidemasa Sano", country: "JPN", time: "2:00.73" },
 ];

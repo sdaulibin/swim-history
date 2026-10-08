@@ -53,9 +53,11 @@ export const mens200mFreestyleChampions: ChampionEntry[] = [
   { series: "euros", year: 2026, city: "巴黎", champion: "David Popovici", country: "ROU", time: "1:44.15", note: "欧锦赛200自三连冠，同届亦夺100自" },
   { series: "euros", year: 2022, city: "罗马", champion: "David Popovici", country: "ROU", time: "1:42.97", note: "世界青年纪录，纺织品泳衣时代最快" },
 
-  // —— 亚运会（2014 仁川起四届已核） ——
+  // —— 亚运会（2006 多哈起六届已核） ——
   { series: "asiangames", year: 2026, city: "名古屋", champion: "Zhang Zhanshuo", country: "CHN", time: "1:43.49", note: "亚洲纪录；同届包揽200/400/800/1500自四金" },
   { series: "asiangames", year: 2022, city: "杭州", champion: "Hwang Sun-woo", country: "KOR", time: "1:44.40", note: "赛会纪录，潘展乐1:45.25摘银；赛事于2023年举行" },
   { series: "asiangames", year: 2018, city: "雅加达", champion: "Sun Yang", country: "CHN", time: "1:45.43" },
   { series: "asiangames", year: 2014, city: "仁川", champion: "Kosuke Hagino", country: "JPN", time: "1:45.23", note: "决赛力压孙杨（1:45.28）" },
+  { series: "asiangames", year: 2010, city: "广州", champion: "Park Tae-hwan", country: "KOR", time: "1:44.80", note: "亚洲纪录，孙杨摘银" },
+  { series: "asiangames", year: 2006, city: "多哈", champion: "Park Tae-hwan", country: "KOR", time: "1:47.12", note: "17岁，个人首届亚运会" },
 ];

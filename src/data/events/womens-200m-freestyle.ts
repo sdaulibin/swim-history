@@ -17,7 +17,7 @@ export const womens200mFreestyle: SwimEvent = {
   course: "LCM",
   name: "女子 200 米自由泳",
   summary:
-    "从蒂默突破2分钟、范·阿尔姆西克的罗马之夜，到佩莱格里尼快速泳衣时代的1:52.98——这条曲线上的世界纪录已沉睡十余年，成为女子游泳最顽固的堡垒之一。",
+    "从蒂默突破2分钟、范·阿尔姆西克的罗马之夜，到佩莱格里尼快速泳衣时代的1:52.98——悬置十四年后，奥卡拉汉与蒂特姆斯在十四个月里两度改写，如今的1:52.23已是女子中距离的新坐标。",
   dataAsOf: "2026年10月",
   progression: [
     { time: "2:05.8", holder: "Shane Gould", country: "AUS", date: "1972-01-08", place: "悉尼", note: "本表最早条目；古尔德此时同时保有100米至1500米全部自由泳世界纪录" },
@@ -30,7 +30,7 @@ export const womens200mFreestyle: SwimEvent = {
     { time: "1:55.93", holder: "Federica Pellegrini", country: "ITA", date: "2008-03-21", meet: "欧洲锦标赛", place: "埃因霍温" },
     { time: "1:54.82", holder: "Federica Pellegrini", country: "ITA", date: "2008-08-13", meet: "2008年北京奥运会", place: "北京", note: "决赛夺冠" },
     { time: "1:52.98", holder: "Federica Pellegrini", country: "ITA", date: "2009-07-29", meet: "世界锦标赛", place: "罗马", note: "快速泳衣时代的产物，沉睡十四年后被改写" },
-    { time: "1:52.67", holder: "Ariarne Titmus", country: "AUS", date: "2023-07-26", meet: "2023年福冈世锦赛", place: "福冈" },
+    { time: "1:52.67", holder: "Mollie O'Callaghan", country: "AUS", date: "2023-07-26", meet: "2023年福冈世锦赛", place: "福冈", note: "决赛刷新世界纪录，力压蒂特姆斯" },
     { time: "1:52.23", holder: "Ariarne Titmus", country: "AUS", date: "2024-06", meet: "澳大利亚奥运选拔赛", place: "布里斯班", note: "现世界纪录；同场奥卡拉汉游出1:52.48" },
   ],
 
@@ -49,7 +49,7 @@ export const womens200mFreestyle: SwimEvent = {
   top10: [
     { time: "1:52.23", holder: "Ariarne Titmus", country: "AUS", date: "2024-06", meet: "澳大利亚奥运选拔赛", wr: true },
     { time: "1:52.48", holder: "Mollie O'Callaghan", country: "AUS", date: "2024-06", meet: "澳大利亚奥运选拔赛", note: "同场位列第二" },
-    { time: "1:52.67", holder: "Ariarne Titmus", country: "AUS", date: "2023-07-26", meet: "2023年福冈世锦赛" },
+    { time: "1:52.67", holder: "Mollie O'Callaghan", country: "AUS", date: "2023-07-26", meet: "2023年福冈世锦赛" },
     { time: "1:52.98", holder: "Federica Pellegrini", country: "ITA", date: "2009-07-29", meet: "2009年罗马世锦赛" },
     { time: "1:53.07", holder: "Mollie O'Callaghan", country: "AUS", date: "2024-08", meet: "2024年巴黎奥运会" },
     { time: "1:53.50", holder: "Ariarne Titmus", country: "AUS", date: "2021-07", meet: "2020年东京奥运会" },
@@ -93,7 +93,7 @@ export const womens200mFreestyle: SwimEvent = {
     {
       heading: "群星时代与亚洲身影",
       paragraphs: [
-        "奥运赛场上，奥运纪录三易其手：2012年伦敦艾莉森·施密特的1:53.61、2021年东京阿里亚恩·蒂特姆斯的1:53.50先后改写；凯蒂·莱德基2016年里约的1:53.73虽未破纪录，却是她中距离统治力的注脚。2024年巴黎，莫莉·奥卡拉汉力压蒂特姆斯以1:53.07夺冠——距佩莱格里尼的世界纪录仅0.09秒，为历史第二快；2025年新加坡世锦赛，加拿大的萨默·麦金托什登顶。",
+        "奥运赛场上，奥运纪录三易其手：2012年伦敦艾莉森·施密特的1:53.61、2021年东京阿里亚恩·蒂特姆斯的1:53.50先后改写；凯蒂·莱德基2016年里约的1:53.73虽未破纪录，却是她中距离统治力的注脚。2023年福冈，莫莉·奥卡拉汉以1:52.67率先甲开1:53大关并改写世界纪录，力压蒂特姆斯；2024年6月，蒂特穆斯在选拔赛推进到1:52.23，巴黎奥运决赛奥卡拉汉再度胜出；2025年新加坡世锦赛，加拿大的萨默·麦金托什登顶。",
         "在亚洲，中国香港的何诗蓓是这条泳道最快的亚洲选手——东京奥运会的1:53.79至今仍是亚洲最快成绩；杭州亚运会上，李冰洁在这条泳道上称雄。世界纪录的下一个名字，也许就藏在这些正在逼近的人中间。",
       ],
     },

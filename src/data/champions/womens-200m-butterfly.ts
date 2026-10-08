@@ -53,6 +53,11 @@ export const womens200mButterflyChampions: ChampionEntry[] = [
   // —— 欧洲锦标赛（长池） ——
   { series: "euros", year: 2026, city: "巴黎", champion: "Ellen Walshe", country: "IRL", note: "当届个人第二金" },
 
-  // —— 亚运会 ——
+  // —— 亚运会（2006 多哈起六届已核） ——
   { series: "asiangames", year: 2026, city: "名古屋", champion: "Yu Zidi", country: "CHN", time: "2:05.08", note: "13岁，赛会纪录" },
+  { series: "asiangames", year: 2022, city: "杭州", champion: "Zhang Yufei", country: "CHN", time: "2:05.57", note: "赛会纪录，卫冕；赛事于2023年举行" },
+  { series: "asiangames", year: 2018, city: "雅加达", champion: "Zhang Yufei", country: "CHN", time: "2:06.61" },
+  { series: "asiangames", year: 2014, city: "仁川", champion: "Jiao Liuyang", country: "CHN", time: "2:07.56" },
+  { series: "asiangames", year: 2010, city: "广州", champion: "Jiao Liuyang", country: "CHN", time: "2:05.79", note: "当届个人第3金" },
+  { series: "asiangames", year: 2006, city: "多哈", champion: "Yurie Yano", country: "JPN", time: "2:09.08" },
 ];

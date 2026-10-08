@@ -67,9 +67,11 @@ export const womens4x100mFreestyleRelayChampions: ChampionEntry[] = [
   // —— 欧洲锦标赛（长池；仅收 2026 届，更早届次待核） ——
   { series: "euros", year: 2026, city: "巴黎", champion: "Great Britain", country: "GBR", note: "决赛险胜意大利队" },
 
-  // —— 亚运会（2014 仁川起四届已核） ——
+  // —— 亚运会（2006 多哈起六届已核） ——
   { series: "asiangames", year: 2026, city: "名古屋", champion: "China", country: "CHN", time: "3:33.10", note: "赛会纪录，卫冕；余依婷/张雨霏/程玉洁/吴卿风" },
   { series: "asiangames", year: 2022, city: "杭州", champion: "China", country: "CHN", time: "3:33.96", note: "赛会纪录；杨浚瑄/程玉洁/吴卿风/张雨霏；赛事于2023年举行" },
   { series: "asiangames", year: 2018, city: "雅加达", champion: "Japan", country: "JPN", note: "池江璃花子领衔，中国队摘银" },
   { series: "asiangames", year: 2014, city: "仁川", champion: "China", country: "CHN", time: "3:37.25", note: "沈铎/叶诗文/张雨霏/唐奕" },
+  { series: "asiangames", year: 2010, city: "广州", champion: "China", country: "CHN", time: "3:57.80", note: "半个身位险胜" },
+  { series: "asiangames", year: 2006, city: "多哈", champion: "China", country: "CHN", time: "3:42.11" },
 ];

@@ -79,9 +79,11 @@ export const mens400mFreestyleChampions: ChampionEntry[] = [
   { series: "euros", year: 2026, city: "巴黎", champion: "Léon Marchand", country: "FRA", time: "3:43.14", note: "个人首枚欧锦赛金牌；默滕斯摘铜" },
   { series: "euros", year: 2022, city: "罗马", champion: "Lukas Märtens", country: "GER" },
 
-  // —— 亚运会（2014 仁川起四届已核） ——
+  // —— 亚运会（2006 多哈起六届已核） ——
   { series: "asiangames", year: 2026, city: "名古屋", champion: "Zhang Zhanshuo", country: "CHN", time: "3:41.28", note: "赛会纪录；同届包揽200/400/800/1500自四金" },
   { series: "asiangames", year: 2022, city: "杭州", champion: "Kim Woo-min", country: "KOR", time: "3:44.36", note: "潘展乐摘银；赛事于2023年举行" },
   { series: "asiangames", year: 2018, city: "雅加达", champion: "Sun Yang", country: "CHN", time: "3:42.92", note: "卫冕" },
   { series: "asiangames", year: 2014, city: "仁川", champion: "Sun Yang", country: "CHN", time: "3:43.23" },
+  { series: "asiangames", year: 2010, city: "广州", champion: "Park Tae-hwan", country: "KOR", time: "3:41.53", note: "当届第二金，张琳获银" },
+  { series: "asiangames", year: 2006, city: "多哈", champion: "Park Tae-hwan", country: "KOR", time: "3:48.44", note: "16岁首秀夺金，张琳获银" },
 ];

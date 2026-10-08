@@ -45,8 +45,11 @@ export const womens200mBackstrokeChampions: ChampionEntry[] = [
   // —— 欧洲锦标赛 ——
   // 未能核实，暂缺。
 
-  // —— 亚运会（已核实行） ——
-  { series: "asiangames", year: 2026, city: "名古屋", champion: "Peng Xuwei", country: "CHN", time: "2:05.77", note: "9月22日决赛，破亚洲纪录（赵菁2:06.46，2009）并卫冕" },
+  // —— 亚运会（2006 多哈起六届已核） ——
+  { series: "asiangames", year: 2026, city: "名古屋", champion: "Peng Xuwei", country: "CHN", time: "2:05.77", note: "9月22日决赛，破赵菁保持16年的亚洲纪录（2:06.46，2010）并卫冕" },
   { series: "asiangames", year: 2022, city: "杭州", champion: "Peng Xuwei", country: "CHN", time: "2:07.28", note: "9月26日决赛；赛事于2023年举行" },
-  { series: "asiangames", year: 2018, city: "雅加达", champion: "Liu Yaxin", country: "CHN", note: "夺冠成绩未能核实" },
+  { series: "asiangames", year: 2018, city: "雅加达", champion: "Liu Yaxin", country: "CHN", time: "2:07.65", note: "中国时隔八年再夺该项目金牌；酒井夏海2:08.13获银" },
+  { series: "asiangames", year: 2014, city: "仁川", champion: "Sayaka Akase", country: "JPN", time: "2:10.31" },
+  { series: "asiangames", year: 2010, city: "广州", champion: "Zhao Jing", country: "CHN", time: "2:06.46", note: "亚洲纪录" },
+  { series: "asiangames", year: 2006, city: "多哈", champion: "Reiko Nakamura", country: "JPN", time: "2:10.33", note: "赵菁获银" },
 ];

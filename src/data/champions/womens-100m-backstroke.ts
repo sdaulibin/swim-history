@@ -46,7 +46,11 @@ export const womens100mBackstrokeChampions: ChampionEntry[] = [
   // —— 欧洲锦标赛 ——
   // 未能核实，暂缺。
 
-  // —— 亚运会（已核实行） ——
+  // —— 亚运会（2006 多哈起六届已核） ——
   { series: "asiangames", year: 2026, city: "名古屋", champion: "Peng Xuwei", country: "CHN", time: "59.30", note: "决赛9月23日；日本白井璃绪59.89获银" },
   { series: "asiangames", year: 2022, city: "杭州", champion: "Wan Letian", country: "CHN", time: "59.38", note: "赛事于2023年举行；汪雪儿获银" },
+  { series: "asiangames", year: 2018, city: "雅加达", champion: "Natsumi Sakai", country: "JPN", time: "59.27", note: "小西杏奈获银，陈洁摘铜，卫冕冠军傅园慧列第四" },
+  { series: "asiangames", year: 2014, city: "仁川", champion: "Fu Yuanhui", country: "CHN", time: "59.95" },
+  { series: "asiangames", year: 2010, city: "广州", champion: "Zhao Jing", country: "CHN", time: "59.20", note: "当届包揽100/200仰双金" },
+  { series: "asiangames", year: 2006, city: "多哈", champion: "Reiko Nakamura", country: "JPN", time: "1:00.82", note: "当届包揽100/200仰双金，徐田龙子获银" },
 ];

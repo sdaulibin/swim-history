@@ -11,7 +11,7 @@ import type { ChampionEntry } from "@/lib/types";
  */
 export const womens200mFreestyleChampions: ChampionEntry[] = [
   // —— 奥运会 ——
-  { series: "olympics", year: 2024, city: "巴黎", champion: "Mollie O'Callaghan", country: "AUS", time: "1:53.07", or: true, note: "奥运纪录" },
+  { series: "olympics", year: 2024, city: "巴黎", champion: "Mollie O'Callaghan", country: "AUS", time: "1:53.07", or: true, note: "力压蒂特姆斯卫冕世界冠军头衔" },
   { series: "olympics", year: 2020, city: "东京", champion: "Ariarne Titmus", country: "AUS", time: "1:53.50", or: true },
   { series: "olympics", year: 2016, city: "里约热内卢", champion: "Katie Ledecky", country: "USA", time: "1:53.73" },
   { series: "olympics", year: 2012, city: "伦敦", champion: "Allison Schmitt", country: "USA", time: "1:53.61", or: true },
@@ -30,7 +30,7 @@ export const womens200mFreestyleChampions: ChampionEntry[] = [
   // —— 世界锦标赛 ——
   { series: "worlds", year: 2025, city: "新加坡", champion: "Summer McIntosh", country: "CAN", time: "1:53.65" },
   // —— 2024 多哈冠军待核实，暂缺 ——
-  { series: "worlds", year: 2023, city: "福冈", champion: "Ariarne Titmus", country: "AUS", time: "1:52.67", note: "当时的世界纪录" },
+  { series: "worlds", year: 2023, city: "福冈", champion: "Mollie O'Callaghan", country: "AUS", time: "1:52.67", wr: true, note: "决赛打破佩莱格里尼保持14年的世界纪录，力压蒂特姆斯" },
   { series: "worlds", year: 2022, city: "布达佩斯", champion: "Mollie O'Callaghan", country: "AUS", time: "1:55.86" },
   { series: "worlds", year: 2019, city: "光州", champion: "Ariarne Titmus", country: "AUS" },
   { series: "worlds", year: 2017, city: "布达佩斯", champion: "Federica Pellegrini", country: "ITA" },
@@ -56,9 +56,11 @@ export const womens200mFreestyleChampions: ChampionEntry[] = [
   { series: "euros", year: 2026, city: "巴黎", champion: "Barbora Seemanová", country: "CZE", note: "赛会纪录，斯滕贝根摘银" },
   { series: "euros", year: 2024, city: "贝尔格莱德", champion: "Marrit Steenbergen", country: "NED" },
 
-  // —— 亚运会（2014 仁川起四届已核） ——
+  // —— 亚运会（2006 多哈起六届已核） ——
   { series: "asiangames", year: 2026, city: "名古屋", champion: "Siobhán Haughey", country: "HKG", time: "1:54.96", note: "卫冕；同届加冕100/200米自由泳双冠" },
   { series: "asiangames", year: 2022, city: "杭州", champion: "Siobhán Haughey", country: "HKG", time: "1:54.12", note: "赛会纪录，李冰洁1:56.00摘银；赛事于2023年举行" },
   { series: "asiangames", year: 2018, city: "雅加达", champion: "Li Bingjie", country: "CHN", time: "1:56.74" },
   { series: "asiangames", year: 2014, city: "仁川", champion: "Shen Duo", country: "CHN", time: "1:57.66", note: "她当届亚运第4金" },
+  { series: "asiangames", year: 2010, city: "广州", champion: "Zhu Qianwei", country: "CHN", time: "1:56.65", note: "唐奕获银" },
+  { series: "asiangames", year: 2006, city: "多哈", champion: "Pang Jiaying", country: "CHN", time: "1:59.26", note: "杨雨获银" },
 ];

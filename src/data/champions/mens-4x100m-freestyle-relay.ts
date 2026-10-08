@@ -48,9 +48,11 @@ export const mens4x100mFreestyleRelayChampions: ChampionEntry[] = [
   // —— 欧洲锦标赛（长池；2024 及更早未能核实，暂缺） ——
   { series: "euros", year: 2026, city: "巴黎", champion: "Hungary", country: "HUN", time: "3:10.03", note: "赛会纪录，米拉克领衔" },
 
-  // —— 亚运会（2014 仁川起四届已核） ——
+  // —— 亚运会（2006 多哈起六届已核） ——
   { series: "asiangames", year: 2026, city: "名古屋", champion: "China", country: "CHN", time: "3:10.60", note: "破亚洲纪录与赛会纪录，潘展乐压轴；赵家悦/王浩宇/张展硕/潘展乐" },
   { series: "asiangames", year: 2022, city: "杭州", champion: "China", country: "CHN", time: "3:10.88", note: "亚洲纪录；潘展乐/陈俊儿/洪金权/王浩宇；赛事于2023年举行" },
   { series: "asiangames", year: 2018, city: "雅加达", champion: "Japan", country: "JPN", time: "3:12.68", note: "赛会纪录，中国队摘银" },
   { series: "asiangames", year: 2014, city: "仁川", champion: "China", country: "CHN", time: "3:13.47", note: "亚洲纪录；余贺新/林永庆/孙杨/宁泽涛" },
+  { series: "asiangames", year: 2010, city: "广州", champion: "China", country: "CHN", note: "时隔20年重夺该项目亚运金牌；夺冠成绩未能核实" },
+  { series: "asiangames", year: 2006, city: "多哈", champion: "Japan", country: "JPN", time: "3:18.95", note: "亚运会纪录，中国队摘银" },
 ];

@@ -34,9 +34,11 @@ export const mens4x200mFreestyleRelayChampions: ChampionEntry[] = [
   // —— 欧洲锦标赛（长池；2024 及更早未能核实，暂缺） ——
   { series: "euros", year: 2026, city: "巴黎", champion: "Great Britain", country: "GBR", time: "7:01.52", note: "M. Richards · J. McMillan · J. Guy · D. Scott；东道主法国银牌，L. Marchand 一棒 1:43.76" },
 
-  // —— 亚运会（2014 仁川起收录；2010 及更早未能核实，暂缺） ——
+  // —— 亚运会（2006 多哈起六届；2014 日本夺金无成绩披露） ——
   { series: "asiangames", year: 2026, city: "名古屋", champion: "China", country: "CHN", time: "7:00.17", note: "亚洲纪录与赛会纪录；决赛在东京水上运动中心举行，张展硕压轴 1:42.92 逆转日本队" },
   { series: "asiangames", year: 2022, city: "杭州", champion: "South Korea", country: "KOR", time: "7:01.73", note: "亚洲纪录，黄善宇领衔；中国银牌、日本铜牌；赛事于2023年举行" },
   { series: "asiangames", year: 2018, city: "雅加达", champion: "Japan", country: "JPN", time: "7:05.17", note: "赛会纪录；中国 7:05.45 银牌、韩国铜牌" },
-  { series: "asiangames", year: 2014, city: "仁川", champion: "China", country: "CHN", note: "决赛力压日本夺金（具体成绩未能核实），香港队铜牌" },
+  { series: "asiangames", year: 2014, city: "仁川", champion: "Japan", country: "JPN", note: "萩野公介末棒反超孙杨，中国队摘银；夺冠成绩未能核实" },
+  { series: "asiangames", year: 2010, city: "广州", champion: "China", country: "CHN", time: "7:07.66", note: "张琳、孙杨领衔，首次夺得该项目亚运金牌，日本队获银" },
+  { series: "asiangames", year: 2006, city: "多哈", champion: "Japan", country: "JPN", time: "7:14.86", note: "中国队摘银" },
 ];

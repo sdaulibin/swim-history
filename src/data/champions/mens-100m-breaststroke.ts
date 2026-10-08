@@ -73,10 +73,12 @@ export const mens100mBreaststrokeChampions: ChampionEntry[] = [
   { series: "euros", year: 2018, city: "格拉斯哥", champion: "Adam Peaty", country: "GBR", time: "57.10", wr: true },
   { series: "euros", year: 2016, city: "伦敦", champion: "Adam Peaty", country: "GBR" },
 
-  // —— 亚运会（2014 仁川起四届已核） ——
+  // —— 亚运会（2006 多哈起六届已核） ——
   { series: "asiangames", year: 2026, city: "名古屋", champion: "Shin Ohashi", country: "JPN", time: "58.64", note: "与董志豪并列冠军；数日后破200蛙世界纪录" },
   { series: "asiangames", year: 2026, city: "名古屋", champion: "Dong Zhihao", country: "CHN", time: "58.64", note: "与大桥信并列冠军" },
   { series: "asiangames", year: 2022, city: "杭州", champion: "Qin Haiyang", country: "CHN", time: "57.76", note: "赛会纪录；赛事于2023年举行" },
   { series: "asiangames", year: 2018, city: "雅加达", champion: "Yasuhiro Koseki", country: "JPN", time: "58.86", note: "赛会纪录，当届包揽三项蛙泳金牌" },
   { series: "asiangames", year: 2014, city: "仁川", champion: "Dmitriy Balandin", country: "KAZ", time: "59.92", note: "赛会纪录，当届包揽50/100/200蛙三金" },
+  { series: "asiangames", year: 2010, city: "广州", champion: "Ryo Tateishi", country: "JPN", time: "1:00.38", note: "北岛康介仅列第四，曾启亮获银" },
+  { series: "asiangames", year: 2006, city: "多哈", champion: "Kosuke Kitajima", country: "JPN", time: "1:01.13" },
 ];

@@ -57,7 +57,11 @@ export const womens100mButterflyChampions: ChampionEntry[] = [
   { series: "euros", year: 2024, city: "贝尔格莱德", champion: "Roos Vanotterdijk", country: "BEL" },
   { series: "euros", year: 2022, city: "罗马", champion: "Louise Hansson", country: "SWE", time: "56.66" },
 
-  // —— 亚运会 ——
+  // —— 亚运会（2006 多哈起六届已核） ——
   { series: "asiangames", year: 2026, city: "名古屋", champion: "Yu Yiting", country: "CHN", time: "56.41", note: "0.03秒之差力克队友张雨霏" },
+  { series: "asiangames", year: 2022, city: "杭州", champion: "Zhang Yufei", country: "CHN", time: "55.86", note: "赛会纪录；赛事于2023年举行" },
+  { series: "asiangames", year: 2018, city: "雅加达", champion: "Rikako Ikee", country: "JPN", time: "56.30", note: "亚运会纪录" },
   { series: "asiangames", year: 2014, city: "仁川", champion: "Chen Xinyi", country: "CHN", time: "56.61" },
+  { series: "asiangames", year: 2010, city: "广州", champion: "Jiao Liuyang", country: "CHN", time: "56.76", note: "当届个人第2金" },
+  { series: "asiangames", year: 2006, city: "多哈", champion: "Zhou Yafei", country: "CHN", time: "58.38", note: "徐妍玮获银" },
 ];

@@ -41,7 +41,7 @@ const CHART_MARKS: Record<string, ChartMark[]> = {
   ],
   "womens-200m-freestyle": [
     { date: "1976-07-22", label: "首破2分钟" },
-    { date: "2009-07-29", label: "1:52.98 悬置至今" },
+    { date: "2023-07-26", label: "悬置14年后告破" },
   ],
   "mens-400m-freestyle": [
     { date: "1908-07-17", label: "泰勒 5:36.8" },
@@ -58,6 +58,54 @@ const CHART_MARKS: Record<string, ChartMark[]> = {
   "womens-4x100m-freestyle-relay": [
     { date: "1912-07-13", label: "首项世界纪录" },
     { date: "2023-07-23", label: "首破 3:28" },
+  ],
+  "mens-4x200m-freestyle-relay": [
+    { date: "2000-09-19", label: "悉尼主场首冠" },
+    { date: "2008-08-13", label: "首破 7 分钟" },
+  ],
+  "womens-4x200m-freestyle-relay": [
+    { date: "2009-07-30", label: "中国队 7:42.08" },
+    { date: "2023-07-27", label: "澳 7:37.50 现 WR" },
+  ],
+  "mens-100m-butterfly": [
+    { date: "1960-06-26", label: "首破1分钟" },
+    { date: "2009-08-01", label: "菲尔普斯 49.82" },
+  ],
+  "mens-200m-butterfly": [
+    { date: "1975-08-21", label: "首破2分钟" },
+    { date: "2019-07-24", label: "首破 1:51" },
+  ],
+  "womens-100m-butterfly": [
+    { date: "1977-08-28", label: "首破1分钟" },
+    { date: "1981-08-16", label: "57.93 悬置18年" },
+  ],
+  "womens-200m-butterfly": [
+    { date: "1981-08-13", label: "2:05.96 悬置19年" },
+    { date: "2009-10-21", label: "刘子歌 2:01.81" },
+  ],
+  "womens-100m-backstroke": [
+    { date: "2002-08-13", label: "首破1分钟" },
+    { date: "2024-06-18", label: "史密斯 57.13" },
+  ],
+  "womens-200m-backstroke": [
+    { date: "1991-08-25", label: "艾盖尔塞吉时代" },
+    { date: "2019-07-26", label: "首破 2:04" },
+  ],
+  "mens-200m-medley": [
+    { date: "1991-01-13", label: "首破2分钟" },
+    { date: "2025-07-30", label: "马尔尚 1:52.69" },
+  ],
+  "mens-400m-medley": [
+    { date: "1968-08-30", label: "首破4:40" },
+    { date: "2023-07-23", label: "马尔尚 4:02.50" },
+  ],
+  "womens-200m-medley": [
+    { date: "1997-10", label: "吴艳艳 2:09.72" },
+    { date: "2025-06-09", label: "麦金托什 2:05.70" },
+  ],
+  "womens-400m-medley": [
+    { date: "2012-07", label: "叶诗文 4:28.43" },
+    { date: "2025-06-11", label: "麦金托什 4:23.65" },
   ],
 };
 

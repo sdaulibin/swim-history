@@ -75,7 +75,11 @@ export const mens100mButterflyChampions: ChampionEntry[] = [
   { series: "euros", year: 2022, city: "罗马", champion: "Kristóf Milák", country: "HUN" },
   { series: "euros", year: 2021, city: "布达佩斯", champion: "Kristóf Milák", country: "HUN", time: "50.18", note: "赛会纪录；赛事因疫情于2021年举行" },
 
-  // —— 亚运会 ——
+  // —— 亚运会（2006 多哈起六届已核） ——
   { series: "asiangames", year: 2026, city: "名古屋", champion: "Mitsunaga Shoon", country: "JPN", time: "50.56", note: "亚运会纪录；决赛于东京水上运动中心举行" },
+  { series: "asiangames", year: 2022, city: "杭州", champion: "Katsuhiro Matsumoto", country: "JPN", time: "51.13", note: "王长浩51.24摘银；赛事于2023年举行" },
   { series: "asiangames", year: 2018, city: "雅加达", champion: "Joseph Schooling", country: "SGP", time: "51.04", note: "单源待复核" },
+  { series: "asiangames", year: 2014, city: "仁川", champion: "Joseph Schooling", country: "SGP", time: "51.76", note: "新加坡首枚亚运男子游泳金牌之一环" },
+  { series: "asiangames", year: 2010, city: "广州", champion: "Zhou Jiawei", country: "CHN", time: "51.83", note: "中国男队当届首金" },
+  { series: "asiangames", year: 2006, city: "多哈", champion: "Takashi Yamamoto", country: "JPN", time: "52.54" },
 ];

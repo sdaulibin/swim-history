@@ -35,9 +35,11 @@ export const womens4x200mFreestyleRelayChampions: ChampionEntry[] = [
   // —— 欧洲锦标赛（长池；2024 及更早未能核实，暂缺） ——
   { series: "euros", year: 2026, city: "巴黎", champion: "Great Britain", country: "GBR", time: "7:45.93", note: "赛会纪录；A. Wood 领衔，英国队包揽当届男女 4×200 两金" },
 
-  // —— 亚运会（2014 仁川起收录；2014/2018 届成绩未能核实） ——
+  // —— 亚运会（2006 多哈起六届；2010/2014 届成绩未能核实） ——
   { series: "asiangames", year: 2026, city: "名古屋", champion: "China", country: "CHN", time: "7:49.37", note: "李家萍 · 柳雅欣 · 李冰洁 · 余依婷；决赛在东京水上运动中心举行，日本 7:59.53 银牌、韩国 8:01.87 铜牌" },
   { series: "asiangames", year: 2022, city: "杭州", champion: "China", country: "CHN", time: "7:49.34", note: "柳雅欣 · 程玉洁 · 李冰洁 · 李家萍；日本银牌、韩国铜牌；赛事于2023年举行（成绩单一来源，待复核）" },
   { series: "asiangames", year: 2018, city: "雅加达", champion: "China", country: "CHN", note: "王简嘉禾、李冰洁在阵（成绩未能核实）" },
   { series: "asiangames", year: 2014, city: "仁川", champion: "China", country: "CHN", note: "郭君君 · 唐奕 · 曹悦 · 沈铎（成绩未能核实），日本银牌" },
+  { series: "asiangames", year: 2010, city: "广州", champion: "China", country: "CHN", note: "夺冠成绩未能核实" },
+  { series: "asiangames", year: 2006, city: "多哈", champion: "China", country: "CHN", time: "8:01.89" },
 ];

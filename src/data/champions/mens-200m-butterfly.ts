@@ -49,7 +49,11 @@ export const mens200mButterflyChampions: ChampionEntry[] = [
   // —— 欧洲锦标赛（长池；仅 2026 届已核） ——
   { series: "euros", year: 2026, city: "巴黎", champion: "Léon Marchand", country: "FRA", note: "个人首枚欧锦赛金牌，米拉克获银" },
 
-  // —— 亚运会 ——
+  // —— 亚运会（2006 多哈起六届已核） ——
   { series: "asiangames", year: 2026, city: "名古屋", champion: "Wang Kuan-Hung", country: "TPE", time: "1:55.05", note: "中国台北男子游泳首枚亚运金牌；徐放1:55.65获银" },
   { series: "asiangames", year: 2022, city: "杭州", champion: "Honda Tomoshi", country: "JPN", time: "1:53.15", note: "亚运会纪录；赛事于2023年举行" },
+  { series: "asiangames", year: 2018, city: "雅加达", champion: "Daiya Seto", country: "JPN", time: "1:54.34", note: "卫冕" },
+  { series: "asiangames", year: 2014, city: "仁川", champion: "Daiya Seto", country: "JPN", time: "1:54.08" },
+  { series: "asiangames", year: 2010, city: "广州", champion: "Takashi Matsuda", country: "JPN", time: "1:54.02", note: "日本包揽金银，陈寅摘铜" },
+  { series: "asiangames", year: 2006, city: "多哈", champion: "Wu Peng", country: "CHN", time: "1:54.91", note: "卫冕" },
 ];

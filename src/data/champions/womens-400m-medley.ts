@@ -54,6 +54,11 @@ export const womens400mMedleyChampions: ChampionEntry[] = [
   // —— 欧洲锦标赛（2026 已核；2018-2024 待核） ——
   { series: "euros", year: 2026, city: "巴黎", champion: "Ellen Walshe", country: "IRL", time: "4:34.42", note: "爱尔兰纪录，同届包揽200/400混双金" },
 
-  // —— 亚运会（2026 已核；2014/2018/2022 待核） ——
+  // —— 亚运会（2006 多哈起六届已核） ——
   { series: "asiangames", year: 2026, city: "名古屋", champion: "Yu Zidi", country: "CHN", time: "4:28.56", note: "赛会纪录，13岁，本届个人第三金；队友柯雯曦获银" },
+  { series: "asiangames", year: 2022, city: "杭州", champion: "Yu Yiting", country: "CHN", time: "4:35.44", note: "包揽当届女子200/400混双金；赛事于2023年举行" },
+  { series: "asiangames", year: 2018, city: "雅加达", champion: "Yui Ohashi", country: "JPN", time: "4:34.58", note: "金瑟永4:37.43获银，清水咲子获铜" },
+  { series: "asiangames", year: 2014, city: "仁川", champion: "Ye Shiwen", country: "CHN", time: "4:32.97" },
+  { series: "asiangames", year: 2010, city: "广州", champion: "Ye Shiwen", country: "CHN", time: "4:33.79", note: "14岁，李玄旭获银" },
+  { series: "asiangames", year: 2006, city: "多哈", champion: "Qi Hui", country: "CHN", time: "4:38.31", note: "于锐获银" },
 ];

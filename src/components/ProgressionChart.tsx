@@ -28,7 +28,7 @@ const PH = H - M.top - M.bottom;
 const ERA = { from: "2008-02-01", to: "2009-12-31", label: "快速泳衣时代" };
 
 function yearFrac(iso: string): number {
-  const [y, m, d] = iso.split("-").map(Number);
+  const [y, m = 1, d = 1] = iso.split("-").map(Number);
   return y + (m - 1) / 12 + (d - 1) / 365;
 }
 

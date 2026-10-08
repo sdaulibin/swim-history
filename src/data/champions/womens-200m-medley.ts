@@ -53,6 +53,11 @@ export const womens200mMedleyChampions: ChampionEntry[] = [
   // —— 欧洲锦标赛（2026 已核；2018-2024 待核） ——
   { series: "euros", year: 2026, city: "巴黎", champion: "Ellen Walshe", country: "IRL", note: "同届包揽200/400混双金" },
 
-  // —— 亚运会（2026 已核；2014/2018/2022 待核） ——
+  // —— 亚运会（2006 多哈起六届；2018 届成绩未能核实） ——
   { series: "asiangames", year: 2026, city: "名古屋", champion: "Yu Zidi", country: "CHN", time: "2:06.10", note: "亚洲纪录、赛会纪录与世界青年纪录，历史第二快；余依婷获银" },
+  { series: "asiangames", year: 2022, city: "杭州", champion: "Yu Yiting", country: "CHN", time: "2:07.75", note: "赛会纪录；赛事于2023年举行" },
+  { series: "asiangames", year: 2018, city: "雅加达", champion: "Ye Shiwen", country: "CHN", note: "夺冠成绩未能核实" },
+  { series: "asiangames", year: 2014, city: "仁川", champion: "Ye Shiwen", country: "CHN", note: "夺冠成绩未能核实" },
+  { series: "asiangames", year: 2010, city: "广州", champion: "Ye Shiwen", country: "CHN", time: "2:09.37", note: "14岁爆冷夺金，成绩列当年世界第一" },
+  { series: "asiangames", year: 2006, city: "多哈", champion: "Qi Hui", country: "CHN", time: "2:11.92", note: "当届包揽200/400混双金" },
 ];

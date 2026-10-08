@@ -84,9 +84,11 @@ export const mens100mFreestyleChampions: ChampionEntry[] = [
   { series: "euros", year: 2018, city: "格拉斯哥", champion: "Alessandro Miressi", country: "ITA" },
   { series: "euros", year: 2008, city: "埃因霍温", champion: "Alain Bernard", country: "FRA", time: "47.50", wr: true },
 
-  // —— 亚运会（已核 2014 起四届） ——
+  // —— 亚运会（2006 多哈起六届已核） ——
   { series: "asiangames", year: 2026, city: "名古屋", champion: "Pan Zhanle", country: "CHN", time: "47.61", note: "卫冕" },
   { series: "asiangames", year: 2022, city: "杭州", champion: "Pan Zhanle", country: "CHN", time: "46.97", note: "亚洲纪录，亚洲人首次游进47秒；赛事于2023年举行" },
   { series: "asiangames", year: 2018, city: "雅加达", champion: "Shinri Shioura", country: "JPN", time: "48.71" },
   { series: "asiangames", year: 2014, city: "仁川", champion: "Ning Zetao", country: "CHN", time: "47.70", note: "亚洲纪录，亚洲人首次游进48秒" },
+  { series: "asiangames", year: 2010, city: "广州", champion: "Park Tae-hwan", country: "KOR", time: "48.70", note: "当届包揽100/200/400自三金" },
+  { series: "asiangames", year: 2006, city: "多哈", champion: "Chen Zuo", country: "CHN", time: "49.06", note: "亚运会纪录" },
 ];

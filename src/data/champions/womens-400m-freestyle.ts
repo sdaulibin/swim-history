@@ -72,9 +72,11 @@ export const womens400mFreestyleChampions: ChampionEntry[] = [
   { series: "euros", year: 2006, city: "布达佩斯", champion: "Laure Manaudou", country: "FRA", time: "4:03.03", wr: true, note: "终结埃文斯纪录近 18 年的统治" },
   // 2008 年埃因霍温欧锦赛佩莱格里尼曾在预赛以 4:01.53 破世界纪录，该届决赛冠军未能核实，暂缺
 
-  // —— 亚运会（2014 仁川起四届已核） ——
+  // —— 亚运会（2006 多哈起六届已核） ——
   { series: "asiangames", year: 2026, city: "名古屋", champion: "Li Bingjie", country: "CHN", time: "4:02.71", note: "卫冕；该项目亚洲纪录4:01.08仍由她保持" },
   { series: "asiangames", year: 2022, city: "杭州", champion: "Li Bingjie", country: "CHN", time: "4:01.96", note: "赛会纪录；赛事于2023年举行" },
   { series: "asiangames", year: 2018, city: "雅加达", champion: "Wang Jianjiahe", country: "CHN", note: "与李冰洁包揽冠亚军" },
   { series: "asiangames", year: 2014, city: "仁川", champion: "Zhang Yuhan", country: "CHN", time: "4:07.67", note: "中国游泳队当届首金" },
+  { series: "asiangames", year: 2010, city: "广州", champion: "Shao Yiwen", country: "CHN", time: "4:05.58", note: "最后100米反超队友刘京" },
+  { series: "asiangames", year: 2006, city: "多哈", champion: "Yang Jieqiao", country: "CHN", time: "4:12.75", note: "朱雯睿获银" },
 ];
