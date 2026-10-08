@@ -29,7 +29,9 @@ export function EventCard({ ev }: { ev: EventCardData }) {
           {ev.name}
         </h3>
         <span className="mt-0.5 shrink-0 rounded-full bg-pool-50 px-2 py-0.5 text-xs text-pool-700">
-          {ev.strokeZh} · {ev.distance}米
+          {ev.stroke === "relay"
+            ? `${ev.distance === 800 ? "4×200" : "4×100"} 米 · ${ev.strokeZh}`
+            : `${ev.strokeZh} · ${ev.distance}米`}
         </span>
       </div>
       <div className="mt-4 flex items-baseline gap-2">
