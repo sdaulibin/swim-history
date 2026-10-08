@@ -45,6 +45,12 @@ export const COUNTRIES: Record<string, { zh: string; flag: string | null }> = {
   DEN: { zh: "丹麦", flag: "🇩🇰" },
   BUL: { zh: "保加利亚", flag: "🇧🇬" },
   NOR: { zh: "挪威", flag: "🇳🇴" },
+  TUN: { zh: "突尼斯", flag: "🇹🇳" },
+  KOR: { zh: "韩国", flag: "🇰🇷" },
+  NZL: { zh: "新西兰", flag: "🇳🇿" },
+  ARG: { zh: "阿根廷", flag: "🇦🇷" },
+  CRC: { zh: "哥斯达黎加", flag: "🇨🇷" },
+  IRL: { zh: "爱尔兰", flag: "🇮🇪" },
 };
 
 export const FLAG_ZH: Record<RecordFlag, string> = {

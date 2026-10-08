@@ -35,6 +35,29 @@ const CHART_MARKS: Record<string, ChartMark[]> = {
     { date: "1996-07-21", label: "海因斯夺金" },
     { date: "2017-07-25", label: "莉莉·金 1:04.13" },
   ],
+  "mens-200m-freestyle": [
+    { date: "2009-07-28", label: "比德曼 1:42.00" },
+  ],
+  "womens-200m-freestyle": [
+    { date: "1976-07-22", label: "首破2分钟" },
+    { date: "2009-07-29", label: "1:52.98 悬置至今" },
+  ],
+  "mens-400m-freestyle": [
+    { date: "1908-07-17", label: "泰勒 5:36.8" },
+    { date: "2009-07-26", label: "比德曼 3:40.07" },
+  ],
+  "womens-400m-freestyle": [
+    { date: "2009-07-26", label: "首破4分钟" },
+    { date: "2016-08-07", label: "莱德基时代" },
+  ],
+  "mens-4x100m-freestyle-relay": [
+    { date: "2000-09-16", label: "悉尼 3:13.67" },
+    { date: "2008-08-11", label: "神奇一棒" },
+  ],
+  "womens-4x100m-freestyle-relay": [
+    { date: "1912-07-13", label: "首项世界纪录" },
+    { date: "2023-07-23", label: "首破 3:28" },
+  ],
 };
 
 export function generateStaticParams() {
