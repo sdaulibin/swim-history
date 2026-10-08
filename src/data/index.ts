@@ -13,6 +13,30 @@ import { mens100mFreestyleChampions } from "./champions/mens-100m-freestyle";
 import { womens100mFreestyleChampions } from "./champions/womens-100m-freestyle";
 import { mens100mBreaststrokeChampions } from "./champions/mens-100m-breaststroke";
 import { womens100mBreaststrokeChampions } from "./champions/womens-100m-breaststroke";
+import { mens4x200mFreestyleRelay } from "./events/mens-4x200m-freestyle-relay";
+import { mens4x200mFreestyleRelayChampions } from "./champions/mens-4x200m-freestyle-relay";
+import { womens4x200mFreestyleRelay } from "./events/womens-4x200m-freestyle-relay";
+import { womens4x200mFreestyleRelayChampions } from "./champions/womens-4x200m-freestyle-relay";
+import { mens100mButterfly } from "./events/mens-100m-butterfly";
+import { mens100mButterflyChampions } from "./champions/mens-100m-butterfly";
+import { mens200mButterfly } from "./events/mens-200m-butterfly";
+import { mens200mButterflyChampions } from "./champions/mens-200m-butterfly";
+import { womens100mButterfly } from "./events/womens-100m-butterfly";
+import { womens100mButterflyChampions } from "./champions/womens-100m-butterfly";
+import { womens200mButterfly } from "./events/womens-200m-butterfly";
+import { womens200mButterflyChampions } from "./champions/womens-200m-butterfly";
+import { womens100mBackstroke } from "./events/womens-100m-backstroke";
+import { womens100mBackstrokeChampions } from "./champions/womens-100m-backstroke";
+import { womens200mBackstroke } from "./events/womens-200m-backstroke";
+import { womens200mBackstrokeChampions } from "./champions/womens-200m-backstroke";
+import { mens200mMedley } from "./events/mens-200m-medley";
+import { mens200mMedleyChampions } from "./champions/mens-200m-medley";
+import { mens400mMedley } from "./events/mens-400m-medley";
+import { mens400mMedleyChampions } from "./champions/mens-400m-medley";
+import { womens200mMedley } from "./events/womens-200m-medley";
+import { womens200mMedleyChampions } from "./champions/womens-200m-medley";
+import { womens400mMedley } from "./events/womens-400m-medley";
+import { womens400mMedleyChampions } from "./champions/womens-400m-medley";
 import { mens200mFreestyleChampions } from "./champions/mens-200m-freestyle";
 import { womens200mFreestyleChampions } from "./champions/womens-200m-freestyle";
 import { mens400mFreestyleChampions } from "./champions/mens-400m-freestyle";
@@ -31,6 +55,18 @@ export const events = [
   { ...womens400mFreestyle, champions: womens400mFreestyleChampions },
   { ...mens4x100mFreestyleRelay, champions: mens4x100mFreestyleRelayChampions },
   { ...womens4x100mFreestyleRelay, champions: womens4x100mFreestyleRelayChampions },
+  { ...mens4x200mFreestyleRelay, champions: mens4x200mFreestyleRelayChampions },
+  { ...womens4x200mFreestyleRelay, champions: womens4x200mFreestyleRelayChampions },
+  { ...mens100mButterfly, champions: mens100mButterflyChampions },
+  { ...mens200mButterfly, champions: mens200mButterflyChampions },
+  { ...womens100mButterfly, champions: womens100mButterflyChampions },
+  { ...womens200mButterfly, champions: womens200mButterflyChampions },
+  { ...womens100mBackstroke, champions: womens100mBackstrokeChampions },
+  { ...womens200mBackstroke, champions: womens200mBackstrokeChampions },
+  { ...mens200mMedley, champions: mens200mMedleyChampions },
+  { ...mens400mMedley, champions: mens400mMedleyChampions },
+  { ...womens200mMedley, champions: womens200mMedleyChampions },
+  { ...womens400mMedley, champions: womens400mMedleyChampions },
 ];
 
 export const strokeMeta: Record<Stroke, { zh: string }> = {
