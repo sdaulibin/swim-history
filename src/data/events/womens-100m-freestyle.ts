@@ -100,11 +100,17 @@ export const womens100mFreestyle: SwimEvent = {
   top10: [
     { time: "51.68", holder: "Marrit Steenbergen", country: "NED", date: "2026-06-27", meet: "意大利罗马", wr: true, note: "现世界纪录" },
     { time: "51.71", holder: "Sarah Sjöström", country: "SWE", date: "2017-07-23", meet: "2017年布达佩斯世锦赛", flags: ["sf"] },
+    { time: "51.88", holder: "Anna Moesch", country: "USA", date: "2026-07", meet: "2026年美国全国锦标赛", note: "美国纪录" },
     { time: "51.90", holder: "Marrit Steenbergen", country: "NED", date: "2026-08-12", meet: "2026年巴黎欧锦赛" },
+    { time: "51.94", holder: "Anna Moesch", country: "USA", date: "2026-05", meet: "AP Swim International（伦敦）", note: "首破美国纪录" },
     { time: "51.96", holder: "Emma McKeon", country: "AUS", date: "2021-07", meet: "2020年东京奥运会" },
+    { time: "52.03", holder: "Cate Campbell", country: "AUS", date: "2018-08", meet: "2018年泛太平洋锦标赛" },
+    { time: "52.04", holder: "Simone Manuel", country: "USA", date: "2019-07", meet: "2019年光州世锦赛" },
+    { time: "52.09", holder: "Torri Huske", country: "USA", date: "2025-07", meet: "2025年新加坡世锦赛" },
+    { time: "52.16", holder: "Sarah Sjöström", country: "SWE", date: "2024-08", meet: "2024年巴黎奥运会" },
   ],
   top10Note:
-    "第五位起（奥卡拉根、坎贝尔、莫施、道格拉斯等52秒区间成绩的精确排序）待逐条双源核实后补入，宁缺毋滥。",
+    "奥卡拉汉52.17（2023福冈）列第十一未入列；莫施2026年两破美国纪录；52秒区间的道格拉斯等其余成绩待核。",
 
   history: [
     {

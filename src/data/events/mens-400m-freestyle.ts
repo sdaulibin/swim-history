@@ -50,11 +50,11 @@ export const mens400mFreestyle: SwimEvent = {
     { time: "3:40.59", holder: "Ian Thorpe", country: "AUS", date: "2000-09-16", meet: "2000年悉尼奥运会" },
     { time: "3:40.68", holder: "Sam Short", country: "AUS", date: "2023-07", meet: "2023年福冈世锦赛" },
     { time: "3:40.70", holder: "Ahmed Hafnaoui", country: "TUN", date: "2023-07", meet: "2023年福冈世锦赛" },
+    { time: "3:41.28", holder: "Zhang Zhanshuo", country: "CHN", date: "2026-09", meet: "名古屋亚运会", note: "赛会纪录" },
     { time: "3:41.35", holder: "Zhang Lin", country: "CHN", date: "2009-07", meet: "2009年罗马世锦赛" },
-    { time: "3:41.55", holder: "Mack Horton", country: "AUS", date: "2016-08", meet: "2016年里约奥运会" },
   ],
   top10Note:
-    "索普3:41.83（1999泛太）、朴泰桓3:41.86（2008北京）紧随其后未入列；孙杨3:40.14保持至今（2012年以来）。",
+    "霍顿3:41.55（2016里约）、索普3:41.83（1999泛太）、朴泰桓3:41.86（2008北京）紧随其后未入列；孙杨3:40.14保持至今（2012年以来）。",
 
   history: [
     {

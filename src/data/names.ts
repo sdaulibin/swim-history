@@ -324,6 +324,7 @@ export const zhNames: Record<string, string> = {
   "Yang Junxuan": "杨浚瑄",
   "Egor Kornev": "叶戈尔·科尔涅夫",
   "Yuliya Efimova": "尤利娅·埃菲莫娃",
+  "Anna Moesch": "安娜·莫施",
   "Zhang Lin": "张琳",
   "Arno Kamminga": "阿诺·卡明加",
   "Hwang Sun-woo": "黄善宇",
