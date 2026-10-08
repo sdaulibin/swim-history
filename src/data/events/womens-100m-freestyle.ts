@@ -96,6 +96,16 @@ export const womens100mFreestyle: SwimEvent = {
     note: "4×100自接力第一棒；个人赛全国纪录为其52.68（2024年4月全国冠军赛）",
   },
 
+
+  top10: [
+    { time: "51.68", holder: "Marrit Steenbergen", country: "NED", date: "2026-06-27", meet: "意大利罗马", wr: true, note: "现世界纪录" },
+    { time: "51.71", holder: "Sarah Sjöström", country: "SWE", date: "2017-07-23", meet: "2017年布达佩斯世锦赛", flags: ["sf"] },
+    { time: "51.90", holder: "Marrit Steenbergen", country: "NED", date: "2026-08-12", meet: "2026年巴黎欧锦赛" },
+    { time: "51.96", holder: "Emma McKeon", country: "AUS", date: "2021-07", meet: "2020年东京奥运会" },
+  ],
+  top10Note:
+    "第五位起（奥卡拉根、坎贝尔、莫施、道格拉斯等52秒区间成绩的精确排序）待逐条双源核实后补入，宁缺毋滥。",
+
   history: [
     {
       heading: "1912：女子游泳登上奥运舞台",

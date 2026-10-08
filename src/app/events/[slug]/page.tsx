@@ -268,6 +268,78 @@ export default async function EventPage({ params }: PageProps) {
         </div>
       </section>
 
+      {/* 历史前十成绩 */}
+      {event.top10 && event.top10.length > 0 && (
+        <section className="mt-10">
+          <h2 className="text-2xl font-bold text-pool-950">
+            历史前十成绩
+            <span className="ml-2 align-middle text-sm font-normal text-slate-400">
+              长池 · 截至 {event.dataAsOf}
+            </span>
+          </h2>
+          {event.top10Note && (
+            <p className="mt-1 text-sm text-slate-500">{event.top10Note}</p>
+          )}
+          <div className="mt-4 overflow-x-auto rounded-2xl border border-slate-200 bg-white">
+            <table className="w-full min-w-[560px] text-sm">
+              <thead>
+                <tr className="border-b border-slate-200 bg-pool-50/60 text-left text-xs tracking-wide text-slate-500">
+                  <th className="px-4 py-3 font-medium">#</th>
+                  <th className="px-4 py-3 font-medium">成绩</th>
+                  <th className="px-4 py-3 font-medium">运动员</th>
+                  <th className="px-4 py-3 font-medium">国家 / 地区</th>
+                  <th className="px-4 py-3 font-medium">赛事 · 日期</th>
+                </tr>
+              </thead>
+              <tbody>
+                {event.top10.map((r, i) => {
+                  const c = countryOf(r.country);
+                  return (
+                    <tr
+                      key={`${r.time}-${r.holder}-${i}`}
+                      className={`border-b border-slate-100 last:border-0 hover:bg-pool-50/50 ${
+                        i === 0 ? "border-l-4 border-l-amber-400 bg-amber-50/60" : ""
+                      }`}
+                    >
+                      <td className="px-4 py-2.5 tabular-nums text-slate-400">
+                        {i + 1}
+                      </td>
+                      <td className="px-4 py-2.5 font-mono font-semibold tabular-nums text-pool-800">
+                        {r.time}
+                        {r.wr && (
+                          <span className="ml-2 rounded bg-amber-100 px-1.5 py-0.5 text-xs font-medium text-amber-700">
+                            WR
+                          </span>
+                        )}
+                      </td>
+                      <td className="px-4 py-2.5">
+                        <span className="font-medium">{holderZh(r.holder)}</span>
+                        <span className="ml-1.5 text-xs text-slate-400">
+                          {r.holder}
+                        </span>
+                      </td>
+                      <td className="whitespace-nowrap px-4 py-2.5">
+                        {c.flag && <span className="mr-1">{c.flag}</span>}
+                        {c.zh}
+                      </td>
+                      <td className="px-4 py-2.5 text-slate-600">
+                        {r.meet}
+                        {r.date && ` · ${r.date.replace(/-/g, ".")}`}
+                        {r.note && (
+                          <span className="ml-2 text-xs text-slate-400">
+                            {r.note}
+                          </span>
+                        )}
+                      </td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
+        </section>
+      )}
+
       {/* 历届大赛冠军 */}
       {event.champions && event.champions.length > 0 && (
         <section className="mt-10">

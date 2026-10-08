@@ -37,7 +37,7 @@ export const mens100mFreestyleChampions: ChampionEntry[] = [
   { series: "olympics", year: 1896, city: "雅典", champion: "Alfréd Hajós", country: "HUN", time: "1:22.2" },
 
   // —— 世界锦标赛 ——
-  { series: "worlds", year: 2025, city: "新加坡", champion: "Jack Alexy", country: "USA", time: "46.81" },
+  { series: "worlds", year: 2025, city: "新加坡", champion: "David Popovici", country: "ROU", time: "46.51", note: "赛会纪录，阿莱克西46.92摘银" },
   { series: "worlds", year: 2024, city: "多哈", champion: "Pan Zhanle", country: "CHN", time: "47.53" },
   { series: "worlds", year: 2023, city: "福冈", champion: "Kyle Chalmers", country: "AUS", time: "47.15" },
   { series: "worlds", year: 2022, city: "布达佩斯", champion: "David Popovici", country: "ROU", time: "46.86", wr: true },

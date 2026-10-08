@@ -83,6 +83,20 @@ export const mens100mBreaststroke: SwimEvent = {
     date: "2023-07-24", meet: "2023年福冈世锦赛", place: "福冈",
   },
 
+
+  top10: [
+    { time: "56.88", holder: "Adam Peaty", country: "GBR", date: "2019-07-21", meet: "2019年光州世锦赛", flags: ["sf"], wr: true },
+    { time: "57.10", holder: "Adam Peaty", country: "GBR", date: "2018-08-04", meet: "2018年格拉斯哥欧锦赛" },
+    { time: "57.13", holder: "Adam Peaty", country: "GBR", date: "2016-08-07", meet: "2016年里约奥运会" },
+    { time: "57.37", holder: "Adam Peaty", country: "GBR", date: "2021-07", meet: "2020年东京奥运会" },
+    { time: "57.55", holder: "Adam Peaty", country: "GBR", date: "2016-08-06", meet: "2016年里约奥运会", flags: ["h"] },
+    { time: "57.69", holder: "Qin Haiyang", country: "CHN", date: "2023-07-24", meet: "2023年福冈世锦赛" },
+    { time: "57.82", holder: "Qin Haiyang", country: "CHN", date: "2023-07-23", meet: "2023年福冈世锦赛", flags: ["sf"] },
+    { time: "57.90", holder: "Arno Kamminga", country: "NED", date: "2021", note: "2021年两度游出，分列第八、九位" },
+  ],
+  top10Note:
+    "榜首几乎被皮蒂垄断；卡明加2021年两游57.90。皮蒂其余57.9x区间的成绩与第十位归属待进一步核实，故列前九项。",
+
   history: [
     {
       heading: "最古老的泳姿",

@@ -101,6 +101,20 @@ export interface SecondaryRecord {
   note?: string;
 }
 
+/** 历史最快成绩（单个成绩条目，用于项目历史前十榜） */
+export interface TopPerformance {
+  time: string;
+  holder: string;
+  country: string;
+  /** 日期，ISO 或 yyyy / yyyy-mm */
+  date?: string;
+  meet?: string;
+  place?: string;
+  flags?: RecordFlag[];
+  wr?: boolean;
+  note?: string;
+}
+
 export interface SwimEvent {
   /** URL 路径标识，如 mens-100m-freestyle */
   slug: string;
@@ -124,6 +138,13 @@ export interface SwimEvent {
   asianRecord?: SecondaryRecord;
   /** 中国纪录（长池；未能核实则缺省） */
   chineseRecord?: SecondaryRecord;
+  /**
+   * 历史前十成绩（长池，按成绩升序；只收经双源核实的行，
+   * 不足十行时配合 top10Note 说明缺口）
+   */
+  top10?: TopPerformance[];
+  /** 前十榜说明（数据口径/待核名次） */
+  top10Note?: string;
   /** 项目历史 */
   history: HistorySection[];
   sources: SourceLink[];

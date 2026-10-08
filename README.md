@@ -64,6 +64,10 @@ src/
 
 在事件文件（`src/data/events/<slug>.ts`）中填写 `asianRecord` / `chineseRecord` 字段（`SecondaryRecord` 类型：`time / holder / country / date / meet / place / wr / note`，长池口径，日期可只写到年月），项目详情页会在现世界纪录下方并列展示两张纪录卡。同样要求至少两个独立来源核对；短池成绩（如世界杯、ISL）不计入。
 
+### 历史前十成绩
+
+事件文件中填写 `top10`（`TopPerformance[]`，按成绩升序）与 `top10Note`（口径说明），详情页自动渲染"历史前十成绩"表。**每行都必须可锚定**：或来自本站已核实的纪录/冠军数据，或有两个独立来源；不足十行时如实列已核实行并在 `top10Note` 说明缺口，不凭记忆凑数。注意：接力第一棒（`flags: ["r"]`）与半决赛成绩计入个人历史榜，未被批准的成绩不计。
+
 ## 数据来源与维护
 
 - 纪录演进：[Wikipedia · World record progression 系列](https://en.wikipedia.org/wiki/World_record_progression_100_metres_freestyle)（CC BY-SA 4.0）

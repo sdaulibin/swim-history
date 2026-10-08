@@ -82,6 +82,22 @@ export const mens100mFreestyle: SwimEvent = {
     note: "与亚洲纪录、世界纪录为同一成绩",
   },
 
+
+  top10: [
+    { time: "46.40", holder: "Pan Zhanle", country: "CHN", date: "2024-07-31", meet: "2024年巴黎奥运会", wr: true },
+    { time: "46.51", holder: "David Popovici", country: "ROU", date: "2025-07", meet: "2025年新加坡世锦赛", note: "赛会纪录" },
+    { time: "46.56", holder: "David Popovici", country: "ROU", date: "2026-08-12", meet: "2026年巴黎欧锦赛" },
+    { time: "46.72", holder: "David Popovici", country: "ROU", date: "2026-08-11", meet: "2026年巴黎欧锦赛", flags: ["sf"] },
+    { time: "46.74", holder: "Egor Kornev", country: "RUS", date: "2026-08-12", meet: "2026年巴黎欧锦赛", note: "以中立运动员身份参赛" },
+    { time: "46.80", holder: "Pan Zhanle", country: "CHN", date: "2024-02-11", meet: "2024年多哈世锦赛", flags: ["r"], note: "接力第一棒" },
+    { time: "46.86", holder: "David Popovici", country: "ROU", date: "2022-08-13", meet: "2022年罗马欧锦赛" },
+    { time: "46.91", holder: "César Cielo", country: "BRA", date: "2009-07-30", meet: "2009年罗马世锦赛" },
+    { time: "46.92", holder: "Pan Zhanle", country: "CHN", date: "2024-07-27", meet: "2024年巴黎奥运会", flags: ["r"], note: "接力第一棒，破奥运纪录" },
+    { time: "46.92", holder: "Jack Alexy", country: "USA", date: "2025-07", meet: "2025年新加坡世锦赛" },
+  ],
+  top10Note:
+    "伯纳德2009年的46.94因所穿泳衣未获批准不计入；德雷塞尔46.96（2019光州）与查尔莫斯47.08紧随其后，未入列。",
+
   history: [
     {
       heading: "从「任意泳姿」到爬泳一统",

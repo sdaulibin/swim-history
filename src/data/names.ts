@@ -322,6 +322,8 @@ export const zhNames: Record<string, string> = {
 
   // —— 亚运会与 2026 泛太/欧锦补遗 ——
   "Yang Junxuan": "杨浚瑄",
+  "Egor Kornev": "叶戈尔·科尔涅夫",
+  "Arno Kamminga": "阿诺·卡明加",
   "Hwang Sun-woo": "黄善宇",
   "Shen Duo": "沈铎",
   "Zhang Yuhan": "张雨涵",
