@@ -3,7 +3,7 @@ import type { SwimEvent } from "@/lib/types";
 /**
  * 男子 4×100 米自由泳接力（长池）世界纪录演进
  * 数据来源：Wikipedia "World record progression 4 × 100 metres freestyle relay"
- * 数据截至：2026年7月
+ * 数据截至：2026年10月
  *
  * holder 一律使用国家英文名（站点接力项目惯例），中文译名由 names.ts 映射。
  * progression 空缺说明（宁缺毋滥）：
@@ -22,7 +22,7 @@ export const mens4x100mFreestyleRelay: SwimEvent = {
   name: "男子 4×100 米自由泳接力",
   summary:
     "四棒交接、每人一百米——游泳最快的团队项目。从1964年东京的3:33.2，到2008年北京莱扎克46.06「神奇一棒」写下的3:08.24，这条世界纪录曲线已经沉睡了十八年。",
-  dataAsOf: "2026年7月",
+  dataAsOf: "2026年10月",
   progression: [
     { time: "3:33.2", holder: "United States", country: "USA", date: "1964-10-17", meet: "1964年东京奥运会", place: "东京", note: "S. Clark · M. Austin · D. Schollander · G. Ilman；项目首次进入奥运会" },
     // 1968–1996 年间美国的多次接力世界纪录（3:31.7、3:26.42、3:24.85、3:16.53、3:15.23）

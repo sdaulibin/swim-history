@@ -3,7 +3,7 @@ import type { SwimEvent } from "@/lib/types";
 /**
  * 男子 100 米自由泳（长池）世界纪录演进
  * 数据来源：Wikipedia "World record progression 100 metres freestyle"
- * 数据截至：2026年7月
+ * 数据截至：2026年10月
  */
 export const mens100mFreestyle: SwimEvent = {
   slug: "mens-100m-freestyle",
@@ -14,7 +14,7 @@ export const mens100mFreestyle: SwimEvent = {
   name: "男子 100 米自由泳",
   summary:
     "游泳皇冠上的明珠。从1905年哈尔迈的1:05.8，到2024年潘展乐在巴黎游出的46.40，一百二十年间人类将这100米的极限推进了近20秒。",
-  dataAsOf: "2026年7月",
+  dataAsOf: "2026年10月",
   progression: [
     { time: "1:05.8", holder: "Zoltán Halmay", country: "HUN", date: "1905-12-03", place: "维也纳", note: "首个被承认的世界纪录" },
     { time: "1:05.6", holder: "Charles Daniels", country: "USA", date: "1908-07-20", meet: "1908年伦敦奥运会", place: "伦敦" },

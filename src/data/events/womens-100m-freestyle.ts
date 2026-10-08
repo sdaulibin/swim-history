@@ -3,7 +3,7 @@ import type { SwimEvent } from "@/lib/types";
 /**
  * 女子 100 米自由泳（长池）世界纪录演进
  * 数据来源：Wikipedia "World record progression 100 metres freestyle"
- * 数据截至：2026年7月
+ * 数据截至：2026年10月
  */
 export const womens100mFreestyle: SwimEvent = {
   slug: "womens-100m-freestyle",
@@ -14,7 +14,7 @@ export const womens100mFreestyle: SwimEvent = {
   name: "女子 100 米自由泳",
   summary:
     "1912年斯德哥尔摩，女子游泳第一次进入奥运会。从芬妮·杜拉克的1:19.8到斯滕贝根的51.68，一个多世纪的演进里写满了弗雷泽、恩德、乐靖宜与舍斯特伦的名字。",
-  dataAsOf: "2026年7月",
+  dataAsOf: "2026年10月",
   progression: [
     { time: "1:35.0", holder: "Martha Gerstung", country: "GER", date: "1908-10-18", place: "马格德堡", note: "首个被承认的世界纪录" },
     { time: "1:26.6", holder: "Claire Guttenstein", country: "BEL", date: "1910-10-02", place: "布鲁塞尔" },

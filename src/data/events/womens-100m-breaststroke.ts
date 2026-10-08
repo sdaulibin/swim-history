@@ -3,7 +3,7 @@ import type { SwimEvent } from "@/lib/types";
 /**
  * 女子 100 米蛙泳（长池）世界纪录演进
  * 数据来源：Wikipedia "World record progression 100 metres breaststroke"
- * 数据截至：2026年7月
+ * 数据截至：2026年10月
  */
 export const womens100mBreaststroke: SwimEvent = {
   slug: "womens-100m-breaststroke",
@@ -14,7 +14,7 @@ export const womens100mBreaststroke: SwimEvent = {
   name: "女子 100 米蛙泳",
   summary:
     "从东德时代的1:20.3起步，到莉莉·金2017年的1:04.13，半个多世纪推进了16秒。罗雪娟的雅典登顶与唐钱婷的1:04.39，是中国泳军在这条时间线上刻下的印记。",
-  dataAsOf: "2026年7月",
+  dataAsOf: "2026年10月",
   progression: [
     { time: "1:20.3", holder: "Karin Beyer", country: "GDR", date: "1958-07-20", place: "东柏林", note: "首个被承认的世界纪录" },
     { time: "1:19.6", holder: "Karin Beyer", country: "GDR", date: "1958-09-12", place: "莱比锡" },

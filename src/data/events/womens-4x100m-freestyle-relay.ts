@@ -3,7 +3,7 @@ import type { SwimEvent } from "@/lib/types";
 /**
  * 女子 4×100 米自由泳接力（长池）世界纪录演进
  * 数据来源：Wikipedia "World record progression 4 × 100 metres freestyle relay"、World Aquatics
- * 数据截至：2026年7月
+ * 数据截至：2026年10月
  *
  * 接力条目的 holder 为国家英文名，中文译名由 names.ts 映射。
  * 部分早期条目（1912/1976/1992/1994/2004/2008）的具体日期按当届赛程考证，存在个别天数误差，
@@ -18,7 +18,7 @@ export const womens4x100mFreestyleRelay: SwimEvent = {
   name: "女子 4×100 米自由泳接力",
   summary:
     "从1912年斯德哥尔摩英国队的5:52.8，到2023年福冈的3:27.96：接力王座在美国王朝、民主德国机器、荷兰旋风与澳大利亚帝国手中流转，中国队则在罗马、杭州与巴黎写下自己的坐标。",
-  dataAsOf: "2026年7月",
+  dataAsOf: "2026年10月",
   progression: [
     { time: "5:52.8", holder: "Great Britain", country: "GBR", date: "1912-07-13", meet: "1912年斯德哥尔摩奥运会", place: "斯德哥尔摩", note: "首个被承认的世界纪录；女子游泳入奥首届接力" },
     // 1920–1972 年间：美国（1920年安特卫普5:11.2、1924、1928、1932、1948、1960、1964、1968、1972）、

@@ -3,7 +3,7 @@ import type { SwimEvent } from "@/lib/types";
 /**
  * 男子 100 米蛙泳（长池）世界纪录演进
  * 数据来源：Wikipedia "World record progression 100 metres breaststroke"
- * 数据截至：2026年7月
+ * 数据截至：2026年10月
  */
 export const mens100mBreaststroke: SwimEvent = {
   slug: "mens-100m-breaststroke",
@@ -14,7 +14,7 @@ export const mens100mBreaststroke: SwimEvent = {
   name: "男子 100 米蛙泳",
   summary:
     "最古老的泳姿，最漫长的较量。1961年科列斯尼科夫的1:14.1起步，经过贾斯特雷姆斯基的疯狂一年、北岛康介的亚洲王朝，最终停在亚当·皮蒂2019年的56.88。",
-  dataAsOf: "2026年7月",
+  dataAsOf: "2026年10月",
   progression: [
     { time: "1:14.1", holder: "Leonid Kolesnikov", country: "URS", date: "1961-05-02", place: "莫斯科", note: "首个被承认的世界纪录" },
     { time: "1:11.1", holder: "Chet Jastremski", country: "USA", date: "1961-07-02", place: "芝加哥" },

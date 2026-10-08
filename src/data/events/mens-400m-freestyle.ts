@@ -3,7 +3,7 @@ import type { SwimEvent } from "@/lib/types";
 /**
  * 男子 400 米自由泳（长池）世界纪录演进
  * 数据来源：Wikipedia "World record progression 400 metres freestyle"、World Aquatics 纪录库
- * 数据截至：2026年7月
+ * 数据截至：2026年10月
  * 说明：本文件仅收录能够确认日期与成绩的条目；两段空缺区间的取舍见 progression 内注释。
  */
 export const mens400mFreestyle: SwimEvent = {
@@ -15,7 +15,7 @@ export const mens400mFreestyle: SwimEvent = {
   name: "男子 400 米自由泳",
   summary:
     "中距离的皇冠。从1908年泰勒的5:36.8，到比德曼快速泳衣时代游出、悬置至今的3:40.07，这条曲线写满了罗斯与山中、肖兰德、索普与孙杨的名字。",
-  dataAsOf: "2026年7月",
+  dataAsOf: "2026年10月",
   progression: [
     { time: "5:36.8", holder: "Henry Taylor", country: "GBR", date: "1908-07-17", meet: "1908年伦敦奥运会", place: "伦敦", note: "首个被承认的世界纪录" },
     // —— 1908–1975：纪录在霍奇森、伯格、查尔顿、克拉布、肖兰德、伯顿、德蒙特、肖等人之间多次更迭，

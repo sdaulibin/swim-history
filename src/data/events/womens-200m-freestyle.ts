@@ -3,7 +3,7 @@ import type { SwimEvent } from "@/lib/types";
 /**
  * 女子 200 米自由泳（长池）世界纪录演进
  * 数据来源：Wikipedia "World record progression 200 metres freestyle"
- * 数据截至：2026年7月
+ * 数据截至：2026年10月
  *
  * 说明：本项目早期（1908–1971，如 Hveger、Crapp 时代）以及 1972–1976、
  * 1977–1986 之间的纪录流转未能可靠核实，按「宁缺毋滥」原则未收录，
@@ -18,7 +18,7 @@ export const womens200mFreestyle: SwimEvent = {
   name: "女子 200 米自由泳",
   summary:
     "从蒂默突破2分钟、范·阿尔姆西克的罗马之夜，到佩莱格里尼快速泳衣时代的1:52.98——这条曲线上的世界纪录已沉睡十余年，成为女子游泳最顽固的堡垒之一。",
-  dataAsOf: "2026年7月",
+  dataAsOf: "2026年10月",
   progression: [
     { time: "2:05.8", holder: "Shane Gould", country: "AUS", date: "1972-01-08", place: "悉尼", note: "本表最早条目；古尔德此时同时保有100米至1500米全部自由泳世界纪录" },
     // —— 1972–1976 年间的纪录流转（Ender、Brigitha 等）待核，暂缺 ——
