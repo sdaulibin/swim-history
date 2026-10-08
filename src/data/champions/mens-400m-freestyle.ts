@@ -10,7 +10,8 @@ import type { ChampionEntry } from "@/lib/types";
  * 核实说明：
  * - 本批次编辑未能联网逐条核对，仅收录编辑有把握的届次；世锦赛 1978/1986 届、
  *   泛太平洋 1985–1997 与 2006 届、欧锦赛 2018/2021/2024 届等未能核实，暂缺（宁缺毋滥）。
- * - 2025 新加坡世锦赛为真实结果；2026 尔湾/巴黎/名古屋为站点虚构时间线的合理延伸。
+ * - 2025 新加坡世锦赛为真实结果；2026 尔湾/巴黎为站点虚构时间线的合理延伸；
+ *   名古屋亚运为实际结果（冠军据站长核定，夺冠成绩待补）。
  */
 export const mens400mFreestyleChampions: ChampionEntry[] = [
   // —— 奥运会 ——
@@ -79,7 +80,7 @@ export const mens400mFreestyleChampions: ChampionEntry[] = [
   { series: "euros", year: 2022, city: "罗马", champion: "Lukas Märtens", country: "GER" },
 
   // —— 亚运会（站点惯例自 2014 年起收录） ——
-  { series: "asiangames", year: 2026, city: "名古屋", champion: "Kim Woo-min", country: "KOR", time: "3:43.21", note: "卫冕" },
+  { series: "asiangames", year: 2026, city: "名古屋", champion: "Zhang Zhanshuo", country: "CHN", note: "同届亦夺200米自由泳金牌" },
   { series: "asiangames", year: 2022, city: "杭州", champion: "Kim Woo-min", country: "KOR", note: "赛事于2023年举行" },
   { series: "asiangames", year: 2018, city: "雅加达", champion: "Sun Yang", country: "CHN", time: "3:42.92", note: "卫冕" },
   { series: "asiangames", year: 2014, city: "仁川", champion: "Sun Yang", country: "CHN" },

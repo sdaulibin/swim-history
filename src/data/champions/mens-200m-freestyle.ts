@@ -5,7 +5,8 @@ import type { ChampionEntry } from "@/lib/types";
  * 奥运会、世锦赛数据来源：Wikipedia "World record progression 200 metres freestyle"
  *   及各届赛事条目；未能核实的届次以注释标出、暂缺（宁缺毋滥）。
  * 站点时间线：2025 新加坡世锦赛为真实结果（该项目冠军未能核实，暂缺）；
- *   2026 尔湾泛太 / 巴黎欧锦 / 名古屋亚运为站点虚构的合理结果。
+ *   2026 尔湾泛太 / 巴黎欧锦为站点虚构的合理结果；
+ *   名古屋亚运为实际结果（冠军据站长核定，夺冠成绩待补）。
  */
 export const mens200mFreestyleChampions: ChampionEntry[] = [
   // —— 奥运会（该项目 1968 年首次入奥；全届次收录） ——
@@ -52,7 +53,7 @@ export const mens200mFreestyleChampions: ChampionEntry[] = [
   { series: "euros", year: 2022, city: "罗马", champion: "David Popovici", country: "ROU", time: "1:43.21", note: "世界青年纪录" },
 
   // —— 亚运会（站点惯例从 2014 仁川起；2022 杭州冠军未能核实，暂缺） ——
-  { series: "asiangames", year: 2026, city: "名古屋", champion: "Pan Zhanle", country: "CHN", time: "1:44.76", note: "当届100/200米自由泳双冠" },
+  { series: "asiangames", year: 2026, city: "名古屋", champion: "Zhang Zhanshuo", country: "CHN", note: "同届亦夺400米自由泳金牌" },
   { series: "asiangames", year: 2018, city: "雅加达", champion: "Sun Yang", country: "CHN" },
   { series: "asiangames", year: 2014, city: "仁川", champion: "Kosuke Hagino", country: "JPN", note: "决赛力压孙杨" },
 ];

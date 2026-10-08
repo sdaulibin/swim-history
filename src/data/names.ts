@@ -231,6 +231,7 @@ export const zhNames: Record<string, string> = {
   "Ahmed Hafnaoui": "艾哈迈德·哈夫纳维",
   "Thomas Fraser-Holmes": "托马斯·弗雷泽-霍姆斯",
   "Thomas Neill": "托马斯·尼尔",
+  "Zhang Zhanshuo": "张展硕",
   "Matthew Richards": "马修·理查兹",
   "Kosuke Hagino": "萩野公介",
 
