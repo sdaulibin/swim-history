@@ -65,6 +65,8 @@ import { mens4x100mMedleyRelay } from "./events/mens-4x100m-medley-relay";
 import { mens4x100mMedleyRelayChampions } from "./champions/mens-4x100m-medley-relay";
 import { womens4x100mMedleyRelay } from "./events/womens-4x100m-medley-relay";
 import { womens4x100mMedleyRelayChampions } from "./champions/womens-4x100m-medley-relay";
+import { mens100mBackstroke } from "./events/mens-100m-backstroke";
+import { mens100mBackstrokeChampions } from "./champions/mens-100m-backstroke";
 
 export const events = [
   { ...mens100mFreestyle, champions: mens100mFreestyleChampions },
@@ -100,6 +102,7 @@ export const events = [
   { ...womens50mButterfly, champions: womens50mButterflyChampions },
   { ...mens4x100mMedleyRelay, champions: mens4x100mMedleyRelayChampions },
   { ...womens4x100mMedleyRelay, champions: womens4x100mMedleyRelayChampions },
+  { ...mens100mBackstroke, champions: mens100mBackstrokeChampions },
 ];
 
 export const strokeMeta: Record<Stroke, { zh: string }> = {

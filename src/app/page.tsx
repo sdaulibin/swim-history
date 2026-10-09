@@ -26,6 +26,10 @@ export default function Home() {
       slug: "mens-400m-freestyle",
       line: "同为2009年罗马的遗产；2026年尔湾泛太平洋赛上，肖特的3:40.52距它只剩0.45秒。",
     },
+    {
+      slug: "mens-100m-backstroke",
+      line: "51秒60——2022年布达佩斯之夜切孔一击致命；奥运会纪录却仍停在墨菲的51.85，两项纪录隔着大西洋对望。",
+    },
   ];
   const others = events.filter(
     (e) => e.slug !== featured.slug && !featuredMore.some((f) => f.slug === e.slug),
@@ -195,29 +199,6 @@ export default function Home() {
               </div>
             );
           })}
-
-          {/* 男子 100 米仰泳：项目页尚未收录，先展示世界纪录 */}
-          <div className="flex flex-col justify-between rounded-2xl border border-dashed border-slate-300 bg-slate-50/60 p-6">
-            <div>
-              <span className="rounded-full bg-slate-200 px-2.5 py-1 text-xs font-medium text-slate-600">
-                男子 100 米仰泳 · 现世界纪录
-              </span>
-              <div className="mt-4 font-mono text-5xl font-bold tabular-nums text-pool-900">
-                51.60
-              </div>
-              <div className="mt-3 text-lg font-semibold text-pool-950">
-                <span className="mr-1">🇮🇹</span>
-                托马斯·切孔
-                <span className="ml-2 text-sm font-normal text-slate-400">Thomas Ceccon</span>
-              </div>
-              <p className="mt-2 text-sm leading-relaxed text-slate-600">
-                2022年6月布达佩斯世锦赛决赛，切孔将原纪录一举提高0.25秒；四年过去，51.60仍是该项目的历史最快。
-              </p>
-            </div>
-            <span className="mt-6 self-start text-sm font-medium text-slate-400">
-              项目页面筹备中 · 纪录先行
-            </span>
-          </div>
         </div>
 
         <div className="mt-4 grid gap-4 lg:grid-cols-2">

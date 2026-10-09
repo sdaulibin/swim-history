@@ -146,6 +146,10 @@ const CHART_MARKS: Record<string, ChartMark[]> = {
     { date: "2019-07-27", label: "英国 3:28.10" },
     { date: "2021-08-01", label: "美国 3:26.78" },
   ],
+  "mens-100m-backstroke": [
+    { date: "2016-08-08", label: "墨菲 51.85" },
+    { date: "2022-06", label: "切孔 51.60" },
+  ],
   "womens-4x100m-medley-relay": [
     { date: "2012-08-04", label: "3:52.05" },
     { date: "2024-08-04", label: "首破 3:50" },

@@ -592,4 +592,7 @@ export const zhNames: Record<string, string> = {
   "Mikhail Arhangelsky": "米哈伊尔·阿尔汉格尔斯基",
   "Baek Incheol": "白寅铁",
   "Nishiono Kodai": "西小野皓大",
+  "Thomas Ceccon": "托马斯·切孔",
+  "Matt Grevers": "马特·格雷弗斯",
+  "Lenny Krayzelburg": "伦尼·克雷泽尔伯格",
 };
