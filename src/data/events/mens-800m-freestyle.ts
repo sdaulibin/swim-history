@@ -6,8 +6,8 @@ import type { SwimEvent } from "@/lib/types";
  * 数据截至：2026年10月
  *
  * progression 空缺说明（宁缺毋滥）：
- *  - 哈克特 2001 年以前的纪录沿革（桑普森、帕金斯、索普时代的多次改写）
- *    未能核实到可靠来源，暂缺；
+ *  - 索普 7:39.16（2001 福冈，破自己1999年7:41.59）以前的沿革未能核实到
+ *    可靠来源，暂缺；
  *  - 7:32.12 至今无人撼动——与 200 仰的 1:51.92 一样，是快速泳衣时代留下的
  *    现存最古老的世界纪录之一。
  */
@@ -22,7 +22,8 @@ export const mens800mFreestyle: SwimEvent = {
     "7:32.12——张琳2009年罗马为中国男子游泳拿下第一枚世界大赛金牌时创造的世界纪录，十七年后依然无人撼动。它是快速泳衣时代的遗产，也是中国男子泳坛至今唯一的一次「世界最快」。",
   dataAsOf: "2026年10月",
   progression: [
-    { time: "7:38.65", holder: "Grant Hackett", country: "AUS", date: "2001-07-24", meet: "世界锦标赛", place: "福冈", note: "长距离之王的长池绝唱；此前沿革未能核实，暂不收录" },
+    { time: "7:39.16", holder: "Ian Thorpe", country: "AUS", date: "2001-07", meet: "世界锦标赛", place: "福冈", note: "决赛夺冠并破自己保持的世界纪录（7:41.59）；当届三金之一" },
+    { time: "7:38.65", holder: "Grant Hackett", country: "AUS", date: "2005-07", meet: "世界锦标赛", place: "蒙特利尔", note: "决赛夺冠并破世界纪录；此前沿革未能核实，暂缺" },
     { time: "7:32.12", holder: "Zhang Lin", country: "CHN", date: "2009-07-29", meet: "世界锦标赛", place: "罗马", note: "中国男子游泳史上第一个世界大赛冠军兼世界纪录；快速泳衣时代遗产，保持至今" },
   ],
 
@@ -43,7 +44,8 @@ export const mens800mFreestyle: SwimEvent = {
     { time: "7:32.12", holder: "Zhang Lin", country: "CHN", date: "2009-07-29", meet: "2009年罗马世锦赛", wr: true, note: "现世界纪录" },
     { time: "7:38.19", holder: "Daniel Wiffen", country: "IRL", date: "2024-08", meet: "2024年巴黎奥运会", note: "奥运会纪录" },
     { time: "7:38.57", holder: "Sun Yang", country: "CHN", date: "2011-07", meet: "2011年上海世锦赛", note: "孙杨首个世锦赛冠军的成绩" },
-    { time: "7:38.65", holder: "Grant Hackett", country: "AUS", date: "2001-07-24", meet: "2001年福冈世锦赛", note: "张琳之前的世界纪录，保持八年" },
+    { time: "7:38.65", holder: "Grant Hackett", country: "AUS", date: "2005-07", meet: "2005年蒙特利尔世锦赛", note: "夺冠兼破世界纪录；张琳之前的世界纪录，保持四年" },
+    { time: "7:39.16", holder: "Ian Thorpe", country: "AUS", date: "2001-07", meet: "2001年福冈世锦赛", note: "当届三金之一，夺冠兼破世界纪录" },
     { time: "7:39.96", holder: "Sun Yang", country: "CHN", date: "2015-08", meet: "2015年喀山世锦赛", note: "世锦赛三连冠的收官一战" },
     { time: "7:41.36", holder: "Sun Yang", country: "CHN", date: "2013-08", meet: "2013年巴塞罗那世锦赛", note: "世锦赛卫冕战" },
   ],
@@ -52,9 +54,9 @@ export const mens800mFreestyle: SwimEvent = {
 
   history: [
     {
-      heading: "哈克特的长距离王国",
+      heading: "索普、哈克特与张琳的接力棒",
       paragraphs: [
-        "格兰特·哈克特统治男子中长距离自由泳的岁月里，800米自由泳只是他的「副业」——奥运会直到2021年才设立这个项目，世锦赛才是它的主战场。2001年福冈，哈克特游出7:38.65，把世界纪录定格在一个此后八年无人能及的高度。",
+        "奥运会直到2021年才设立男子800自，世锦赛才是它的主战场。2001年福冈，伊恩·索普以7:39.16夺冠并改写自己保持的世界纪录，那是他当届三枚金牌之一；四年后的蒙特利尔，长距离之王格兰特·哈克特以7:38.65终于把这个项目的世界纪录据为己有——此后四年，再无人能进7:38。",
         "2009年7月29日的罗马之夜改写了一切：22岁的张琳在快速泳衣的助推下狂飙至7:32.12，一举将世界纪录提高6.53秒——这是中国男子游泳选手第一次站上世界大赛的最高领奖台，也是至今唯一一次以世界纪录保持者的身份离场的中国男选手。",
       ],
     },
