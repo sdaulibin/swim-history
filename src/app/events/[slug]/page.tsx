@@ -107,6 +107,49 @@ const CHART_MARKS: Record<string, ChartMark[]> = {
     { date: "2012-07", label: "叶诗文 4:28.43" },
     { date: "2025-06-11", label: "麦金托什 4:23.65" },
   ],
+  "mens-200m-backstroke": [
+    { date: "2008-07-03", label: "布料时代天花板 1:52.89" },
+    { date: "2009-08", label: "罗马之夜 1:51.92" },
+  ],
+  "mens-800m-freestyle": [
+    { date: "2001-07-24", label: "哈克特 7:38.65" },
+    { date: "2009-07-29", label: "张琳 7:32.12" },
+  ],
+  "womens-800m-freestyle": [
+    { date: "2016-08-12", label: "里约 8:04.79" },
+    { date: "2025-07", label: "时隔九年自刷 8:04.12" },
+  ],
+  "mens-1500m-freestyle": [
+    { date: "2012-08-04", label: "孙杨 14:31.02" },
+    { date: "2024-08-04", label: "十二年后同日易主" },
+  ],
+  "womens-1500m-freestyle": [
+    { date: "2017-07-25", label: "世锦赛首秀 15:25.48" },
+    { date: "2018-07", label: "15:20.48 悬置至今" },
+  ],
+  "mens-50m-freestyle": [
+    { date: "2008-03", label: "沙利文 21.28" },
+    { date: "2009-08-01", label: "西埃洛 20.91" },
+  ],
+  "womens-50m-freestyle": [
+    { date: "2009-08-02", label: "斯特芬 23.73" },
+    { date: "2017-07-29", label: "半决赛 23.61" },
+  ],
+  "mens-50m-butterfly": [
+    { date: "2019-07-27", label: "德雷塞尔 22.35" },
+  ],
+  "womens-50m-butterfly": [
+    { date: "2009-07-31", label: "25.07" },
+    { date: "2014", label: "24.43 悬置至今" },
+  ],
+  "mens-4x100m-medley-relay": [
+    { date: "2019-07-27", label: "英国 3:28.10" },
+    { date: "2021-08-01", label: "美国 3:26.78" },
+  ],
+  "womens-4x100m-medley-relay": [
+    { date: "2012-08-04", label: "3:52.05" },
+    { date: "2024-08-04", label: "首破 3:50" },
+  ],
 };
 
 export function generateStaticParams() {

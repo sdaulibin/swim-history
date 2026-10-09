@@ -43,6 +43,28 @@ import { mens400mFreestyleChampions } from "./champions/mens-400m-freestyle";
 import { womens400mFreestyleChampions } from "./champions/womens-400m-freestyle";
 import { mens4x100mFreestyleRelayChampions } from "./champions/mens-4x100m-freestyle-relay";
 import { womens4x100mFreestyleRelayChampions } from "./champions/womens-4x100m-freestyle-relay";
+import { mens200mBackstroke } from "./events/mens-200m-backstroke";
+import { mens200mBackstrokeChampions } from "./champions/mens-200m-backstroke";
+import { mens800mFreestyle } from "./events/mens-800m-freestyle";
+import { mens800mFreestyleChampions } from "./champions/mens-800m-freestyle";
+import { womens800mFreestyle } from "./events/womens-800m-freestyle";
+import { womens800mFreestyleChampions } from "./champions/womens-800m-freestyle";
+import { mens1500mFreestyle } from "./events/mens-1500m-freestyle";
+import { mens1500mFreestyleChampions } from "./champions/mens-1500m-freestyle";
+import { womens1500mFreestyle } from "./events/womens-1500m-freestyle";
+import { womens1500mFreestyleChampions } from "./champions/womens-1500m-freestyle";
+import { mens50mFreestyle } from "./events/mens-50m-freestyle";
+import { mens50mFreestyleChampions } from "./champions/mens-50m-freestyle";
+import { womens50mFreestyle } from "./events/womens-50m-freestyle";
+import { womens50mFreestyleChampions } from "./champions/womens-50m-freestyle";
+import { mens50mButterfly } from "./events/mens-50m-butterfly";
+import { mens50mButterflyChampions } from "./champions/mens-50m-butterfly";
+import { womens50mButterfly } from "./events/womens-50m-butterfly";
+import { womens50mButterflyChampions } from "./champions/womens-50m-butterfly";
+import { mens4x100mMedleyRelay } from "./events/mens-4x100m-medley-relay";
+import { mens4x100mMedleyRelayChampions } from "./champions/mens-4x100m-medley-relay";
+import { womens4x100mMedleyRelay } from "./events/womens-4x100m-medley-relay";
+import { womens4x100mMedleyRelayChampions } from "./champions/womens-4x100m-medley-relay";
 
 export const events = [
   { ...mens100mFreestyle, champions: mens100mFreestyleChampions },
@@ -67,6 +89,17 @@ export const events = [
   { ...mens400mMedley, champions: mens400mMedleyChampions },
   { ...womens200mMedley, champions: womens200mMedleyChampions },
   { ...womens400mMedley, champions: womens400mMedleyChampions },
+  { ...mens200mBackstroke, champions: mens200mBackstrokeChampions },
+  { ...mens800mFreestyle, champions: mens800mFreestyleChampions },
+  { ...womens800mFreestyle, champions: womens800mFreestyleChampions },
+  { ...mens1500mFreestyle, champions: mens1500mFreestyleChampions },
+  { ...womens1500mFreestyle, champions: womens1500mFreestyleChampions },
+  { ...mens50mFreestyle, champions: mens50mFreestyleChampions },
+  { ...womens50mFreestyle, champions: womens50mFreestyleChampions },
+  { ...mens50mButterfly, champions: mens50mButterflyChampions },
+  { ...womens50mButterfly, champions: womens50mButterflyChampions },
+  { ...mens4x100mMedleyRelay, champions: mens4x100mMedleyRelayChampions },
+  { ...womens4x100mMedleyRelay, champions: womens4x100mMedleyRelayChampions },
 ];
 
 export const strokeMeta: Record<Stroke, { zh: string }> = {
