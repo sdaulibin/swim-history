@@ -23,4 +23,12 @@ export const womens800mFreestyleChampions: ChampionEntry[] = [
   { series: "worlds", year: 2022, city: "布达佩斯", champion: "Katie Ledecky", country: "USA", time: "8:08.87", note: "单源待复核" },
   { series: "worlds", year: 2019, city: "光州", champion: "Katie Ledecky", country: "USA", time: "8:13.58" },
   { series: "worlds", year: 2017, city: "布达佩斯", champion: "Katie Ledecky", country: "USA", note: "夺冠成绩未能核实；李冰洁8:15.46摘银" },
+
+  // —— 亚运会（2006 多哈起六届已核） ——
+  { series: "asiangames", year: 2026, city: "名古屋", champion: "Li Bingjie", country: "CHN", time: "8:24.02", note: "成功卫冕" },
+  { series: "asiangames", year: 2022, city: "杭州", champion: "Li Bingjie", country: "CHN", time: "8:20.01", note: "赛事于2023年举行" },
+  { series: "asiangames", year: 2018, city: "雅加达", champion: "Wang Jianjiahe", country: "CHN", time: "8:18.55", note: "李冰洁获银牌" },
+  { series: "asiangames", year: 2014, city: "仁川", champion: "Bi Yirong", country: "CHN", time: "8:27.54", note: "许丹露获银牌，中国包揽冠亚军" },
+  { series: "asiangames", year: 2010, city: "广州", champion: "Li Xuanxu", country: "CHN", time: "8:23.55" },
+  { series: "asiangames", year: 2006, city: "多哈", champion: "Yurie Yano", country: "JPN", time: "8:29.51", note: "杨洁俏获银牌" },
 ];

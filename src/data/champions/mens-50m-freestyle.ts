@@ -22,6 +22,10 @@ export const mens50mFreestyleChampions: ChampionEntry[] = [
   { series: "worlds", year: 2023, city: "福冈", champion: "Cameron McEvoy", country: "AUS", time: "21.06", note: "布料泳衣时代历史最快，距世界纪录0.15秒" },
   { series: "worlds", year: 2019, city: "光州", champion: "Caeleb Dressel", country: "USA", time: "21.04", note: "赛会纪录" },
 
-  // —— 亚运会（2006 多哈起六届；详见研究核证） ——
-  { series: "asiangames", year: 2026, city: "名古屋", champion: "Kim Young-beom", country: "KOR", time: "21.66", note: "破赛会纪录夺金" },
+  // —— 亚运会（2006 多哈起六届，五届已核；2006 届未能核实） ——
+  { series: "asiangames", year: 2026, city: "名古屋", champion: "Kim Young-beom", country: "KOR", time: "21.66", note: "破赛会纪录；中国香港何甄陶获银牌" },
+  { series: "asiangames", year: 2022, city: "杭州", champion: "Ji Yuchan", country: "KOR", time: "21.72", note: "破赛会纪录；赛事于2023年举行" },
+  { series: "asiangames", year: 2018, city: "雅加达", champion: "Yu Hexin", country: "CHN", time: "22.11" },
+  { series: "asiangames", year: 2014, city: "仁川", champion: "Ning Zetao", country: "CHN", time: "21.95", note: "单源待复核" },
+  { series: "asiangames", year: 2010, city: "广州", champion: "Lü Zhiwu", country: "CHN", time: "22.37", note: "爆冷夺金；日本选手岸田真幸、原田兰丸分获银铜" },
 ];

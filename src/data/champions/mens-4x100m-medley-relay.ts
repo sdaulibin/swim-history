@@ -20,4 +20,12 @@ export const mens4x100mMedleyRelayChampions: ChampionEntry[] = [
   { series: "worlds", year: 2025, city: "新加坡", champion: "China", country: "CHN", note: "潘展乐压轴棒次游出45.92；夺冠成绩未能核实" },
   { series: "worlds", year: 2023, city: "福冈", champion: "United States", country: "USA", time: "3:27.20", note: "中国队获银牌并创当时的亚洲纪录" },
   { series: "worlds", year: 2019, city: "光州", champion: "Great Britain", country: "GBR", time: "3:28.10", wr: true, note: "皮蒂的蛙泳棒次奠定胜局" },
+
+  // —— 亚运会（2006 多哈起六届已核；2026 届成绩未能核实） ——
+  { series: "asiangames", year: 2026, city: "名古屋", champion: "China", country: "CHN", note: "徐嘉余·董志豪·徐放·潘展乐；亚运四连冠，夺冠成绩未能核实" },
+  { series: "asiangames", year: 2022, city: "杭州", champion: "China", country: "CHN", time: "3:27.01", note: "破亚洲纪录；赛事于2023年举行" },
+  { series: "asiangames", year: 2018, city: "雅加达", champion: "China", country: "CHN", time: "3:29.99", note: "破赛会纪录" },
+  { series: "asiangames", year: 2014, city: "仁川", champion: "China", country: "CHN", time: "3:31.37", note: "破亚运会纪录；徐嘉余·李响·李朱濠·宁泽涛末棒逆转日本" },
+  { series: "asiangames", year: 2010, city: "广州", champion: "Japan", country: "JPN", time: "3:34.10", note: "中国队率先到边（3:34.01）但因抢跳被取消成绩，日本递补夺冠" },
+  { series: "asiangames", year: 2006, city: "多哈", champion: "Japan", country: "JPN", time: "3:36.52", note: "中国队获银牌" },
 ];

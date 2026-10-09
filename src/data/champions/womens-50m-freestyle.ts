@@ -21,5 +21,8 @@ export const womens50mFreestyleChampions: ChampionEntry[] = [
   // —— 世界锦标赛（2015/2022–2025 届未能核实，暂缺） ——
   { series: "worlds", year: 2017, city: "布达佩斯", champion: "Sarah Sjöström", country: "SWE", time: "23.69", note: "半决赛23.61创现世界纪录" },
 
-  // —— 亚运会（2006 多哈起六届；详见研究核证） ——
+  // —— 亚运会（2006 多哈起六届，三届已核；2006/2010/2014 届未能核实） ——
+  { series: "asiangames", year: 2026, city: "名古屋", champion: "Wu Qingfeng", country: "CHN", time: "23.98", note: "破赛会纪录" },
+  { series: "asiangames", year: 2022, city: "杭州", champion: "Zhang Yufei", country: "CHN", time: "24.26", note: "破赛会纪录；赛事于2023年举行" },
+  { series: "asiangames", year: 2018, city: "雅加达", champion: "Rikako Ikee", country: "JPN", time: "24.53", note: "张雨霏获银牌；池江当届六金王的收官单项之一" },
 ];

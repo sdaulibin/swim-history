@@ -9,7 +9,8 @@ import type { SwimEvent } from "@/lib/types";
  *  - 德雷塞尔 22.35（2019 光州决赛）以前的纪录沿革（Huegill、Govorov 时代的
  *    多次改写及 22.43 等）未能核实到可靠日期，暂缺；
  *  - 50 米蝶泳不是奥运会项目，世锦赛（2001 年起）与欧锦赛是其最高舞台；
- *  - 亚洲纪录的保持者与数值未能核实到可靠来源，暂缺。
+ *  - 亚洲纪录由巴林归化选手阿尔汉格尔斯基持有（2026名古屋亚运以22.91夺冠时
+ *    已是纪录保持者），精确数值待复核，暂缺。
  */
 export const mens50mButterfly: SwimEvent = {
   slug: "mens-50m-butterfly",

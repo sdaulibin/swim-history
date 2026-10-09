@@ -20,4 +20,9 @@ export const womens1500mFreestyleChampions: ChampionEntry[] = [
   { series: "worlds", year: 2022, city: "布达佩斯", champion: "Katie Ledecky", country: "USA", note: "夺冠成绩未能核实" },
   { series: "worlds", year: 2019, city: "光州", champion: "Katie Ledecky", country: "USA", note: "夺冠成绩未能核实" },
   { series: "worlds", year: 2017, city: "布达佩斯", champion: "Katie Ledecky", country: "USA", time: "15:31.82", note: "项目首届世锦赛，夺冠兼破世界纪录" },
+
+  // —— 亚运会（2018 年起设项，三届已核） ——
+  { series: "asiangames", year: 2026, city: "名古屋", champion: "Li Bingjie", country: "CHN", time: "15:53.52", note: "成功卫冕" },
+  { series: "asiangames", year: 2022, city: "杭州", champion: "Li Bingjie", country: "CHN", time: "15:51.18", note: "破赛会纪录；高唯中获银牌；赛事于2023年举行" },
+  { series: "asiangames", year: 2018, city: "雅加达", champion: "Wang Jianjiahe", country: "CHN", time: "15:53.68", note: "项目亚运首秀冠军" },
 ];
