@@ -8,7 +8,9 @@ import type { SwimEvent } from "@/lib/types";
  * progression 空缺说明（宁缺毋滥）：
  *  - 哈克特 14:34.56（2001 布里斯班友好运动会，仅年份精度）以前的沿革
  *    未能核实到可靠日期，暂缺；
- *  - 14:31.02 悬置十二年后，2024 年 8 月 4 日巴黎之夜被芬克以 14:30.67 打破。
+ *  - 14:31.02 悬置十二年后，2024 年 8 月 4 日巴黎之夜被芬克以 14:30.67 打破；
+ *    仅两年后，2026 年 8 月 15 日欧锦赛决赛，19 岁的利布曼以 14:26.79 一夜
+ *    削掉 3.88 秒，改写为现存世界纪录。
  */
 export const mens1500mFreestyle: SwimEvent = {
   slug: "mens-1500m-freestyle",
@@ -18,13 +20,14 @@ export const mens1500mFreestyle: SwimEvent = {
   course: "LCM",
   name: "男子 1500 米自由泳",
   summary:
-    "14:30.67——2024年8月4日的巴黎，博比·芬克在没人押注的终点前疯狂加速，把孙杨悬置十二年的14:31.02送进历史。这是「泳池马拉松」最伟大的冲刺之一，也是孙杨时代留下的最后一块界碑被移除的时刻。",
+    "14:26.79——2026年8月15日的欧锦赛决赛，19岁的德国人约翰内斯·利布曼以绝对优势率先触壁，把芬克只保持了两年的14:30.67一夜削掉3.88秒。孙杨的14:31.02依然是亚洲的疆界，而世界纪录的地平线，已被新一代重新划定。",
   dataAsOf: "2026年10月",
   progression: [
     { time: "14:34.56", holder: "Grant Hackett", country: "AUS", date: "2001", meet: "友好运动会", place: "布里斯班", note: "保持十年的长池绝唱；具体日期未能核实，按年份精度收录" },
     { time: "14:34.14", holder: "Sun Yang", country: "CHN", date: "2011-07", meet: "世界锦标赛", place: "上海", note: "个人首枚世锦赛金牌兼破世界纪录，把哈克特的十年悬纪录提高0.42秒" },
     { time: "14:31.02", holder: "Sun Yang", country: "CHN", date: "2012-08-04", meet: "2012年伦敦奥运会", place: "伦敦", note: "决赛夺冠并再破世界纪录" },
-    { time: "14:30.67", holder: "Bobby Finke", country: "USA", date: "2024-08-04", meet: "2024年巴黎奥运会", place: "巴黎", note: "整整十二年后同一天被打破；现世界纪录，最后100米的疯狂冲刺" },
+    { time: "14:30.67", holder: "Bobby Finke", country: "USA", date: "2024-08-04", meet: "2024年巴黎奥运会", place: "巴黎", note: "整整十二年后同一天被打破；最后100米的疯狂冲刺" },
+    { time: "14:26.79", holder: "Johannes Liebmann", country: "GER", date: "2026-08-15", meet: "欧洲游泳锦标赛", note: "19岁一夜削掉3.88秒；前400米即游出3:48.38的配速；现世界纪录" },
   ],
 
   asianRecord: {
@@ -39,7 +42,8 @@ export const mens1500mFreestyle: SwimEvent = {
   },
 
   top10: [
-    { time: "14:30.67", holder: "Bobby Finke", country: "USA", date: "2024-08-04", meet: "2024年巴黎奥运会", wr: true, note: "现世界纪录" },
+    { time: "14:26.79", holder: "Johannes Liebmann", country: "GER", date: "2026-08-15", meet: "2026年欧洲游泳锦标赛", wr: true, note: "现世界纪录" },
+    { time: "14:30.67", holder: "Bobby Finke", country: "USA", date: "2024-08-04", meet: "2024年巴黎奥运会", note: "原世界纪录" },
     { time: "14:31.02", holder: "Sun Yang", country: "CHN", date: "2012-08-04", meet: "2012年伦敦奥运会", note: "亚洲纪录，原世界纪录" },
     { time: "14:31.54", holder: "Ahmed Hafnaoui", country: "TUN", date: "2023-07", meet: "2023年福冈世锦赛", note: "破孙杨保持的赛会纪录（14:34.14）" },
     { time: "14:34.14", holder: "Sun Yang", country: "CHN", date: "2011-07", meet: "2011年上海世锦赛", note: "原世界纪录" },
@@ -48,10 +52,9 @@ export const mens1500mFreestyle: SwimEvent = {
     { time: "14:35.43", holder: "Sun Yang", country: "CHN", date: "2010-11", meet: "2010年广州亚运会", note: "破亚洲纪录" },
     { time: "14:39.65", holder: "Bobby Finke", country: "USA", date: "2021-08-01", meet: "2020年东京奥运会", note: "东京最后50米反超夺金" },
     { time: "14:40.84", holder: "Oussama Mellouli", country: "TUN", date: "2008-08-17", meet: "2008年北京奥运会", note: "为突尼斯拿下历史性金牌" },
-    { time: "14:42.42", holder: "Zhang Zhanshuo", country: "CHN", date: "2026-09", meet: "2026年名古屋亚运会", note: "破赛会纪录，后程反超夺冠" },
   ],
   top10Note:
-    "前十的门槛在14:45上下；孙杨的14:31.02之后，只有芬克一人游进过14:32。中国的费立纬（14:46.59，2025年全国赛）正在叩响前十的门槛。",
+    "前十的门槛在14:42上下（张展硕的亚运赛会纪录14:42.42恰好落在门外）；利布曼的14:26.79之后，孙杨的14:31.02仍是亚洲纪录，也是这条榜上亚洲人的最高点。中国的费立纬（14:46.59，2025年全国赛）正在叩响门槛。",
 
   history: [
     {
@@ -65,6 +68,7 @@ export const mens1500mFreestyle: SwimEvent = {
       heading: "巴黎之夜：芬克的疯狂冲刺",
       paragraphs: [
         "2024年8月4日——与孙杨破纪录同一天，只是隔了十二年——博比·芬克在巴黎拉德芳斯体育馆的最后一百米发起赌博式的冲刺，14:30.67，快了0.35秒。一个以「后程发力」闻名的佛罗里达人，用最戏剧化的方式完成了这个项目十二年来最重要的一次改写。",
+        "而纪录只在他名下停了两年：2026年8月15日的欧锦赛决赛，19岁的德国人约翰内斯·利布曼以绝对优势夺冠，14:26.79——一夜削掉3.88秒，把「孙杨→芬克」十二年只挪动0.35秒的刻度尺彻底折断。新一代的长距离时代，从这一晚开始。",
         "对中国长距离而言，孙杨的14:31.02仍是亚洲纪录；费立纬（14:46.59，2025）领衔的新一代正试图重新接近这条线。亚运会赛场上，从2006年多哈起，男子1500自的冠军在中日之间轮转——张琳、孙杨、朴泰桓、萩野公介、费立纬们轮流加冕，详见冠军榜。",
       ],
     },

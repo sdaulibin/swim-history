@@ -4,9 +4,10 @@ import type { ChampionEntry } from "@/lib/types";
  * 男子 1500 米自由泳 · 历届大赛冠军
  * 空缺说明（宁缺毋滥，未能核实的届次暂缺）：
  *  - 奥运会：2000 年及以前各届未能核实，暂缺；
- *  - 世锦赛：2011/2015/2017/2022/2023 五届已核（2013/2019/2024/2025 届
- *    未能核实，暂缺）；2022 届成绩单源待复核；
+ *  - 世锦赛：2011/2015/2017/2022/2023 五届已核；2025 届冠军单源待复核收录；
+ *    2013/2019/2024 届未能核实，暂缺；2022 届成绩单源待复核；
  *  - 泛太平洋 / 欧洲锦标赛：各届未能核实，暂缺；
+ *  - 欧锦赛：2026 届已核；其余届次未能核实，暂缺；
  *  - 亚运会：2006 多哈起七届全部已核。
  */
 export const mens1500mFreestyleChampions: ChampionEntry[] = [
@@ -19,14 +20,18 @@ export const mens1500mFreestyleChampions: ChampionEntry[] = [
   { series: "olympics", year: 2004, city: "雅典", champion: "Grant Hackett", country: "AUS", time: "14:43.40", note: "卫冕成功" },
 
   // —— 世界锦标赛（2013/2019/2024/2025 届未能核实，暂缺） ——
+  { series: "worlds", year: 2025, city: "新加坡", champion: "Bobby Finke", country: "USA", note: "重夺2023年失守的金牌；夺冠成绩未能核实，归属单源待复核" },
   { series: "worlds", year: 2023, city: "福冈", champion: "Ahmed Hafnaoui", country: "TUN", time: "14:31.54", note: "破孙杨2011年创造的赛会纪录（14:34.14）" },
   { series: "worlds", year: 2022, city: "布达佩斯", champion: "Gregorio Paltrinieri", country: "ITA", time: "14:32.80", note: "单源待复核" },
   { series: "worlds", year: 2017, city: "布达佩斯", champion: "Gregorio Paltrinieri", country: "ITA", note: "卫冕；夺冠成绩未能核实" },
   { series: "worlds", year: 2015, city: "喀山", champion: "Gregorio Paltrinieri", country: "ITA", note: "夺冠成绩未能核实" },
   { series: "worlds", year: 2011, city: "上海", champion: "Sun Yang", country: "CHN", time: "14:34.14", note: "个人首枚世锦赛金牌兼破世界纪录" },
 
+  // —— 欧洲锦标赛（长池；2026 届已核，其余届次待补） ——
+  { series: "euros", year: 2026, city: "巴黎", champion: "Johannes Liebmann", country: "GER", time: "14:26.79", wr: true, note: "决赛打破芬克的世界纪录，一夜提升3.88秒；19岁" },
+
   // —— 亚运会（2006 多哈起七届全） ——
-  { series: "asiangames", year: 2026, city: "名古屋", champion: "Zhang Zhanshuo", country: "CHN", time: "14:42.42", note: "破赛会纪录；前段第五后程反超日本双将；当届七金征程收官" },
+  { series: "asiangames", year: 2026, city: "名古屋", champion: "Zhang Zhanshuo", country: "CHN", time: "14:42.42", note: "9月22日决赛，破赛会纪录；前段第五后程反超日本双将；当届七金征程收官" },
   { series: "asiangames", year: 2022, city: "杭州", champion: "Fei Liwei", country: "CHN", time: "14:55.47", note: "赛事于2023年举行" },
   { series: "asiangames", year: 2018, city: "雅加达", champion: "Sun Yang", country: "CHN", time: "14:58.53", note: "实现该项目亚运三连冠" },
   { series: "asiangames", year: 2014, city: "仁川", champion: "Sun Yang", country: "CHN", time: "14:49.75", note: "卫冕" },

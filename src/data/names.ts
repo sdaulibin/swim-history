@@ -126,6 +126,7 @@ export const zhNames: Record<string, string> = {
   "Jose Fiolo": "若泽·菲奥洛",
   "Nikolai Pankin": "尼古拉·潘金",
   "John Hencken": "约翰·亨肯",
+  "Johannes Liebmann": "约翰内斯·利布曼",
   "Nobutaka Taguchi": "田口信教",
   "Gerald Mörken": "格拉尔德·默肯",
   "Steve Lundquist": "史蒂夫·伦德奎斯特",
