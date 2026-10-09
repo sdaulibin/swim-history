@@ -48,7 +48,7 @@ export const mens1500mFreestyle: SwimEvent = {
     { time: "14:35.43", holder: "Sun Yang", country: "CHN", date: "2010-11", meet: "2010年广州亚运会", note: "破亚洲纪录" },
     { time: "14:39.65", holder: "Bobby Finke", country: "USA", date: "2021-08-01", meet: "2020年东京奥运会", note: "东京最后50米反超夺金" },
     { time: "14:40.84", holder: "Oussama Mellouli", country: "TUN", date: "2008-08-17", meet: "2008年北京奥运会", note: "为突尼斯拿下历史性金牌" },
-    { time: "14:43.40", holder: "Grant Hackett", country: "AUS", date: "2004-08-21", meet: "2004年雅典奥运会" },
+    { time: "14:42.42", holder: "Zhang Zhanshuo", country: "CHN", date: "2026-09", meet: "2026年名古屋亚运会", note: "破赛会纪录，后程反超夺冠" },
   ],
   top10Note:
     "前十的门槛在14:45上下；孙杨的14:31.02之后，只有芬克一人游进过14:32。中国的费立纬（14:46.59，2025年全国赛）正在叩响前十的门槛。",

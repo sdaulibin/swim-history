@@ -481,6 +481,7 @@ export const zhNames: Record<string, string> = {
   "Bobby Finke": "博比·芬克",
   "Oussama Mellouli": "乌萨马·梅卢利",
   "Gregorio Paltrinieri": "格雷戈里奥·帕尔特里涅里",
+  "Gabriele Detti": "加布里埃莱·德蒂",
   "Ai Shibata": "柴田亚衣",
   "Cesar Cielo": "塞萨尔·西埃洛",
   "Florent Manaudou": "弗洛朗·马纳多",

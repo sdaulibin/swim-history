@@ -7,7 +7,7 @@ import type { ChampionEntry } from "@/lib/types";
  *  - 世锦赛：2011/2015/2017/2022/2023 五届已核（2013/2019/2024/2025 届
  *    未能核实，暂缺）；2022 届成绩单源待复核；
  *  - 泛太平洋 / 欧洲锦标赛：各届未能核实，暂缺；
- *  - 亚运会：2006 多哈起六届，五届已核；2026 届未能核实到直接赛果。
+ *  - 亚运会：2006 多哈起七届全部已核。
  */
 export const mens1500mFreestyleChampions: ChampionEntry[] = [
   // —— 奥运会 ——
@@ -25,7 +25,8 @@ export const mens1500mFreestyleChampions: ChampionEntry[] = [
   { series: "worlds", year: 2015, city: "喀山", champion: "Gregorio Paltrinieri", country: "ITA", note: "夺冠成绩未能核实" },
   { series: "worlds", year: 2011, city: "上海", champion: "Sun Yang", country: "CHN", time: "14:34.14", note: "个人首枚世锦赛金牌兼破世界纪录" },
 
-  // —— 亚运会（2006 多哈起六届，五届已核；2026 届未能核实到直接赛果） ——
+  // —— 亚运会（2006 多哈起七届全） ——
+  { series: "asiangames", year: 2026, city: "名古屋", champion: "Zhang Zhanshuo", country: "CHN", time: "14:42.42", note: "破赛会纪录；前段第五后程反超日本双将；当届七金征程收官" },
   { series: "asiangames", year: 2022, city: "杭州", champion: "Fei Liwei", country: "CHN", time: "14:55.47", note: "赛事于2023年举行" },
   { series: "asiangames", year: 2018, city: "雅加达", champion: "Sun Yang", country: "CHN", time: "14:58.53", note: "实现该项目亚运三连冠" },
   { series: "asiangames", year: 2014, city: "仁川", champion: "Sun Yang", country: "CHN", time: "14:49.75", note: "卫冕" },
