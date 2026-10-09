@@ -13,7 +13,23 @@ export default function Home() {
   const strokesInUse = Array.from(new Set(events.map((e) => e.stroke)));
   const featured = events.find((e) => e.slug === "mens-100m-freestyle")!;
   const featuredWr = wrOf(featured);
-  const others = events.filter((e) => e.slug !== featured.slug);
+  const featuredMore = [
+    {
+      slug: "womens-200m-medley",
+      line: "2025年6月加拿大选拔赛，麦金托什把自己保持的世界纪录再推快0.17秒，女子混合泳已进入她的时代。",
+    },
+    {
+      slug: "mens-200m-freestyle",
+      line: "快速泳衣时代罗马之夜的1:42.00已悬挂十七年，波波维奇2022年的1:42.97是最接近的一次。",
+    },
+    {
+      slug: "mens-400m-freestyle",
+      line: "同为2009年罗马的遗产；2026年尔湾泛太平洋赛上，肖特的3:40.52距它只剩0.45秒。",
+    },
+  ];
+  const others = events.filter(
+    (e) => e.slug !== featured.slug && !featuredMore.some((f) => f.slug === e.slug),
+  );
 
   const recent = events
     .flatMap((e) =>
@@ -117,7 +133,7 @@ export default function Home() {
           </Link>
         </div>
 
-        <div className="mt-6 grid gap-4 lg:grid-cols-2">
+        <div className="mt-6 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
           <div className="flex flex-col justify-between rounded-2xl border border-amber-200 bg-gradient-to-br from-amber-50 to-white p-6">
             <div>
               <span className="rounded-full bg-amber-100 px-2.5 py-1 text-xs font-medium text-amber-700">
@@ -145,7 +161,66 @@ export default function Home() {
             </Link>
           </div>
 
-          <div className="grid gap-4">
+          {featuredMore.map(({ slug, line }) => {
+            const e = events.find((ev) => ev.slug === slug)!;
+            const wr = wrOf(e);
+            const c = countryOf(wr.country);
+            return (
+              <div
+                key={slug}
+                className="flex flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 transition-all hover:border-pool-400 hover:shadow-md hover:shadow-pool-100"
+              >
+                <div>
+                  <span className="rounded-full bg-pool-50 px-2.5 py-1 text-xs font-medium text-pool-700">
+                    {e.name} · 现世界纪录
+                  </span>
+                  <div className="mt-4 font-mono text-5xl font-bold tabular-nums text-pool-900">
+                    {wr.time}
+                  </div>
+                  <div className="mt-3 text-lg font-semibold text-pool-950">
+                    {c.flag && <span className="mr-1">{c.flag}</span>}
+                    {holderZh(wr.holder)}
+                    <span className="ml-2 text-sm font-normal text-slate-400">
+                      {wr.holder}
+                    </span>
+                  </div>
+                  <p className="mt-2 text-sm leading-relaxed text-slate-600">{line}</p>
+                </div>
+                <Link
+                  href={`/events/${slug}/`}
+                  className="mt-6 self-start text-sm font-medium text-pool-700 hover:text-pool-600"
+                >
+                  查看完整演进（{e.progression.filter(isRatified).length} 条纪录）→
+                </Link>
+              </div>
+            );
+          })}
+
+          {/* 男子 100 米仰泳：项目页尚未收录，先展示世界纪录 */}
+          <div className="flex flex-col justify-between rounded-2xl border border-dashed border-slate-300 bg-slate-50/60 p-6">
+            <div>
+              <span className="rounded-full bg-slate-200 px-2.5 py-1 text-xs font-medium text-slate-600">
+                男子 100 米仰泳 · 现世界纪录
+              </span>
+              <div className="mt-4 font-mono text-5xl font-bold tabular-nums text-pool-900">
+                51.60
+              </div>
+              <div className="mt-3 text-lg font-semibold text-pool-950">
+                <span className="mr-1">🇮🇹</span>
+                托马斯·切孔
+                <span className="ml-2 text-sm font-normal text-slate-400">Thomas Ceccon</span>
+              </div>
+              <p className="mt-2 text-sm leading-relaxed text-slate-600">
+                2022年6月布达佩斯世锦赛决赛，切孔将原纪录一举提高0.25秒；四年过去，51.60仍是该项目的历史最快。
+              </p>
+            </div>
+            <span className="mt-6 self-start text-sm font-medium text-slate-400">
+              项目页面筹备中 · 纪录先行
+            </span>
+          </div>
+        </div>
+
+        <div className="mt-4 grid gap-4 lg:grid-cols-2">
             {others.map((e) => {
               const wr = wrOf(e);
               const c = countryOf(wr.country);
@@ -177,7 +252,6 @@ export default function Home() {
               );
             })}
           </div>
-        </div>
       </section>
 
       {/* 按泳姿浏览 */}
