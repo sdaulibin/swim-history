@@ -6,7 +6,7 @@ import type { SwimEvent } from "@/lib/types";
  * 数据截至：2026年10月
  *
  * progression 空缺说明（宁缺毋滥）：
- *  - 佩尔索尔 52.54（2008 北京）以前的纪录沿革未能核实到可靠来源，暂缺；
+ *  - 佩尔索尔 52.89（2008-07 美国奥运选拔赛）以前的纪录沿革未能核实，暂缺；
  *  - 51.60（2022 布达佩斯）为布料泳衣时代该项目唯一突破52秒大关的成绩；
  *  - 奥运会纪录仍是墨菲的 51.85（2016 里约）——东京 51.98 与巴黎 52.00 均未能改写。
  */
@@ -21,7 +21,8 @@ export const mens100mBackstroke: SwimEvent = {
     "51.60——2022年布达佩斯世锦赛决赛，意大利人托马斯·切孔把世界纪录一次提高0.25秒，是布料泳衣时代该项目唯一一次叩开52秒大关。亚洲纪录与中国纪录同属徐嘉余：2017年4月的51.86至今仍是亚洲仰泳的天花板。",
   dataAsOf: "2026年10月",
   progression: [
-    { time: "52.54", holder: "Aaron Peirsol", country: "USA", date: "2008-08", meet: "2008年北京奥运会", place: "北京", note: "决赛夺冠，世界纪录兼奥运会纪录；快速泳衣时代前夕的布料泳衣成绩" },
+    { time: "52.89", holder: "Aaron Peirsol", country: "USA", date: "2008-07", meet: "美国奥运选拔赛", place: "奥马哈", note: "快速泳衣时代前夕的布料泳衣纪录" },
+    { time: "52.54", holder: "Aaron Peirsol", country: "USA", date: "2008-08", meet: "2008年北京奥运会", place: "北京", note: "决赛夺冠并改写自己七月的纪录；世界纪录兼奥运会纪录" },
     { time: "51.94", holder: "Aaron Peirsol", country: "USA", date: "2009-07", meet: "美国游泳锦标赛（世锦赛选拔赛）", place: "印第安纳波利斯", note: "十天内抢回被改写的纪录；聚氨酯泳衣时代的极限" },
     { time: "51.85", holder: "Ryan Murphy", country: "USA", date: "2016-08-08", meet: "2016年里约奥运会", place: "里约热内卢", note: "决赛夺冠并破世界纪录，此后作为奥运会纪录保持至今" },
     { time: "51.60", holder: "Thomas Ceccon", country: "ITA", date: "2022-06", meet: "世界锦标赛", place: "布达佩斯", note: "决赛夺冠并破世界纪录，当届世锦赛诞生的第一项世界纪录；现世界纪录" },

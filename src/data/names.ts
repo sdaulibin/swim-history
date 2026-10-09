@@ -379,6 +379,7 @@ export const zhNames: Record<string, string> = {
   "Daiya Seto": "濑户大也",
   "Dana Vollmer": "达娜·沃尔默",
   "Daniela Hunger": "达妮埃拉·亨格",
+  "Daniel Wiffen": "丹尼尔·维芬",
   "David Wharton": "戴维·沃顿",
   "David Wilkie": "戴维·威尔基",
   "Denis Pankratov": "杰尼斯·潘克拉托夫",

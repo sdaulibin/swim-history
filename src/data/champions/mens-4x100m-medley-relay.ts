@@ -19,7 +19,7 @@ export const mens4x100mMedleyRelayChampions: ChampionEntry[] = [
   // —— 世界锦标赛（2022/2024 届未能核实，暂缺） ——
   { series: "worlds", year: 2025, city: "新加坡", champion: "China", country: "CHN", note: "潘展乐压轴棒次游出45.92；夺冠成绩未能核实" },
   { series: "worlds", year: 2023, city: "福冈", champion: "United States", country: "USA", time: "3:27.20", note: "中国队获银牌并创当时的亚洲纪录" },
-  { series: "worlds", year: 2019, city: "光州", champion: "Great Britain", country: "GBR", time: "3:28.10", wr: true, note: "皮蒂的蛙泳棒次奠定胜局" },
+  { series: "worlds", year: 2019, city: "光州", champion: "Great Britain", country: "GBR", time: "3:28.10", note: "欧洲纪录；皮蒂的蛙泳棒次奠定胜局" },
 
   // —— 亚运会（2006 多哈起六届已核；2026 届成绩未能核实） ——
   { series: "asiangames", year: 2026, city: "名古屋", champion: "China", country: "CHN", note: "徐嘉余·董志豪·徐放·潘展乐；亚运四连冠，夺冠成绩未能核实" },

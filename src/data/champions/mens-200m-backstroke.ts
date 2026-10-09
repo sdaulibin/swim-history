@@ -4,7 +4,7 @@ import type { ChampionEntry } from "@/lib/types";
  * 男子 200 米仰泳 · 历届大赛冠军
  * 空缺说明（宁缺毋滥，未能核实的届次暂缺）：
  *  - 奥运会：2008 年及以前各届未能核实，暂缺；
- *  - 世锦赛：2017/2023/2025 届未能核实，暂缺；
+ *  - 世锦赛：2009 届已核；2017/2023/2025 届未能核实，暂缺；
  *  - 泛太平洋：各届未能核实，暂缺；欧洲锦标赛：2026 及以前暂缺；
  *  - 亚运会：2006 多哈起六届已核（2006/2010 入江陵介，2018/2022 徐嘉余，2026 西小野皓大）；2010、2022 届夺冠成绩未能核实。
  */
@@ -16,6 +16,7 @@ export const mens200mBackstrokeChampions: ChampionEntry[] = [
   { series: "olympics", year: 2012, city: "伦敦", champion: "Tyler Clary", country: "USA", time: "1:53.41", note: "力压卫冕冠军佩尔索尔夺冠" },
 
   // —— 世界锦标赛（2017/2023/2025 届未能核实，暂缺） ——
+  { series: "worlds", year: 2009, city: "罗马", champion: "Aaron Peirsol", country: "USA", time: "1:51.92", wr: true, note: "决赛亚军入江陵介同场创亚洲纪录" },
   { series: "worlds", year: 2022, city: "布达佩斯", champion: "Ryan Murphy", country: "USA", time: "1:54.52", note: "单源待复核" },
   { series: "worlds", year: 2019, city: "光州", champion: "Evgeny Rylov", country: "Russia", time: "1:53.68", note: "赛会纪录" },
 

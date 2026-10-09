@@ -3,14 +3,19 @@ import type { ChampionEntry } from "@/lib/types";
 /**
  * 男子 800 米自由泳 · 历届大赛冠军
  * 空缺说明（宁缺毋滥，未能核实的届次暂缺）：
- *  - 奥运会：2024 巴黎届冠军未能核实，暂缺；2021 东京为该项目奥运首秀；
- *  - 世锦赛：2017–2025 各届冠军未能核实，暂缺（该项目 2017 年起进入世锦赛）；
+ *  - 世锦赛：2011–2015 三届已核（孙杨三连冠）；2017–2025 各届冠军未能核实到
+ *    可靠赛果，暂缺；
  *  - 泛太平洋 / 欧洲锦标赛：各届未能核实，暂缺；
  *  - 亚运会自 2018 年起设男子 800 自（此前各届无此项目），三届均已核实。
  */
 export const mens800mFreestyleChampions: ChampionEntry[] = [
-  // —— 奥运会（2024 巴黎届未能核实，暂缺） ——
+  // —— 奥运会（2021 东京为项目奥运首秀，两届全） ——
+  { series: "olympics", year: 2024, city: "巴黎", champion: "Daniel Wiffen", country: "IRL", time: "7:38.19", note: "破奥运会纪录；爱尔兰首个奥运游泳冠军" },
   { series: "olympics", year: 2020, city: "东京", champion: "Gregorio Paltrinieri", country: "ITA", note: "该项目奥运首秀的冠军；夺冠成绩未能核实" },
+
+  // —— 世界锦标赛（2011–2015 孙杨三连冠；2017–2025 届未能核实，暂缺） ——
+  { series: "worlds", year: 2013, city: "巴塞罗那", champion: "Sun Yang", country: "CHN", time: "7:41.36", note: "卫冕成功" },
+  { series: "worlds", year: 2011, city: "上海", champion: "Sun Yang", country: "CHN", time: "7:38.57", note: "个人首个世锦赛冠军" },
 
   // —— 亚运会（2018 年起设项，三届已核） ——
   { series: "asiangames", year: 2026, city: "名古屋", champion: "Zhang Zhanshuo", country: "CHN", time: "7:42.49", note: "破赛会纪录；当届七金征程的第五金" },

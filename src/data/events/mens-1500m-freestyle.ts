@@ -6,7 +6,7 @@ import type { SwimEvent } from "@/lib/types";
  * 数据截至：2026年10月
  *
  * progression 空缺说明（宁缺毋滥）：
- *  - 孙杨 2012 伦敦 14:31.02 以前的纪录沿革（哈克特时代 14:34.56 等）
+ *  - 哈克特 14:34.56（2001 布里斯班友好运动会，仅年份精度）以前的沿革
  *    未能核实到可靠日期，暂缺；
  *  - 14:31.02 悬置十二年后，2024 年 8 月 4 日巴黎之夜被芬克以 14:30.67 打破。
  */
@@ -21,7 +21,9 @@ export const mens1500mFreestyle: SwimEvent = {
     "14:30.67——2024年8月4日的巴黎，博比·芬克在没人押注的终点前疯狂加速，把孙杨悬置十二年的14:31.02送进历史。这是「泳池马拉松」最伟大的冲刺之一，也是孙杨时代留下的最后一块界碑被移除的时刻。",
   dataAsOf: "2026年10月",
   progression: [
-    { time: "14:31.02", holder: "Sun Yang", country: "CHN", date: "2012-08-04", meet: "2012年伦敦奥运会", place: "伦敦", note: "决赛夺冠并破世界纪录；此前沿革未能核实，暂缺" },
+    { time: "14:34.56", holder: "Grant Hackett", country: "AUS", date: "2001", meet: "友好运动会", place: "布里斯班", note: "保持十年的长池绝唱；具体日期未能核实，按年份精度收录" },
+    { time: "14:34.14", holder: "Sun Yang", country: "CHN", date: "2011-07", meet: "世界锦标赛", place: "上海", note: "个人首枚世锦赛金牌兼破世界纪录，把哈克特的十年悬纪录提高0.42秒" },
+    { time: "14:31.02", holder: "Sun Yang", country: "CHN", date: "2012-08-04", meet: "2012年伦敦奥运会", place: "伦敦", note: "决赛夺冠并再破世界纪录" },
     { time: "14:30.67", holder: "Bobby Finke", country: "USA", date: "2024-08-04", meet: "2024年巴黎奥运会", place: "巴黎", note: "整整十二年后同一天被打破；现世界纪录，最后100米的疯狂冲刺" },
   ],
 
@@ -39,11 +41,14 @@ export const mens1500mFreestyle: SwimEvent = {
   top10: [
     { time: "14:30.67", holder: "Bobby Finke", country: "USA", date: "2024-08-04", meet: "2024年巴黎奥运会", wr: true, note: "现世界纪录" },
     { time: "14:31.02", holder: "Sun Yang", country: "CHN", date: "2012-08-04", meet: "2012年伦敦奥运会", note: "亚洲纪录，原世界纪录" },
+    { time: "14:31.54", holder: "Ahmed Hafnaoui", country: "TUN", date: "2023-07", meet: "2023年福冈世锦赛", note: "破孙杨保持的赛会纪录（14:34.14）" },
+    { time: "14:34.14", holder: "Sun Yang", country: "CHN", date: "2011-07", meet: "2011年上海世锦赛", note: "原世界纪录" },
+    { time: "14:34.56", holder: "Grant Hackett", country: "AUS", date: "2001", meet: "2001年友好运动会" },
     { time: "14:34.57", holder: "Gregorio Paltrinieri", country: "ITA", date: "2016-08-13", meet: "2016年里约奥运会", note: "奥运会纪录时代的欧洲标杆" },
+    { time: "14:35.43", holder: "Sun Yang", country: "CHN", date: "2010-11", meet: "2010年广州亚运会", note: "破亚洲纪录" },
     { time: "14:39.65", holder: "Bobby Finke", country: "USA", date: "2021-08-01", meet: "2020年东京奥运会", note: "东京最后50米反超夺金" },
     { time: "14:40.84", holder: "Oussama Mellouli", country: "TUN", date: "2008-08-17", meet: "2008年北京奥运会", note: "为突尼斯拿下历史性金牌" },
     { time: "14:43.40", holder: "Grant Hackett", country: "AUS", date: "2004-08-21", meet: "2004年雅典奥运会" },
-    { time: "14:46.59", holder: "Fei Liwei", country: "CHN", date: "2025", meet: "全国游泳锦标赛", note: "中国新一代长距离领军者；单源待复核" },
   ],
   top10Note:
     "前十的门槛在14:45上下；孙杨的14:31.02之后，只有芬克一人游进过14:32。中国的费立纬（14:46.59，2025年全国赛）正在叩响前十的门槛。",

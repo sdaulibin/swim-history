@@ -22,7 +22,8 @@ export const womens4x100mMedleyRelay: SwimEvent = {
     "3:49.63——2024年8月4日的巴黎，美国女队把世界纪录送进3:49时代。这是唯一在人类3:50大关之内的接力成绩；而亚洲的刻度，属于罗马2009那个中国之夜留下的3:52.19。",
   dataAsOf: "2026年10月",
   progression: [
-    { time: "3:52.05", holder: "United States", country: "USA", date: "2012-08-04", meet: "2012年伦敦奥运会", place: "伦敦", note: "决赛夺冠并破世界纪录；此前沿革未能核实，暂缺" },
+    { time: "3:52.19", holder: "China", country: "CHN", date: "2009-08-01", meet: "世界锦标赛", place: "罗马", note: "赵菁·孙晔·焦刘洋·庞佳颖；快速泳衣时代的夺冠成绩兼世界纪录；此前沿革未能核实，暂缺" },
+    { time: "3:52.05", holder: "United States", country: "USA", date: "2012-08-04", meet: "2012年伦敦奥运会", place: "伦敦", note: "决赛夺冠并破中国队的罗马纪录0.14秒" },
     { time: "3:50.40", holder: "United States", country: "USA", date: "2019-07-27", meet: "世界锦标赛", place: "光州", note: "决赛夺冠并破世界纪录" },
     { time: "3:49.63", holder: "United States", country: "USA", date: "2024-08-04", meet: "2024年巴黎奥运会", place: "巴黎", note: "现世界纪录；雷根·史密斯仰泳棒次领衔" },
   ],
@@ -43,7 +44,10 @@ export const womens4x100mMedleyRelay: SwimEvent = {
     { time: "3:50.40", holder: "United States", country: "USA", date: "2019-07-27", meet: "2019年光州世锦赛", note: "夺冠时为世界纪录" },
     { time: "3:51.60", holder: "Australia", country: "AUS", date: "2021-08-01", meet: "2020年东京奥运会", note: "奥运金牌成绩" },
     { time: "3:52.05", holder: "United States", country: "USA", date: "2012-08-04", meet: "2012年伦敦奥运会", note: "夺冠时为世界纪录" },
-    { time: "3:52.19", holder: "China", country: "CHN", date: "2009-08-01", meet: "2009年罗马世锦赛", note: "亚洲纪录" },
+    { time: "3:52.19", holder: "China", country: "CHN", date: "2009-08-01", meet: "2009年罗马世锦赛", note: "亚洲纪录，原世界纪录" },
+    { time: "3:53.13", holder: "United States", country: "USA", date: "2016-08-13", meet: "2016年里约奥运会", note: "奥运金牌成绩" },
+    { time: "3:54.55", holder: "China", country: "CHN", date: "2026-09", meet: "2026年名古屋亚运会", note: "破赛会纪录" },
+    { time: "3:54.73", holder: "Japan", country: "JPN", date: "2018-08", meet: "2018年雅加达亚运会", note: "破亚运会纪录" },
   ],
   top10Note:
     "美国队包办历史前三与第四，唯一的例外是中国队罗马2009的3:52.19；东京的澳大利亚（3:51.60）紧随其后。完整名次的第6–10位未能逐条双源核实，暂列锚点。",

@@ -6,7 +6,9 @@ import type { SwimEvent } from "@/lib/types";
  * 数据截至：2026年10月
  *
  * progression 空缺说明（宁缺毋滥）：
- *  - 莱德基 2016 里约 8:04.79 以前的多次改写（8:11.50 等）未能核实到可靠日期，暂缺；
+ *  - 珍妮特·埃文斯 8:16.22（1987，仅年份精度）与阿德灵顿 8:14.10（2008北京）
+ *    之间的沿革未能核实到可靠日期，暂缺；莱德基 2013–2015 年间的多次改写
+ *    （8:13.86 之后）亦未能核实到可靠日期，暂缺；
  *  - 8:04.79 保持九年后，2025 年 7 月新加坡世锦赛莱德基自己再刷至 8:04.12。
  */
 export const womens800mFreestyle: SwimEvent = {
@@ -20,7 +22,10 @@ export const womens800mFreestyle: SwimEvent = {
     "这是莱德基一个人的王国：8:04.12——2025年新加坡，28岁的她时隔九年再刷自己保持的世界纪录，把项目推到了连自己都难以复刻的高度。李冰洁的8:13.31（2023福冈银牌）是亚洲人距离王座最近的一次。",
   dataAsOf: "2026年10月",
   progression: [
-    { time: "8:04.79", holder: "Katie Ledecky", country: "USA", date: "2016-08-12", meet: "2016年里约奥运会", place: "里约热内卢", note: "决赛夺冠并破世界纪录；此前多次改写未能核实到可靠日期，暂缺" },
+    { time: "8:16.22", holder: "Janet Evans", country: "USA", date: "1987", note: "保持十九年的传奇；具体赛事与日期未能核实，按年份精度收录" },
+    { time: "8:14.10", holder: "Rebecca Adlington", country: "GBR", date: "2008-08-16", meet: "2008年北京奥运会", place: "北京", note: "决赛夺冠并破埃文斯尘封十九年的世界纪录" },
+    { time: "8:13.86", holder: "Katie Ledecky", country: "USA", date: "2013-08", meet: "世界锦标赛", place: "巴塞罗那", note: "16岁首夺世锦赛冠军并破世界纪录；此后的多次改写未能核实到可靠日期，暂缺" },
+    { time: "8:04.79", holder: "Katie Ledecky", country: "USA", date: "2016-08-12", meet: "2016年里约奥运会", place: "里约热内卢", note: "决赛夺冠并破世界纪录" },
     { time: "8:04.12", holder: "Katie Ledecky", country: "USA", date: "2025-07", meet: "世界锦标赛", place: "新加坡", note: "时隔九年自己刷新；现世界纪录" },
   ],
 
@@ -43,6 +48,9 @@ export const womens800mFreestyle: SwimEvent = {
     { time: "8:11.04", holder: "Katie Ledecky", country: "USA", date: "2024-08-03", meet: "2024年巴黎奥运会", note: "巴黎第四次奥运称霸该距离" },
     { time: "8:12.57", holder: "Katie Ledecky", country: "USA", date: "2021-07-31", meet: "2020年东京奥运会", note: "比里约慢了近8秒仍碾压夺冠" },
     { time: "8:13.31", holder: "Li Bingjie", country: "CHN", date: "2023-07", meet: "2023年福冈世锦赛", note: "亚洲纪录，历史最快非莱德基成绩" },
+    { time: "8:13.58", holder: "Katie Ledecky", country: "USA", date: "2019-07", meet: "2019年光州世锦赛" },
+    { time: "8:13.86", holder: "Katie Ledecky", country: "USA", date: "2013-08", meet: "2013年巴塞罗那世锦赛", note: "当时的世界纪录" },
+    { time: "8:14.10", holder: "Rebecca Adlington", country: "GBR", date: "2008-08-16", meet: "2008年北京奥运会", note: "埃文斯之后、莱德基之前的世界纪录" },
   ],
   top10Note:
     "历史前十几乎被莱德基一人垄断（她生涯游出8:12.5以内的次数超过其余人类总和）；李冰洁的8:13.31是唯一闯进前十附近的中国成绩。8:14.10（阿德灵顿，2008北京奥运冠军成绩）为莱德基之前的奥运标杆。",

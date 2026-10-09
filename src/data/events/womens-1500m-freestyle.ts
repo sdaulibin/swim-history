@@ -21,7 +21,8 @@ export const womens1500mFreestyle: SwimEvent = {
     "15:20.48——莱德基2018年写下的世界纪录悬置至今，比她自己的800米纪录（8:04.12）还要「古老」。这个项目2021年才第一次进入奥运会；而亚洲的第一道刻度，是李冰洁的15:43.94。",
   dataAsOf: "2026年10月",
   progression: [
-    { time: "15:25.48", holder: "Katie Ledecky", country: "USA", date: "2017-07-25", meet: "世界锦标赛", place: "布达佩斯", note: "项目首届世锦赛决赛夺冠并破世界纪录；此前沿革未能核实，暂缺" },
+    { time: "15:36.53", holder: "Katie Ledecky", country: "USA", date: "2013-08", meet: "世界锦标赛", place: "巴塞罗那", note: "项目首届世锦赛决赛夺冠并创世界纪录；此前的沿革未能核实，暂缺" },
+    { time: "15:25.48", holder: "Katie Ledecky", country: "USA", date: "2017-07-25", meet: "世界锦标赛", place: "布达佩斯", note: "其间多次改写未能核实到可靠日期，暂缺" },
     { time: "15:20.48", holder: "Katie Ledecky", country: "USA", date: "2018-07", meet: "美国全国锦标赛", place: "欧文", note: "现世界纪录，悬置至今" },
   ],
 
@@ -42,6 +43,7 @@ export const womens1500mFreestyle: SwimEvent = {
     { time: "15:26.44", holder: "Katie Ledecky", country: "USA", date: "2025-07", meet: "2025年新加坡世锦赛", note: "第六届世锦赛冠军" },
     { time: "15:30.02", holder: "Katie Ledecky", country: "USA", date: "2024-08-03", meet: "2024年巴黎奥运会", note: "第二次奥运夺冠" },
     { time: "15:37.34", holder: "Katie Ledecky", country: "USA", date: "2021-07-28", meet: "2020年东京奥运会", note: "奥运首秀夺冠" },
+    { time: "15:40.89", holder: "Simona Quadarella", country: "ITA", date: "2019-07", meet: "2019年光州世锦赛", note: "莱德基病退后的最大受益者，此后建立自己的时代" },
     { time: "15:43.94", holder: "Li Bingjie", country: "CHN", date: "2025-05-20", meet: "2025年全国游泳冠军赛", note: "亚洲纪录" },
   ],
   top10Note:

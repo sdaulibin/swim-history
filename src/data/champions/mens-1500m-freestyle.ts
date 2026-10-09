@@ -4,9 +4,10 @@ import type { ChampionEntry } from "@/lib/types";
  * 男子 1500 米自由泳 · 历届大赛冠军
  * 空缺说明（宁缺毋滥，未能核实的届次暂缺）：
  *  - 奥运会：2000 年及以前各届未能核实，暂缺；
- *  - 世锦赛：2022–2025 各届未能核实，暂缺；
+ *  - 世锦赛：2011/2015/2017/2022/2023 五届已核（2013/2019/2024/2025 届
+ *    未能核实，暂缺）；2022 届成绩单源待复核；
  *  - 泛太平洋 / 欧洲锦标赛：各届未能核实，暂缺；
- *  - 亚运会：2006 多哈起六届（研究进行中，个别届次可能暂缺）。
+ *  - 亚运会：2006 多哈起六届，五届已核；2026 届未能核实到直接赛果。
  */
 export const mens1500mFreestyleChampions: ChampionEntry[] = [
   // —— 奥运会 ——
@@ -16,6 +17,13 @@ export const mens1500mFreestyleChampions: ChampionEntry[] = [
   { series: "olympics", year: 2012, city: "伦敦", champion: "Sun Yang", country: "CHN", time: "14:31.02", wr: true, note: "中国男子游泳首枚奥运长距离金牌" },
   { series: "olympics", year: 2008, city: "北京", champion: "Oussama Mellouli", country: "TUN", time: "14:40.84", note: "为突尼斯拿下历史性金牌" },
   { series: "olympics", year: 2004, city: "雅典", champion: "Grant Hackett", country: "AUS", time: "14:43.40", note: "卫冕成功" },
+
+  // —— 世界锦标赛（2013/2019/2024/2025 届未能核实，暂缺） ——
+  { series: "worlds", year: 2023, city: "福冈", champion: "Ahmed Hafnaoui", country: "TUN", time: "14:31.54", note: "破孙杨2011年创造的赛会纪录（14:34.14）" },
+  { series: "worlds", year: 2022, city: "布达佩斯", champion: "Gregorio Paltrinieri", country: "ITA", time: "14:32.80", note: "单源待复核" },
+  { series: "worlds", year: 2017, city: "布达佩斯", champion: "Gregorio Paltrinieri", country: "ITA", note: "卫冕；夺冠成绩未能核实" },
+  { series: "worlds", year: 2015, city: "喀山", champion: "Gregorio Paltrinieri", country: "ITA", note: "夺冠成绩未能核实" },
+  { series: "worlds", year: 2011, city: "上海", champion: "Sun Yang", country: "CHN", time: "14:34.14", note: "个人首枚世锦赛金牌兼破世界纪录" },
 
   // —— 亚运会（2006 多哈起六届，五届已核；2026 届未能核实到直接赛果） ——
   { series: "asiangames", year: 2022, city: "杭州", champion: "Fei Liwei", country: "CHN", time: "14:55.47", note: "赛事于2023年举行" },

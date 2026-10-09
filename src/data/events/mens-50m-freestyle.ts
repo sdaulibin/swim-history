@@ -6,7 +6,8 @@ import type { SwimEvent } from "@/lib/types";
  * 数据截至：2026年10月
  *
  * progression 空缺说明（宁缺毋滥）：
- *  - 沙利文 21.28（2008）以前的纪录沿革未能核实到可靠日期，暂缺；
+ *  - 波波夫 21.64（2000-06）以前的沿革未能核实，暂缺；
+ *  - 21.64 与 21.50 均为单源待复核的著名锚点；
  *  - 西埃洛 20.91 为快速泳衣时代遗产，悬置至今；
  *  - 亚洲纪录的保持者与数值未能核实到可靠来源，暂缺。
  */
@@ -21,7 +22,9 @@ export const mens50mFreestyle: SwimEvent = {
     "20.91——塞萨尔·西埃洛2009年罗马的「一炮」，十七年后依然是人类在这个「水上百米飞人大战」上的极限。从霍尔与欧文的千禧并列，到麦克沃伊30岁的巴黎加冕，这是最短、也最残酷的距离。",
   dataAsOf: "2026年10月",
   progression: [
-    { time: "21.28", holder: "Eamon Sullivan", country: "AUS", date: "2008-03", meet: "澳大利亚奥运选拔赛", place: "悉尼", note: "此前沿革未能核实，暂缺" },
+    { time: "21.64", holder: "Alexander Popov", country: "Russia", date: "2000-06", note: "保持八年的布料泳衣时代标杆；具体赛事未能核实，单源待复核" },
+    { time: "21.50", holder: "Alain Bernard", country: "FRA", date: "2008-03", meet: "欧洲游泳锦标赛", place: "埃因霍温", note: "快速泳衣时代的第一波；单源待复核" },
+    { time: "21.28", holder: "Eamon Sullivan", country: "AUS", date: "2008-03", meet: "澳大利亚奥运选拔赛", place: "悉尼", note: "三天内两破伯纳德的纪录" },
     { time: "20.91", holder: "Cesar Cielo", country: "BRA", date: "2009-08-01", meet: "世界锦标赛", place: "罗马", note: "快速泳衣时代遗产，现世界纪录" },
   ],
 

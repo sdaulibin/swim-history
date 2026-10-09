@@ -4,7 +4,7 @@ import type { ChampionEntry } from "@/lib/types";
  * 男子 100 米仰泳 · 历届大赛冠军
  * 空缺说明（宁缺毋滥，未能核实的届次暂缺）：
  *  - 奥运会：1996 年及以前各届未能核实，暂缺；
- *  - 世锦赛：2015 年及以前、2024/2025 届未能核实，暂缺；
+ *  - 世锦赛：2009/2013 届已核（2009 届成绩未能核实）；2011/2015 及 2024/2025 届未能核实，暂缺；
  *  - 泛太平洋 / 欧洲锦标赛：各届未能核实，暂缺；
  *  - 亚运会：2006 多哈届未能核实，暂缺；2010 届冠军已核、成绩未能核实。
  */
@@ -21,6 +21,8 @@ export const mens100mBackstrokeChampions: ChampionEntry[] = [
   // —— 世界锦标赛（2015 及以前、2024/2025 届未能核实，暂缺） ——
   { series: "worlds", year: 2023, city: "福冈", champion: "Ryan Murphy", country: "USA", time: "52.22", note: "徐嘉余52.64获第四" },
   { series: "worlds", year: 2022, city: "布达佩斯", champion: "Thomas Ceccon", country: "ITA", time: "51.60", wr: true, note: "决赛破世界纪录；当届世锦赛第一项世界纪录" },
+  { series: "worlds", year: 2013, city: "巴塞罗那", champion: "Matt Grevers", country: "USA", time: "52.93", note: "美国包揽金银，卫冕奥运冠军后首夺世锦赛冠军" },
+  { series: "worlds", year: 2009, city: "罗马", champion: "Aaron Peirsol", country: "USA", note: "夺冠成绩未能核实" },
   { series: "worlds", year: 2019, city: "光州", champion: "Xu Jiayu", country: "CHN", time: "52.43", note: "卫冕成功" },
   { series: "worlds", year: 2017, city: "布达佩斯", champion: "Xu Jiayu", country: "CHN", time: "52.44", note: "0.04秒险胜格雷弗斯，中国男子仰泳首个世界冠军" },
 
