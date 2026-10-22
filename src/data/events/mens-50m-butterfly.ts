@@ -2,15 +2,15 @@ import type { SwimEvent } from "@/lib/types";
 
 /**
  * 男子 50 米蝶泳（长池）世界纪录演进
- * 数据来源：Wikipedia "World record progression 50 metres butterfly" 等
+ * 数据来源：Wikipedia「50 metres butterfly」演进表（逐行核对）、
+ * World Aquatics 官方纪录、各届世锦赛官方成绩页
  * 数据截至：2026年10月
  *
- * progression 空缺说明（宁缺毋滥）：
- *  - 德雷塞尔 22.35（2019 光州决赛）以前的纪录沿革（Huegill、Govorov 时代的
- *    多次改写及 22.43 等）未能核实到可靠日期，暂缺；
- *  - 50 米蝶泳不是奥运会项目，世锦赛（2001 年起）与欧锦赛是其最高舞台；
- *  - 亚洲纪录由巴林归化选手阿尔汉格尔斯基持有（2026名古屋亚运以22.91夺冠时
- *    已是纪录保持者），精确数值待复核，暂缺。
+ * 重要勘误：
+ *  - 本站旧版把德雷塞尔 2019 光州决赛的 22.35 记为「世界纪录」，
+ *    实为世锦赛纪录（CR）；世界纪录是乌克兰戈沃罗夫 2018-07-01
+ *    在罗马七丘杯游出的 22.27，悬置至今；
+ *  - 50 米蝶泳不是奥运会项目，世锦赛（2001 年起）与欧锦赛是最高舞台。
  */
 export const mens50mButterfly: SwimEvent = {
   slug: "mens-50m-butterfly",
@@ -20,49 +20,71 @@ export const mens50mButterfly: SwimEvent = {
   course: "LCM",
   name: "男子 50 米蝶泳",
   summary:
-    "22.35——2019年光州，卡莱布·德雷塞尔在50蝶决赛里把世界纪录一次提高0.12秒。这是不进奥运会的「闪电项目」：世锦赛与欧锦赛是它唯一的巅峰舞台，而亚洲的速度同样在这里生长。",
+    "22.27——2018年7月1日的罗马，安德里·戈沃罗夫在七丘杯游出这个数字，八年后仍无人能及。这不是奥运项目，却是世锦赛最凶的「一枪定生死」：从许吉尔到舍曼，从西埃洛到德雷塞尔，五十米只有一次入水、一次转身前的全部勇气。",
   dataAsOf: "2026年10月",
   progression: [
-    { time: "22.35", holder: "Caeleb Dressel", country: "USA", date: "2019-07-27", meet: "世界锦标赛", place: "光州", note: "决赛夺冠并破世界纪录；同届包揽50自/50蝶/100蝶三项冠军，现世界纪录" },
+    { time: "23.60", holder: "Geoff Huegill", country: "AUS", date: "2000-05-14", meet: "澳大利亚全国锦标赛", place: "悉尼", note: "该项目首个被承认的世界纪录（1996 年潘克拉托夫的 23.68 未被国际泳联承认）" },
+    { time: "23.44", holder: "Geoff Huegill", country: "AUS", date: "2001-07-27", meet: "世界锦标赛", place: "福冈", flags: ["sf"] },
+    { time: "23.43", holder: "Matt Welsh", country: "AUS", date: "2003-07-21", meet: "世界锦标赛", place: "巴塞罗那", note: "世锦赛夺冠兼破纪录" },
+    { time: "23.30", holder: "Ian Crocker", country: "USA", date: "2004-02-29", meet: "Big 12 计时赛", place: "奥斯汀", flags: ["tt"] },
+    { time: "23.01", holder: "Roland Schoeman", country: "RSA", date: "2005-07-24", meet: "世界锦标赛", place: "蒙特利尔", flags: ["sf"] },
+    { time: "22.96", holder: "Roland Schoeman", country: "RSA", date: "2005-07-25", meet: "世界锦标赛", place: "蒙特利尔", note: "世锦赛夺冠兼破纪录，首次游进23秒" },
+    { time: "22.43", holder: "Rafael Muñoz", country: "ESP", date: "2009-04-05", meet: "西班牙全国锦标赛", place: "马拉加", flags: ["sf"], note: "快速泳衣时代" },
+    { time: "22.27", holder: "Andriy Govorov", country: "UKR", date: "2018-07-01", meet: "七丘杯", place: "罗马", note: "现世界纪录——悬置八年" },
   ],
 
-  chineseRecord: {
-    time: "23.21", holder: "Wang Changhao", country: "CHN",
-    date: "2023-05", meet: "全国游泳冠军赛",
-    note: "打破李朱濠时代的旧全国纪录",
+  asianRecord: {
+    time: "22.91", holder: "Mikhail Arkhangelskiy", country: "BRN",
+    date: "2026-09", meet: "亚运会",
+    note: "巴林归化选手阿尔汉格尔斯基 2026 名古屋亚运以 22.91 夺冠并平亚洲纪录；张雨霏同届以 25.41 拿下女子组金牌",
   },
 
   top10: [
-    { time: "22.35", holder: "Caeleb Dressel", country: "USA", date: "2019-07-27", meet: "2019年光州世锦赛", wr: true, note: "现世界纪录" },
-    { time: "23.21", holder: "Wang Changhao", country: "CHN", date: "2023-05", meet: "2023年全国游泳冠军赛", note: "中国纪录" },
+    { time: "22.27", holder: "Andriy Govorov", country: "UKR", date: "2018-07-01", meet: "2018年七丘杯（罗马）", wr: true, note: "现世界纪录" },
+    { time: "22.35", holder: "Caeleb Dressel", country: "USA", date: "2019-07-27", meet: "2019年光州世锦赛", note: "世锦赛纪录，非世界纪录" },
+    { time: "22.43", holder: "Rafael Muñoz", country: "ESP", date: "2009-04-05", meet: "2009年西班牙全国锦标赛" },
+    { time: "22.48", holder: "Maxime Grousset", country: "FRA", date: "2025-08-02", meet: "2025年新加坡世锦赛" },
+    { time: "22.51", holder: "Noè Ponti", country: "SUI", date: "2025-08-02", meet: "2025年新加坡世锦赛" },
+    { time: "22.57", holder: "Caeleb Dressel", country: "USA", date: "2022-06-19", meet: "2022年布达佩斯世锦赛" },
+    { time: "22.67", holder: "Milorad Čavić", country: "SRB", date: "2009-07-27", meet: "2009年罗马世锦赛" },
+    { time: "22.68", holder: "Thomas Ceccon", country: "ITA", date: "2023-07-24", meet: "2023年福冈世锦赛" },
+    { time: "22.71", holder: "Ben Proud", country: "GBR", date: "2022-06-19", meet: "2022年布达佩斯世锦赛（预赛）" },
+    { time: "22.75", holder: "Ben Proud", country: "GBR", date: "2017-07-29", meet: "2017年布达佩斯世锦赛" },
   ],
   top10Note:
-    "德雷塞尔的22.35独居榜首，此后无人游进22.5；戈沃罗夫、桑托斯等人的22.4x级别历史成绩未能逐条双源核实，暂列锚点。",
+    "前十门槛 22.75；戈沃罗夫的 22.27 是快速泳衣之后最长寿的世界纪录之一。亚洲最好刻度为巴林阿尔汉格尔斯基的 22.91（2026 名古屋亚运，平亚洲纪录），中国最好成绩未进前十。",
 
   history: [
     {
-      heading: "不进奥运的闪电项目",
+      heading: "最短的项目，最长的等待",
       paragraphs: [
-        "50米蝶泳2001年才进入世锦赛，且始终无缘奥运会——它是最纯粹的「触壁竞速」：一次出发、十几次划臂、零容错。澳大利亚的杰夫·休吉尔、乌克兰的安德烈·戈沃罗夫、巴西的尼古拉斯·桑托斯们先后在00年代留下纪录，但都湮没在泳衣时代的混沌里。",
-        "2019年7月的光州属于德雷塞尔：决赛22.35一举破世界纪录——该届包揽50自、50蝶、100蝶三项冠军的美国人，把50蝶推到了一个此后无人接近的高度。",
+        "50 米蝶泳 2001 年才进入世锦赛，但它的世界纪录可以追溯到更早：1996 年亚特兰大前夜，俄罗斯的杰尼斯·潘克拉托夫在法国米卢斯游出 23.68，国际泳联当年并未承认。真正的第一条官方纪录属于澳大利亚的杰夫·许吉尔——2000 年 5 月在悉尼的 23.60。",
+        "2001 年福冈、2003 年巴塞罗那、2005 年蒙特利尔，三年三个纪录：许吉尔 23.44、威尔士 23.43、舍曼 22.96。南非人舍曼在蒙特利尔一天之内先在半决赛破纪录，再在决赛夺金并游进 23 秒——这是这个项目第一次真正进入「22 秒时代」。",
       ],
     },
     {
-      heading: "亚洲的速度",
+      heading: "戈沃罗夫的 22.27",
       paragraphs: [
-        "亚洲人在这个项目上的标杆是日本的短距离蝶泳群像与中国的新生代：李朱濠曾是旧全国纪录的保持者，2023年5月的全国冠军赛，王长浩以23.21改写全国纪录；同年杭州亚运会，该项目重新回到亚洲视野的中心。",
-        "泛太平洋锦标赛不设50米项目；对亚洲选手而言，世锦赛、欧锦赛（非亚洲）之外，亚运会是这个项目最重要的舞台——2023年杭州、2026年名古屋的冠军榜见证着亚洲速度的轮替。",
+        "2009 年的快速泳衣把纪录推到 22.43（西班牙穆尼奥斯）。泳衣禁令之后，这个数字反而成了顽石：德雷塞尔 2019 年在光州游出 22.35，很多人误以为是世界纪录——其实他破的是世锦赛纪录；真正的世界纪录在一年前已被乌克兰人戈沃罗夫以 22.27 改写。",
+        "2018 年 7 月 1 日，罗马七丘杯，戈沃罗夫在预赛之外的决赛中一枪定音。此后八年，从德雷塞尔到格鲁塞、蓬蒂、切孔，最快的世界大赛成绩仍停在 22.35——0.08 秒，是五十米蝶泳至今未被跨越的鸿沟。",
+      ],
+    },
+    {
+      heading: "亚洲的一枪",
+      paragraphs: [
+        "亚洲的速度在这个项目上并不缺席：周嘉威 2006/2010 两届亚运以 23.94、23.66 连续刷新赛会纪录；2014 年仁川石杨 23.46；2018 年雅加达，约瑟夫·斯库林为新加坡夺金。",
+        "2026 年名古屋亚运会，巴林归化选手米哈伊尔·阿尔汉格尔斯基在决赛游出 22.91，平亚洲纪录夺金——这是亚洲选手第一次站到 22.9 的门槛上。同届中国张雨霏以 25.41 拿下女子组金牌。",
       ],
     },
   ],
   sources: [
     {
-      label: "Wikipedia：World record progression 50 metres butterfly",
-      url: "https://en.wikipedia.org/wiki/World_record_progression_50_metres_butterfly",
+      label: "Wikipedia：50 metres butterfly（世界纪录演进表）",
+      url: "https://en.wikipedia.org/wiki/50_metres_butterfly",
     },
     {
-      label: "Wikipedia：Swimming at the 2019 World Aquatics Championships – Men's 50 metre butterfly",
-      url: "https://en.wikipedia.org/wiki/Swimming_at_the_2019_World_Aquatics_Championships_%E2%80%93_Men%27s_50_metre_butterfly",
+      label: "Wikipedia：List of World Aquatics Championships medalists in swimming (men)",
+      url: "https://en.wikipedia.org/wiki/List_of_World_Aquatics_Championships_medalists_in_swimming_(men)",
     },
     {
       label: "World Aquatics 官方纪录",

@@ -67,6 +67,10 @@ import { womens4x100mMedleyRelay } from "./events/womens-4x100m-medley-relay";
 import { womens4x100mMedleyRelayChampions } from "./champions/womens-4x100m-medley-relay";
 import { mens100mBackstroke } from "./events/mens-100m-backstroke";
 import { mens100mBackstrokeChampions } from "./champions/mens-100m-backstroke";
+import { mens200mBreaststroke } from "./events/mens-200m-breaststroke";
+import { mens200mBreaststrokeChampions } from "./champions/mens-200m-breaststroke";
+import { womens200mBreaststroke } from "./events/womens-200m-breaststroke";
+import { womens200mBreaststrokeChampions } from "./champions/womens-200m-breaststroke";
 
 export const events = [
   { ...mens100mFreestyle, champions: mens100mFreestyleChampions },
@@ -103,6 +107,8 @@ export const events = [
   { ...mens4x100mMedleyRelay, champions: mens4x100mMedleyRelayChampions },
   { ...womens4x100mMedleyRelay, champions: womens4x100mMedleyRelayChampions },
   { ...mens100mBackstroke, champions: mens100mBackstrokeChampions },
+  { ...mens200mBreaststroke, champions: mens200mBreaststrokeChampions },
+  { ...womens200mBreaststroke, champions: womens200mBreaststrokeChampions },
 ];
 
 export const strokeMeta: Record<Stroke, { zh: string }> = {
