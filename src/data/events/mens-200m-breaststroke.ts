@@ -63,14 +63,14 @@ export const mens200mBreaststroke: SwimEvent = {
   ],
 
   asianRecord: {
-    time: "2:05.48", holder: "Qin Haiyang", country: "CHN",
-    date: "2023-07-27", meet: "世界锦标赛", place: "福冈",
-    note: "亚洲纪录；2026 名古屋亚运大桥信 2:04.83 已改写世界纪录，亚洲纪录随之易主为 2:04.83",
+    time: "2:04.83", holder: "Shin Ohashi", country: "JPN",
+    date: "2026-09-24", meet: "亚运会", place: "名古屋", wr: true,
+    note: "2026 名古屋亚运决赛破世界纪录，亚洲纪录随之易主；此前亚洲纪录为覃海洋 2:05.48（2023 福冈）",
   },
   chineseRecord: {
     time: "2:05.48", holder: "Qin Haiyang", country: "CHN",
     date: "2023-07-27", meet: "世界锦标赛", place: "福冈",
-    note: "覃海洋 2023 年包揽 50/100/200 蛙三金，200 蛙决赛 2:05.48 破世界纪录",
+    note: "覃海洋 2023 年包揽 50/100/200 蛙三金，200 蛙决赛 2:05.48 破世界纪录；仍是中国纪录",
   },
 
   top10: [
