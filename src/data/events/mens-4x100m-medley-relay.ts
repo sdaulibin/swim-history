@@ -71,9 +71,9 @@ export const mens4x100mMedleyRelay: SwimEvent = {
   ],
 
   asianRecord: {
-    time: "3:27.46", holder: "China", country: "CHN",
-    date: "2024-08-04", meet: "奥运会", place: "巴黎",
-    note: "徐嘉余·覃海洋·孙佳俊·潘展乐；亚运史上中国队 2022 杭州 3:27.01 更快，但亚运成绩不计为亚洲纪录",
+    time: "3:27.01", holder: "China", country: "CHN",
+    date: "2023-09-26", meet: "亚运会", place: "杭州",
+    note: "徐嘉余·覃海洋·王长浩·潘展乐；亚运成绩同样计为亚洲纪录，故 2024 巴黎的 3:27.46（奥运金牌）并非亚洲纪录",
   },
   chineseRecord: {
     time: "3:27.46", holder: "China", country: "CHN",

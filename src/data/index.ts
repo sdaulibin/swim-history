@@ -71,6 +71,8 @@ import { mens200mBreaststroke } from "./events/mens-200m-breaststroke";
 import { mens200mBreaststrokeChampions } from "./champions/mens-200m-breaststroke";
 import { womens200mBreaststroke } from "./events/womens-200m-breaststroke";
 import { womens200mBreaststrokeChampions } from "./champions/womens-200m-breaststroke";
+import { mixed4x100mMedleyRelay } from "./events/mixed-4x100m-medley-relay";
+import { mixed4x100mMedleyRelayChampions } from "./champions/mixed-4x100m-medley-relay";
 
 export const events = [
   { ...mens100mFreestyle, champions: mens100mFreestyleChampions },
@@ -109,6 +111,7 @@ export const events = [
   { ...mens100mBackstroke, champions: mens100mBackstrokeChampions },
   { ...mens200mBreaststroke, champions: mens200mBreaststrokeChampions },
   { ...womens200mBreaststroke, champions: womens200mBreaststrokeChampions },
+  { ...mixed4x100mMedleyRelay, champions: mixed4x100mMedleyRelayChampions },
 ];
 
 export const strokeMeta: Record<Stroke, { zh: string }> = {
@@ -123,6 +126,7 @@ export const strokeMeta: Record<Stroke, { zh: string }> = {
 export const genderMeta: Record<string, { zh: string }> = {
   men: { zh: "男子" },
   women: { zh: "女子" },
+  mixed: { zh: "男女混合" },
 };
 
 export const siteConfig = {

@@ -8,7 +8,7 @@ export function EventsExplorer({ events }: { events: EventCardData[] }) {
     () => ["全部", ...Array.from(new Set(events.map((e) => e.strokeZh)))],
     [events],
   );
-  const genders = ["全部", "男子", "女子"];
+  const genders = ["全部", "男子", "女子", "男女混合"];
 
   const [stroke, setStroke] = useState("全部");
   const [gender, setGender] = useState("全部");

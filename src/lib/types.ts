@@ -14,7 +14,7 @@ export type Stroke =
   | "medley"
   | "relay";
 
-export type Gender = "men" | "women";
+export type Gender = "men" | "women" | "mixed";
 
 /** 纪录附加标记（对应维基百科表格中的括号注记） */
 export type RecordFlag =
